@@ -204,4 +204,3991 @@ Error generating stack: `+a.message+`
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const md=$("X",[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]]);function hd({size:e=32,onDark:t=!1}){const n=t?"#F7F7FB":"#3F3D99",r=t?"#18183A":"#F7F7FB";return o.jsxs("svg",{width:e,height:e,viewBox:"0 0 64 64","aria-hidden":"true",children:[o.jsx("g",{fill:n,children:[0,60,120,180,240,300].map(l=>o.jsx("ellipse",{cx:"32",cy:"16",rx:"8",ry:"13",transform:`rotate(${l} 32 32)`},l))}),o.jsx("circle",{cx:"32",cy:"32",r:"10",fill:"#F5C443",stroke:r,strokeWidth:"3"})]})}function Ql({size:e=32,onDark:t=!1,withWordmark:n=!0,className:r=""}){return o.jsxs("span",{className:`inline-flex items-center gap-2 ${r}`,children:[o.jsx(hd,{size:e,onDark:t}),n&&o.jsx("span",{className:`font-heading text-[28px] font-bold leading-9 tracking-tight ${t?"text-bg-light":"text-ink"}`,children:"mindbloom"})]})}const Q={get(e,t){try{const n=window.localStorage.getItem(e);return n?JSON.parse(n):t}catch{return t}},set(e,t){try{window.localStorage.setItem(e,JSON.stringify(t))}catch{}},remove(e){try{window.localStorage.removeItem(e)}catch{}}},Ch={langName:"English",nav:{problem:"Problem",solution:"Solution",product:"Product",whyUs:"Why us",contact:"Contact",join:"Join",signIn:"Sign in",account:"My account",present:"Present",menu:"Menu",language:"Language"},hero:{tags:["Ages 6 to 18","ADHD, dyslexia, autism and more","Barcelona"],title:"Study, focus and friends, in one place.",subtitle:"MindBloom brings study help, focus and time with other kids together, in one app and one learning centre in Barcelona.",ctaProduct:"See the product",ctaContact:"Get in touch",quoteTranslation:"Homework afternoons never end.",quoteSource:"Mother of an 8-year-old, quoted by a school counsellor · Infosal, 2016"},problem:{label:"The problem",title:"Help comes in pieces. Parents hold them together.",body:"Families pay for a psychologist, a tutor, maybe an app, and homework still takes all afternoon. Each kind of help covers one piece, and parents are the ones holding it all together.",stats:[{value:"1.26M",label:"students in Spain needed extra support at school in 2024-25"},{value:"€700",label:"a month one Barcelona family spends on private help"},{value:"6 months",label:"waiting list a Barcelona early-care centre quotes to families"}],quoteTranslation:"My daughter needs a speech therapist, an occupational therapist and a psychologist, and nobody helps me!",quoteSource:"Inma Caballero, mother of Vega, Barcelona · betevé, 2021",sources:"Sources: Spanish Ministry of Education, ACNEAE 2024-25 · betevé, 10 Jun 2021"},solution:{label:"The solution",title:"One place for study, focus and friends",body:"MindBloom is for children aged 6 to 18 who think and learn differently. One app between visits, and one learning centre in Barcelona.",cards:[{title:"Study",body:"Help with real schoolwork: keeping it together and remembering what they learn."},{title:"Focus",body:"Focus sessions with planned breaks, so homework time is calmer and shorter."},{title:"Friends",body:"Time with other kids who learn like they do, at the Barcelona centre."}]},product:{label:"Product",title:"What we are building",tag:"Prototype",body:"Progress at home and at the centre is linked, so each child's plan follows them everywhere.",mockLabel:"Example screens — concept",tabs:["Focus Mode","My path","Parent view"],focus:{timer:"25:00",paused:"Distracting apps paused",start:"Start focus",next:"Next break in 25 min"},path:{today:"Today's goals",goals:["Read chapter 3 (15 min)","Maths: 10 fractions","Pack bag for tomorrow"],progress:"This week",home:"Home",centre:"Centre"},parent:{week:"Lucas's week",sessions:"4 of 5 focus sessions done",next:"Next centre session",nextWhen:"Thursday, 17:00 · Small group",message:"Message from Laura (educator)",messageText:"Great work on fractions today. We'll practise again on Thursday."},appTitle:"The app",app:[["Focus Mode","Pauses distracting apps during focus sessions, with planned breaks."],["A personal path","Goals and a progression that link learning at home with the centre."],["Parent and educator view","Follow progress and coordinate the learning plan in one place."]],centreTitle:"The Barcelona centre",centre:[["Sessions and small groups","Practical exercises with qualified education professionals."],["Quiet learning spaces","A calm, flexible place to study."],["One shared learning plan","Educators update each child's plan after every visit."]],pause:"Pause slideshow",play:"Play slideshow"},gap:{label:"Why us",title:"Others solve one piece",rows:["Attention training","Reading & writing","Diagnosis & therapy","Schoolwork help","Friends & social","App + physical centre"],cols:["Sincrolab","Dytective","Private clinics","MindBloom"],yes:"Yes",no:"No",footnote:"Based on competitors' public websites, Nov 2026. The MindBloom column shows our plan."},model:{label:"Business model",title:"How MindBloom will earn",cards:[{title:"Families",body:"App subscription and learning-centre membership."},{title:"Schools and institutions",body:"Licences for schools and education organisations."},{title:"One-to-one sessions",body:"Individual sessions at the Barcelona centre."}],note:"Prices to be set with the first families."},roadmap:{label:"Roadmap",title:"Where we are",steps:[{when:"Now",what:"Research and parent interviews"},{when:"Next",what:"Waitlist and first Barcelona families"},{when:"Then",what:"App pilot and learning-centre opening"}]},contact:{label:"Contact",title:"Let's build this together",body:"Partner, educator or parent: tell us a little about you and we'll get in touch.",name:"Name",email:"Email",org:"Organisation (optional)",consent:"I agree to the privacy policy and to MindBloom storing my data.",submit:"Send",success:"Thank you! We'll be in touch soon.",required:"Please fill in your name, a valid email and tick the box."},footer:{tagline:"Study, focus and friends, in one place.",rights:"© 2026 MindBloom · Barcelona"},auth:{joinTitle:"Join MindBloom",joinBody:"Create a parent account. It takes less than a minute.",google:"Continue with Google",or:"or",emailSignup:"Sign up with email",email:"Email",password:"Password",passwordHint:"At least 8 characters.",show:"Show password",hide:"Hide password",create:"Create account",haveAccount:"Already have an account?",signInLink:"Sign in",signInTitle:"Welcome back",signInBody:"Sign in to your parent account.",signInBtn:"Sign in",forgot:"Forgot password?",noAccount:"New to MindBloom?",joinLink:"Create an account",resetSent:"If that email has an account, we've sent a link to reset the password.",resetNeedEmail:"Type your email above first, then click “Forgot password?” again.",checkEmail:"Check your inbox: we've sent you a link to confirm your email.",errors:{google:"Google sign-in isn't available yet. Please use your email and a password.",resetOff:"Password reset by email isn't switched on yet. Please write to us with the contact form on the home page.",exists:"This email already has an account. Sign in instead?",invalid:"That email and password don't match. Try again, or reset your password.",weak:"Please use a password with at least 8 characters.",email:"Please enter a valid email address.",generic:"Something went wrong. Please try again."},demo:"Demo mode: accounts are saved only in this browser."},welcome:{step:"Step",of:"of",s1Title:"About you",firstName:"Your first name",language:"Preferred language",s2Title:"About your child",childName:"Child's first name or nickname",childAge:"Child's age",ageHint:"MindBloom is for ages 6 to 18.",ageError:"Please enter an age between 6 and 18.",interest:"What interests you most?",interests:{app:["The app","Help with schoolwork and focus between visits."],centre:["The Barcelona centre","Sessions, small groups and quiet spaces to learn."],both:["Both","The app at home and the centre in Barcelona."]},consent:"I agree to the privacy policy and to MindBloom storing my data.",consentError:"Please tick the box to continue.",next:"Next",back:"Back",finish:"Finish",privacyNote:"We only ask for what we need. No diagnoses, health details, school or surnames.",doneTitle:"You're on the list.",doneBody:"We'll be in touch to talk.",nextTitle:"What happens next",nextSteps:["We read your answers.","We email you to arrange a short chat.","You hear first when the app and centre open."],toAccount:"Go to my account",toHome:"Back to the website"},account:{title:"My account",signedInAs:"Signed in as",parent:"You",child:"Your child",save:"Save changes",saved:"Saved.",passwordTitle:"Change password",newPassword:"New password",changePassword:"Change password",passwordChanged:"Password changed.",dangerTitle:"Delete account",dangerBody:"This deletes your account and all the data you gave us. It can't be undone.",deleteBtn:"Delete my account and data",confirm:"Are you sure? Type DELETE to confirm.",confirmWord:"DELETE",confirmBtn:"Yes, delete everything",cancel:"Cancel",deleted:"Your account and data have been deleted.",signOut:"Sign out"},notFound:{title:"Page not found",body:"This page doesn't exist or has moved.",home:"Back to the home page"},present:{exit:"Exit",prev:"Previous",next:"Next",hint:"Use ← → arrow keys · Esc to exit"}},Ph={langName:"Español",nav:{problem:"Problema",solution:"Solución",product:"Producto",whyUs:"Por qué nosotros",contact:"Contacto",join:"Únete",signIn:"Iniciar sesión",account:"Mi cuenta",present:"Presentar",menu:"Menú",language:"Idioma"},hero:{tags:["De 6 a 18 años","TDAH, dislexia, autismo y más","Barcelona"],title:"Estudio, concentración y amigos, en un solo lugar.",subtitle:"MindBloom une la ayuda con los estudios, la concentración y el tiempo con otros niños, en una app y un centro de aprendizaje en Barcelona.",ctaProduct:"Ver el producto",ctaContact:"Contacta con nosotros",quoteTranslation:"Las tardes de deberes no tienen fin.",quoteSource:"Madre de un niño de 8 años, citada por una orientadora escolar · Infosal, 2016"},problem:{label:"El problema",title:"La ayuda llega a trozos. Los padres la sostienen.",body:"Las familias pagan un psicólogo, un profesor particular, quizá una app, y los deberes siguen ocupando toda la tarde. Cada ayuda cubre una parte, y son los padres quienes lo sostienen todo.",stats:[{value:"1,26 M",label:"alumnos en España necesitaron apoyo educativo en 2024-25"},{value:"700 €",label:"al mes gasta una familia de Barcelona en ayuda privada"},{value:"6 meses",label:"de lista de espera indica un centro de atención temprana de Barcelona"}],quoteTranslation:"¡Mi hija necesita un logopeda, un terapeuta ocupacional y un psicólogo, y nadie me ayuda!",quoteSource:"Inma Caballero, madre de Vega, Barcelona · betevé, 2021",sources:"Fuentes: Ministerio de Educación, ACNEAE 2024-25 · betevé, 10 jun 2021"},solution:{label:"La solución",title:"Un solo lugar para estudiar, concentrarse y hacer amigos",body:"MindBloom es para niños y jóvenes de 6 a 18 años que piensan y aprenden de forma diferente. Una app entre visitas y un centro de aprendizaje en Barcelona.",cards:[{title:"Estudio",body:"Ayuda con los deberes reales: organizarlos y recordar lo aprendido."},{title:"Concentración",body:"Sesiones de concentración con descansos planificados, para tardes más tranquilas y cortas."},{title:"Amigos",body:"Tiempo con otros niños que aprenden como ellos, en el centro de Barcelona."}]},product:{label:"Producto",title:"Lo que estamos construyendo",tag:"Prototipo",body:"El progreso en casa y en el centro está conectado, así que el plan de cada niño le acompaña siempre.",mockLabel:"Pantallas de ejemplo — concepto",tabs:["Modo concentración","Mi camino","Vista familia"],focus:{timer:"25:00",paused:"Apps que distraen en pausa",start:"Empezar",next:"Próximo descanso en 25 min"},path:{today:"Objetivos de hoy",goals:["Leer el capítulo 3 (15 min)","Mates: 10 fracciones","Preparar la mochila"],progress:"Esta semana",home:"Casa",centre:"Centro"},parent:{week:"La semana de Lucas",sessions:"4 de 5 sesiones de concentración hechas",next:"Próxima sesión en el centro",nextWhen:"Jueves, 17:00 · Grupo pequeño",message:"Mensaje de Laura (educadora)",messageText:"Muy buen trabajo hoy con las fracciones. Volveremos a practicar el jueves."},appTitle:"La app",app:[["Modo concentración","Pausa las apps que distraen durante las sesiones, con descansos planificados."],["Un camino personal","Objetivos y una progresión que unen lo que aprende en casa y en el centro."],["Vista para familias y educadores","Sigue el progreso y coordina el plan de aprendizaje en un solo lugar."]],centreTitle:"El centro de Barcelona",centre:[["Sesiones y grupos pequeños","Ejercicios prácticos con profesionales de la educación cualificados."],["Espacios tranquilos","Un lugar calmado y flexible para estudiar."],["Un plan compartido","Los educadores actualizan el plan de cada niño después de cada visita."]],pause:"Pausar la presentación",play:"Reproducir la presentación"},gap:{label:"Por qué nosotros",title:"Los demás resuelven una parte",rows:["Entrenamiento de la atención","Lectura y escritura","Diagnóstico y terapia","Ayuda con los deberes","Amigos y socialización","App + centro físico"],cols:["Sincrolab","Dytective","Clínicas privadas","MindBloom"],yes:"Sí",no:"No",footnote:"Según las webs públicas de cada empresa, nov 2026. La columna de MindBloom muestra nuestro plan."},model:{label:"Modelo de negocio",title:"Cómo generará ingresos MindBloom",cards:[{title:"Familias",body:"Suscripción a la app y cuota del centro de aprendizaje."},{title:"Escuelas e instituciones",body:"Licencias para escuelas y organizaciones educativas."},{title:"Sesiones individuales",body:"Sesiones uno a uno en el centro de Barcelona."}],note:"Los precios se fijarán con las primeras familias."},roadmap:{label:"Hoja de ruta",title:"Dónde estamos",steps:[{when:"Ahora",what:"Investigación y entrevistas con familias"},{when:"Después",what:"Lista de espera y primeras familias de Barcelona"},{when:"Más adelante",what:"Piloto de la app y apertura del centro"}]},contact:{label:"Contacto",title:"Construyámoslo juntos",body:"Socio, educador o familia: cuéntanos un poco sobre ti y te escribiremos.",name:"Nombre",email:"Correo electrónico",org:"Organización (opcional)",consent:"Acepto la política de privacidad y que MindBloom guarde mis datos.",submit:"Enviar",success:"¡Gracias! Te escribiremos pronto.",required:"Escribe tu nombre, un correo válido y marca la casilla."},footer:{tagline:"Estudio, concentración y amigos, en un solo lugar.",rights:"© 2026 MindBloom · Barcelona"},auth:{joinTitle:"Únete a MindBloom",joinBody:"Crea una cuenta de familia. Tardarás menos de un minuto.",google:"Continuar con Google",or:"o",emailSignup:"Registrarse con correo",email:"Correo electrónico",password:"Contraseña",passwordHint:"Mínimo 8 caracteres.",show:"Mostrar contraseña",hide:"Ocultar contraseña",create:"Crear cuenta",haveAccount:"¿Ya tienes cuenta?",signInLink:"Inicia sesión",signInTitle:"Hola de nuevo",signInBody:"Inicia sesión en tu cuenta de familia.",signInBtn:"Iniciar sesión",forgot:"¿Has olvidado la contraseña?",noAccount:"¿Eres nuevo en MindBloom?",joinLink:"Crea una cuenta",resetSent:"Si ese correo tiene cuenta, te hemos enviado un enlace para cambiar la contraseña.",resetNeedEmail:"Escribe primero tu correo arriba y vuelve a pulsar «¿Has olvidado la contraseña?».",checkEmail:"Revisa tu correo: te hemos enviado un enlace para confirmarlo.",errors:{google:"El acceso con Google aún no está disponible. Usa tu correo y una contraseña.",resetOff:"El cambio de contraseña por correo aún no está activado. Escríbenos con el formulario de contacto de la página principal.",exists:"Este correo ya tiene una cuenta. ¿Quieres iniciar sesión?",invalid:"El correo y la contraseña no coinciden. Inténtalo de nuevo o cambia la contraseña.",weak:"Usa una contraseña de al menos 8 caracteres.",email:"Escribe un correo electrónico válido.",generic:"Algo ha fallado. Inténtalo de nuevo."},demo:"Modo demo: las cuentas solo se guardan en este navegador."},welcome:{step:"Paso",of:"de",s1Title:"Sobre ti",firstName:"Tu nombre",language:"Idioma preferido",s2Title:"Sobre tu hijo o hija",childName:"Nombre o apodo",childAge:"Edad",ageHint:"MindBloom es para edades de 6 a 18 años.",ageError:"Escribe una edad entre 6 y 18 años.",interest:"¿Qué te interesa más?",interests:{app:["La app","Ayuda con los deberes y la concentración entre visitas."],centre:["El centro de Barcelona","Sesiones, grupos pequeños y espacios tranquilos."],both:["Las dos cosas","La app en casa y el centro en Barcelona."]},consent:"Acepto la política de privacidad y que MindBloom guarde mis datos.",consentError:"Marca la casilla para continuar.",next:"Siguiente",back:"Atrás",finish:"Terminar",privacyNote:"Solo pedimos lo necesario. Nada de diagnósticos, datos de salud, escuela ni apellidos.",doneTitle:"Ya estás en la lista.",doneBody:"Te escribiremos para hablar.",nextTitle:"Qué pasa ahora",nextSteps:["Leemos tus respuestas.","Te escribimos para una breve llamada.","Te avisamos primero cuando abran la app y el centro."],toAccount:"Ir a mi cuenta",toHome:"Volver a la web"},account:{title:"Mi cuenta",signedInAs:"Sesión iniciada como",parent:"Tú",child:"Tu hijo o hija",save:"Guardar cambios",saved:"Guardado.",passwordTitle:"Cambiar contraseña",newPassword:"Nueva contraseña",changePassword:"Cambiar contraseña",passwordChanged:"Contraseña cambiada.",dangerTitle:"Eliminar cuenta",dangerBody:"Esto elimina tu cuenta y todos los datos que nos diste. No se puede deshacer.",deleteBtn:"Eliminar mi cuenta y mis datos",confirm:"¿Seguro? Escribe ELIMINAR para confirmar.",confirmWord:"ELIMINAR",confirmBtn:"Sí, eliminarlo todo",cancel:"Cancelar",deleted:"Tu cuenta y tus datos se han eliminado.",signOut:"Cerrar sesión"},notFound:{title:"Página no encontrada",body:"Esta página no existe o se ha movido.",home:"Volver al inicio"},present:{exit:"Salir",prev:"Anterior",next:"Siguiente",hint:"Usa las flechas ← → · Esc para salir"}},_h={langName:"Català",nav:{problem:"Problema",solution:"Solució",product:"Producte",whyUs:"Per què nosaltres",contact:"Contacte",join:"Uneix-te",signIn:"Inicia sessió",account:"El meu compte",present:"Presentar",menu:"Menú",language:"Idioma"},hero:{tags:["De 6 a 18 anys","TDAH, dislèxia, autisme i més","Barcelona"],title:"Estudi, concentració i amics, en un sol lloc.",subtitle:"MindBloom uneix l'ajuda amb els estudis, la concentració i el temps amb altres infants, en una app i un centre d'aprenentatge a Barcelona.",ctaProduct:"Veure el producte",ctaContact:"Contacta amb nosaltres",quoteTranslation:"Les tardes de deures no s'acaben mai.",quoteSource:"Mare d'un infant de 8 anys, citada per una orientadora escolar · Infosal, 2016"},problem:{label:"El problema",title:"L'ajuda arriba a trossos. Les famílies la sostenen.",body:"Les famílies paguen un psicòleg, un professor particular, potser una app, i els deures encara ocupen tota la tarda. Cada ajuda cobreix una part, i són els pares els qui ho sostenen tot.",stats:[{value:"1,26 M",label:"alumnes a Espanya van necessitar suport educatiu el 2024-25"},{value:"700 €",label:"al mes gasta una família de Barcelona en ajuda privada"},{value:"6 mesos",label:"de llista d'espera indica un CDIAP de Barcelona"}],quoteTranslation:"La meva filla necessita un logopeda, un terapeuta ocupacional i un psicòleg i ningú no m'ajuda!",quoteSource:"Inma Caballero, mare de la Vega, Barcelona · betevé, 2021",sources:"Fonts: Ministeri d'Educació, ACNEAE 2024-25 · betevé, 10 juny 2021"},solution:{label:"La solució",title:"Un sol lloc per estudiar, concentrar-se i fer amics",body:"MindBloom és per a infants i joves de 6 a 18 anys que pensen i aprenen de manera diferent. Una app entre visites i un centre d'aprenentatge a Barcelona.",cards:[{title:"Estudi",body:"Ajuda amb els deures reals: organitzar-los i recordar el que aprenen."},{title:"Concentració",body:"Sessions de concentració amb descansos planificats, per a tardes més tranquil·les i curtes."},{title:"Amics",body:"Temps amb altres infants que aprenen com ells, al centre de Barcelona."}]},product:{label:"Producte",title:"El que estem construint",tag:"Prototip",body:"El progrés a casa i al centre està connectat, així el pla de cada infant l'acompanya arreu.",mockLabel:"Pantalles d'exemple — concepte",tabs:["Mode concentració","El meu camí","Vista família"],focus:{timer:"25:00",paused:"Apps que distreuen en pausa",start:"Començar",next:"Proper descans en 25 min"},path:{today:"Objectius d'avui",goals:["Llegir el capítol 3 (15 min)","Mates: 10 fraccions","Preparar la motxilla"],progress:"Aquesta setmana",home:"Casa",centre:"Centre"},parent:{week:"La setmana d'en Lucas",sessions:"4 de 5 sessions de concentració fetes",next:"Propera sessió al centre",nextWhen:"Dijous, 17:00 · Grup petit",message:"Missatge de la Laura (educadora)",messageText:"Molt bona feina avui amb les fraccions. Hi tornarem dijous."},appTitle:"L'app",app:[["Mode concentració","Posa en pausa les apps que distreuen durant les sessions, amb descansos planificats."],["Un camí personal","Objectius i una progressió que uneixen el que aprèn a casa i al centre."],["Vista per a famílies i educadors","Segueix el progrés i coordina el pla d'aprenentatge en un sol lloc."]],centreTitle:"El centre de Barcelona",centre:[["Sessions i grups petits","Exercicis pràctics amb professionals de l'educació qualificats."],["Espais tranquils","Un lloc calmat i flexible per estudiar."],["Un pla compartit","Els educadors actualitzen el pla de cada infant després de cada visita."]],pause:"Atura la presentació",play:"Reprodueix la presentació"},gap:{label:"Per què nosaltres",title:"Els altres resolen una part",rows:["Entrenament de l'atenció","Lectura i escriptura","Diagnòstic i teràpia","Ajuda amb els deures","Amics i socialització","App + centre físic"],cols:["Sincrolab","Dytective","Clíniques privades","MindBloom"],yes:"Sí",no:"No",footnote:"Segons els webs públics de cada empresa, nov. 2026. La columna de MindBloom mostra el nostre pla."},model:{label:"Model de negoci",title:"Com generarà ingressos MindBloom",cards:[{title:"Famílies",body:"Subscripció a l'app i quota del centre d'aprenentatge."},{title:"Escoles i institucions",body:"Llicències per a escoles i organitzacions educatives."},{title:"Sessions individuals",body:"Sessions individuals al centre de Barcelona."}],note:"Els preus es fixaran amb les primeres famílies."},roadmap:{label:"Full de ruta",title:"On som",steps:[{when:"Ara",what:"Recerca i entrevistes amb famílies"},{when:"Després",what:"Llista d'espera i primeres famílies de Barcelona"},{when:"Més endavant",what:"Pilot de l'app i obertura del centre"}]},contact:{label:"Contacte",title:"Construïm-ho junts",body:"Soci, educador o família: explica'ns una mica qui ets i t'escriurem.",name:"Nom",email:"Correu electrònic",org:"Organització (opcional)",consent:"Accepto la política de privacitat i que MindBloom desi les meves dades.",submit:"Envia",success:"Gràcies! T'escriurem aviat.",required:"Escriu el teu nom, un correu vàlid i marca la casella."},footer:{tagline:"Estudi, concentració i amics, en un sol lloc.",rights:"© 2026 MindBloom · Barcelona"},auth:{joinTitle:"Uneix-te a MindBloom",joinBody:"Crea un compte de família. Trigaràs menys d'un minut.",google:"Continua amb Google",or:"o",emailSignup:"Registra't amb correu",email:"Correu electrònic",password:"Contrasenya",passwordHint:"Mínim 8 caràcters.",show:"Mostra la contrasenya",hide:"Amaga la contrasenya",create:"Crea el compte",haveAccount:"Ja tens compte?",signInLink:"Inicia sessió",signInTitle:"Hola de nou",signInBody:"Inicia sessió al teu compte de família.",signInBtn:"Inicia sessió",forgot:"Has oblidat la contrasenya?",noAccount:"Ets nou a MindBloom?",joinLink:"Crea un compte",resetSent:"Si aquest correu té compte, t'hem enviat un enllaç per canviar la contrasenya.",resetNeedEmail:"Escriu primer el teu correu a dalt i torna a clicar «Has oblidat la contrasenya?».",checkEmail:"Revisa el correu: t'hem enviat un enllaç per confirmar-lo.",errors:{google:"L'accés amb Google encara no està disponible. Fes servir el teu correu i una contrasenya.",resetOff:"El canvi de contrasenya per correu encara no està activat. Escriu-nos amb el formulari de contacte de la pàgina principal.",exists:"Aquest correu ja té un compte. Vols iniciar sessió?",invalid:"El correu i la contrasenya no coincideixen. Torna-ho a provar o canvia la contrasenya.",weak:"Fes servir una contrasenya d'almenys 8 caràcters.",email:"Escriu un correu electrònic vàlid.",generic:"Alguna cosa ha fallat. Torna-ho a provar."},demo:"Mode demo: els comptes només es desen en aquest navegador."},welcome:{step:"Pas",of:"de",s1Title:"Sobre tu",firstName:"El teu nom",language:"Idioma preferit",s2Title:"Sobre el teu fill o filla",childName:"Nom o sobrenom",childAge:"Edat",ageHint:"MindBloom és per a edats de 6 a 18 anys.",ageError:"Escriu una edat entre 6 i 18 anys.",interest:"Què t'interessa més?",interests:{app:["L'app","Ajuda amb els deures i la concentració entre visites."],centre:["El centre de Barcelona","Sessions, grups petits i espais tranquils."],both:["Totes dues coses","L'app a casa i el centre a Barcelona."]},consent:"Accepto la política de privacitat i que MindBloom desi les meves dades.",consentError:"Marca la casella per continuar.",next:"Següent",back:"Enrere",finish:"Acaba",privacyNote:"Només demanem el necessari. Res de diagnòstics, dades de salut, escola ni cognoms.",doneTitle:"Ja ets a la llista.",doneBody:"T'escriurem per parlar.",nextTitle:"Què passa ara",nextSteps:["Llegim les teves respostes.","T'escrivim per fer una breu trucada.","T'avisem els primers quan obrin l'app i el centre."],toAccount:"Ves al meu compte",toHome:"Torna al web"},account:{title:"El meu compte",signedInAs:"Sessió iniciada com a",parent:"Tu",child:"El teu fill o filla",save:"Desa els canvis",saved:"Desat.",passwordTitle:"Canvia la contrasenya",newPassword:"Nova contrasenya",changePassword:"Canvia la contrasenya",passwordChanged:"Contrasenya canviada.",dangerTitle:"Elimina el compte",dangerBody:"Això elimina el teu compte i totes les dades que ens vas donar. No es pot desfer.",deleteBtn:"Elimina el meu compte i les meves dades",confirm:"N'estàs segur? Escriu ELIMINAR per confirmar.",confirmWord:"ELIMINAR",confirmBtn:"Sí, elimina-ho tot",cancel:"Cancel·la",deleted:"El teu compte i les teves dades s'han eliminat.",signOut:"Tanca la sessió"},notFound:{title:"Pàgina no trobada",body:"Aquesta pàgina no existeix o s'ha mogut.",home:"Torna a l'inici"},present:{exit:"Surt",prev:"Anterior",next:"Següent",hint:"Fes servir les fletxes ← → · Esc per sortir"}},gd={en:Ch,es:Ph,ca:_h},vd=[{code:"en",short:"EN",name:"English"},{code:"es",short:"ES",name:"Español"},{code:"ca",short:"CA",name:"Català"}],yd=y.createContext(null);function Th(){const e=Q.get("mb_lang",null);if(e&&e in gd)return e;const t=(typeof navigator<"u"?navigator.language:"en").slice(0,2);return t==="es"||t==="ca"?t:"en"}function Lh({children:e}){const[t,n]=y.useState(Th),r=l=>{n(l),Q.set("mb_lang",l)};return y.useEffect(()=>{document.documentElement.lang=t},[t]),o.jsx(yd.Provider,{value:{lang:t,setLang:r,t:gd[t]},children:e})}function F(){const e=y.useContext(yd);if(!e)throw new Error("useLang must be used inside LanguageProvider");return e}function Pl({onDark:e=!1}){const{lang:t,setLang:n,t:r}=F();return o.jsx("div",{role:"group","aria-label":r.nav.language,className:"flex items-center gap-1",children:vd.map((l,a)=>o.jsxs("span",{className:"flex items-center",children:[a>0&&o.jsx("span",{"aria-hidden":"true",className:e?"px-1 text-bg-light":"px-1 text-ink-soft",children:"·"}),o.jsx("button",{type:"button",onClick:()=>n(l.code),"aria-pressed":t===l.code,"aria-label":l.name,className:`min-h-[44px] min-w-[44px] rounded-sm px-2 text-label ${t===l.code?e?"text-bg-light underline underline-offset-4":"text-main underline underline-offset-4":e?"text-bg-light":"text-ink-soft hover:text-ink"}`,children:l.short})]},l.code))})}const Mh=!1,yn={parent_name:"",language:"en",child_name:"",child_age:null,interest:null,consent:!1,completed:!1},xd=y.createContext(null),$e="mb_demo_users",Dn="mb_demo_session",An="mb_demo_profiles";async function Sa(e){try{const t=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(e));return Array.from(new Uint8Array(t)).map(n=>n.toString(16).padStart(2,"0")).join("")}catch{return btoa(unescape(encodeURIComponent(e)))}}const bs=()=>crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random().toString(16).slice(2);function zh({children:e}){const[t,n]=y.useState(null),[r,l]=y.useState(null),[a,i]=y.useState(!0),A=async(P,M="GET",B)=>{try{const R=await fetch("/api"+P,{method:M,credentials:"same-origin",headers:B?{"Content-Type":"application/json"}:{},body:B?JSON.stringify(B):void 0}),J=await R.json().catch(()=>({}));return R.ok?J:{error:J.error||"generic"}}catch{return{error:"generic"}}},S=J=>{J&&J.user?(n(J.user),l({...yn,...Object.fromEntries(Object.entries(J.profile||{}).filter(([,V])=>V!==null))})):(n(null),l(null))};y.useEffect(()=>{A("/me").then(J=>{J.error||S(J)}).finally(()=>i(!1))},[]);const u=y.useCallback(async(f,d)=>{if(f=f.trim().toLowerCase(),d.length<8)return{error:"weak"};const J=await A("/signup","POST",{email:f,password:d});return J.error?J:(S(J),{})},[]),c=y.useCallback(async(f,d)=>{const J=await A("/signin","POST",{email:f.trim().toLowerCase(),password:d});return J.error?J:(S(J),{})},[]),g=y.useCallback(async()=>{const J=await A("/auth/google/enabled");return J.enabled?(window.location.href="/api/auth/google",await new Promise(()=>{})):{error:"google"}},[]),m=y.useCallback(async f=>{const J=await A("/reset","POST",{email:f.trim().toLowerCase()});return J.error?J:{}},[]),h=y.useCallback(async f=>{if(f.length<8)return{error:"weak"};const J=await A("/password","POST",{password:f});return J.error?J:{}},[]),v=y.useCallback(async f=>{if(!t)return{error:"generic"};const d={...r??yn,...f},J=await A("/profile","PUT",{profile:d});return J.error?J:(l(d),{})},[t,r]),x=y.useCallback(async()=>{await A("/signout","POST"),n(null),l(null)},[]),k=y.useCallback(async()=>{if(!t)return{error:"generic"};const J=await A("/account","DELETE");return J.error?J:(n(null),l(null),{})},[t]),C=y.useMemo(()=>({user:t,profile:r,loading:a,isDemo:Mh,signUp:u,signIn:c,signInWithGoogle:g,resetPassword:m,updatePassword:h,saveProfile:v,deleteAccount:k,signOut:x}),[t,r,a,u,c,g,m,h,v,k,x]);return o.jsx(xd.Provider,{value:C,children:e})}function Yt(){const e=y.useContext(xd);if(!e)throw new Error("useAuth must be used inside AuthProvider");return e}const wd=[{id:"problem",key:"problem"},{id:"solution",key:"solution"},{id:"product",key:"product"},{id:"why-us",key:"whyUs"},{id:"contact",key:"contact"}];function wo(){const e=Gt(),{pathname:t}=lt();return n=>{var r;if(t!=="/"){e("/",{state:{scrollTo:n}});return}(r=document.getElementById(n))==null||r.scrollIntoView({behavior:"smooth"})}}function ko({onPresent:e}){const{t}=F(),{user:n}=Yt(),r=wo(),[l,a]=y.useState(!1),i=wd.map(u=>o.jsx("a",{href:`#${u.id}`,onClick:c=>{c.preventDefault(),a(!1),r(u.id)},className:"flex min-h-[44px] items-center text-small font-semibold text-ink hover:text-main",children:t.nav[u.key]},u.id)),s=o.jsxs(o.Fragment,{children:[e&&o.jsxs("button",{type:"button",onClick:()=>{a(!1),e()},className:"btn-second min-h-[44px] px-4 text-small",children:[o.jsx(xh,{size:18,"aria-hidden":"true"})," ",t.nav.present]}),n?o.jsx(Fe,{to:"/account",onClick:()=>a(!1),className:"btn-main min-h-[44px] px-4 text-small",children:t.nav.account}):o.jsxs(o.Fragment,{children:[o.jsx(Fe,{to:"/signin",onClick:()=>a(!1),className:"flex min-h-[44px] items-center px-2 text-small font-semibold text-main hover:underline",children:t.nav.signIn}),o.jsx(Fe,{to:"/join",onClick:()=>a(!1),className:"btn-main min-h-[44px] px-4 text-small",children:t.nav.join})]})]});return o.jsxs("header",{className:"sticky top-0 z-30 border-b border-line bg-bg-light/95 backdrop-blur",children:[o.jsxs("nav",{className:"container-mb flex items-center justify-between gap-4 py-3","aria-label":"Main",children:[o.jsx(Fe,{to:"/","aria-label":"MindBloom home",onClick:()=>a(!1),children:o.jsx(Ql,{size:32})}),o.jsx("div",{className:"hidden items-center gap-6 lg:flex",children:i}),o.jsxs("div",{className:"hidden items-center gap-3 lg:flex",children:[o.jsx(Pl,{}),s]}),o.jsx("button",{type:"button",className:"flex h-11 w-11 items-center justify-center rounded-sm text-ink lg:hidden","aria-label":t.nav.menu,"aria-expanded":l,onClick:()=>a(u=>!u),children:l?o.jsx(md,{"aria-hidden":"true"}):o.jsx(gh,{"aria-hidden":"true"})})]}),l&&o.jsx("div",{className:"border-t border-line bg-bg-light lg:hidden",children:o.jsxs("div",{className:"container-mb flex flex-col gap-2 py-4",children:[i,o.jsx(Pl,{}),o.jsx("div",{className:"flex flex-wrap items-center gap-3 pt-2",children:s})]})})]})}function So(){const{t:e}=F(),t=wo();return o.jsxs("footer",{className:"bg-bg-dark text-bg-light",children:[o.jsxs("div",{className:"container-mb flex flex-col gap-8 py-12 md:flex-row md:items-start md:justify-between",children:[o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsx(Ql,{onDark:!0,size:32}),o.jsx("p",{className:"text-small",children:e.footer.tagline})]}),o.jsx("ul",{className:"flex flex-wrap gap-x-6 gap-y-2",children:wd.map(n=>o.jsx("li",{children:o.jsx("a",{href:`#${n.id}`,onClick:r=>{r.preventDefault(),t(n.id)},className:"text-small text-bg-light hover:underline",children:e.nav[n.key]})},n.id))}),o.jsx(Pl,{onDark:!0})]}),o.jsx("div",{className:"container-mb pb-8 text-small",children:e.footer.rights})]})}const Ih=5e3;function Rh(){const{t:e}=F(),t=e.product,[n,r]=y.useState(0),[l,a]=y.useState(!1),[i,s]=y.useState(!1),[u,c]=y.useState(!1);y.useEffect(()=>{var h;const m=(h=window.matchMedia)==null?void 0:h.call(window,"(prefers-reduced-motion: reduce)");c(!!(m!=null&&m.matches))},[]);const g=l||i||u;return y.useEffect(()=>{if(g)return;const m=window.setInterval(()=>r(h=>(h+1)%3),Ih);return()=>window.clearInterval(m)},[g]),o.jsxs("div",{className:"flex flex-col items-center gap-4",onMouseEnter:()=>a(!0),onMouseLeave:()=>a(!1),onFocus:()=>a(!0),onBlur:()=>a(!1),children:[o.jsx("div",{role:"tablist","aria-label":t.mockLabel,className:"flex flex-wrap justify-center gap-2",children:t.tabs.map((m,h)=>o.jsx("button",{type:"button",role:"tab",id:`mock-tab-${h}`,"aria-selected":n===h,"aria-controls":"mock-panel",onClick:()=>r(h),className:`min-h-[44px] rounded-sm px-4 text-small font-semibold transition-colors ${n===h?"bg-main text-bg-light":"border border-line text-ink hover:border-main"}`,children:m},m))}),o.jsx("div",{className:"w-[300px] rounded-[44px] bg-bg-dark p-3 shadow-[0_24px_48px_-24px_rgba(24,24,58,0.45)]",children:o.jsxs("div",{id:"mock-panel",role:"tabpanel","aria-labelledby":`mock-tab-${n}`,className:"relative h-[560px] overflow-hidden rounded-[34px] bg-bg-light",children:[o.jsx("div",{className:"mx-auto mt-2 h-6 w-28 rounded-full bg-bg-dark","aria-hidden":"true"}),o.jsxs("div",{className:"px-5 pt-4",children:[n===0&&o.jsx(Oh,{}),n===1&&o.jsx(Bh,{}),n===2&&o.jsx(Fh,{})]})]})}),o.jsxs("div",{className:"flex items-center gap-3",children:[o.jsx("span",{className:"tag",children:t.mockLabel}),o.jsx("button",{type:"button",onClick:()=>s(m=>!m),"aria-label":i?t.play:t.pause,className:"flex h-11 w-11 items-center justify-center rounded-sm border border-line text-main hover:border-main",children:i?o.jsx(kh,{size:18,"aria-hidden":"true"}):o.jsx(wh,{size:18,"aria-hidden":"true"})})]})]})}function jo({children:e}){return o.jsx("p",{className:"font-heading text-[22px] font-semibold leading-7 text-ink",children:e})}function Oh(){const e=F().t.product.focus,t=84,n=2*Math.PI*t;return o.jsxs("div",{className:"flex flex-col items-center gap-5 pt-4",children:[o.jsx(jo,{children:F().t.product.tabs[0]}),o.jsxs("div",{className:"relative h-[200px] w-[200px]",children:[o.jsxs("svg",{viewBox:"0 0 200 200",className:"h-full w-full -rotate-90","aria-hidden":"true",children:[o.jsx("circle",{cx:"100",cy:"100",r:t,fill:"none",stroke:"#D9D9E6",strokeWidth:"14"}),o.jsx("circle",{cx:"100",cy:"100",r:t,fill:"none",stroke:"#3F3D99",strokeWidth:"14",strokeLinecap:"round",strokeDasharray:n,strokeDashoffset:n*.25})]}),o.jsx("span",{className:"absolute inset-0 flex items-center justify-center font-heading text-[44px] font-bold text-ink",children:e.timer})]}),o.jsxs("p",{className:"flex items-center gap-2 text-small font-semibold text-ink",children:[o.jsx(ah,{size:16,"aria-hidden":"true",className:"text-main"})," ",e.paused]}),o.jsx("span",{className:"btn-main w-full",children:e.start}),o.jsx("span",{className:"tag",children:e.next})]})}function Bh(){const{t:e}=F(),t=e.product.path;return o.jsxs("div",{className:"flex flex-col gap-4 pt-2",children:[o.jsx(jo,{children:e.product.tabs[1]}),o.jsx("p",{className:"label text-ink-soft",children:t.today}),o.jsx("ul",{className:"flex flex-col gap-2",children:t.goals.map((n,r)=>o.jsxs("li",{className:"flex items-center gap-3 rounded-md border border-line bg-white p-3 text-small text-ink",children:[o.jsx("span",{className:`flex h-6 w-6 flex-none items-center justify-center rounded-full ${r===0?"bg-main text-bg-light":"border-2 border-line"}`,children:r===0&&o.jsx(Sr,{size:14,"aria-hidden":"true"})}),n]},n))}),o.jsx("p",{className:"label pt-2 text-ink-soft",children:t.progress}),[[t.home,70,mh],[t.centre,45,pd]].map(([n,r,l])=>{const a=l;return o.jsxs("div",{className:"flex flex-col gap-1",children:[o.jsxs("div",{className:"flex items-center justify-between text-small text-ink",children:[o.jsxs("span",{className:"flex items-center gap-2",children:[o.jsx(a,{size:16,"aria-hidden":"true",className:"text-main"}),n]}),o.jsxs("span",{className:"font-semibold",children:[r,"%"]})]}),o.jsx("div",{className:"h-2 rounded-full bg-line",children:o.jsx("div",{className:"h-2 rounded-full bg-main",style:{width:`${r}%`}})})]},n)})]})}function Fh(){const{t:e,lang:t}=F(),n=e.product.parent,r=[1,1,0,1,1],l=new Intl.DateTimeFormat(t,{weekday:"narrow"}),a=r.map((i,s)=>l.format(new Date(2026,0,5+s)));return o.jsxs("div",{className:"flex flex-col gap-4 pt-2",children:[o.jsx(jo,{children:n.week}),o.jsxs("div",{className:"rounded-md border border-line bg-white p-4",children:[o.jsx("div",{className:"flex items-end justify-between gap-2","aria-hidden":"true",children:r.map((i,s)=>o.jsxs("div",{className:"flex flex-1 flex-col items-center gap-1",children:[o.jsx("div",{className:`w-full rounded-sm ${i?"bg-main":"bg-line"}`,style:{height:i?56:20}}),o.jsx("span",{className:"text-[12px] text-ink-soft",children:a[s]})]},s))}),o.jsx("p",{className:"mt-3 text-small font-semibold text-ink",children:n.sessions})]}),o.jsxs("div",{className:"flex gap-3 rounded-md border border-line bg-white p-4",children:[o.jsx(sh,{size:20,"aria-hidden":"true",className:"flex-none text-main"}),o.jsxs("div",{children:[o.jsx("p",{className:"text-small font-semibold text-ink",children:n.next}),o.jsx("p",{className:"text-small text-ink-soft",children:n.nextWhen})]})]}),o.jsxs("div",{className:"flex gap-3 rounded-md bg-main p-4 text-bg-light",children:[o.jsx(vh,{size:20,"aria-hidden":"true",className:"flex-none"}),o.jsxs("div",{children:[o.jsx("p",{className:"text-small font-semibold",children:n.message}),o.jsx("p",{className:"text-small",children:n.messageText})]})]})]})}function Xt({label:e,title:t,body:n,onDark:r=!1}){return o.jsxs("div",{className:"flex max-w-[760px] flex-col gap-4",children:[o.jsx("p",{className:`label ${r?"text-bg-light":"text-main"}`,children:e}),o.jsx("h2",{className:`text-[32px] font-semibold leading-10 md:text-h2 ${r?"text-bg-light":"text-ink"}`,children:t}),n&&o.jsx("p",{className:r?"text-bg-light":"text-ink-soft",children:n})]})}function Dh(){const{t:e}=F(),t=wo(),n=e.hero;return o.jsxs("div",{className:"container-mb grid items-center gap-12 lg:grid-cols-[1.15fr_1fr] lg:gap-16",children:[o.jsxs("div",{className:"flex flex-col gap-6",children:[o.jsx("div",{className:"flex flex-wrap gap-2",children:n.tags.map(r=>o.jsx("span",{className:"tag",children:r},r))}),o.jsx("h1",{className:"text-[40px] font-bold leading-[48px] text-ink md:text-h1",children:n.title}),o.jsx("p",{className:"text-ink-soft",children:n.subtitle}),o.jsxs("div",{className:"flex flex-wrap gap-4",children:[o.jsx("button",{type:"button",className:"btn-main",onClick:()=>t("product"),children:n.ctaProduct}),o.jsx("button",{type:"button",className:"btn-second",onClick:()=>t("contact"),children:n.ctaContact})]})]}),o.jsxs("figure",{className:"flex flex-col gap-6 rounded-lg bg-bg-dark p-8 text-bg-light md:p-12",children:[o.jsx("blockquote",{lang:"es",className:"font-heading text-[32px] font-semibold leading-10 md:text-h2",children:"“Las tardes de deberes no tienen fin.”"}),n.quoteTranslation!=="Las tardes de deberes no tienen fin."&&o.jsx("p",{children:n.quoteTranslation}),o.jsx("figcaption",{className:"text-small",children:n.quoteSource})]})]})}function Ah(){const{t:e}=F(),t=e.problem;return o.jsxs("div",{className:"container-mb flex flex-col gap-12",children:[o.jsxs("div",{className:"grid items-center gap-12 lg:grid-cols-2",children:[o.jsx(Xt,{label:t.label,title:t.title,body:t.body}),o.jsxs("figure",{className:"card flex flex-col gap-4 p-8",children:[o.jsx("blockquote",{lang:"ca",className:"font-heading text-h3 text-ink",children:"“…i ningú no m’ajuda!”"}),o.jsxs("p",{className:"text-ink-soft",children:["“",t.quoteTranslation,"”"]}),o.jsx("figcaption",{className:"hint",children:t.quoteSource})]})]}),o.jsx("div",{className:"grid gap-8 md:grid-cols-3",children:t.stats.map(n=>o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsx("span",{className:"font-heading text-[48px] font-bold leading-[56px] text-main md:text-h1",children:n.value}),o.jsx("span",{className:"text-ink-soft",children:n.label})]},n.value))}),o.jsx("p",{className:"hint",children:t.sources})]})}function Uh(){const{t:e}=F(),t=e.solution,n=[ih,Sh,Eh];return o.jsxs("div",{className:"container-mb flex flex-col gap-12",children:[o.jsx(Xt,{label:t.label,title:t.title,body:t.body}),o.jsx("div",{className:"grid gap-6 md:grid-cols-3",children:t.cards.map((r,l)=>{const a=n[l];return o.jsxs("div",{className:"card flex flex-col gap-4",children:[o.jsx(a,{size:32,className:"text-main","aria-hidden":"true"}),o.jsx("h3",{className:"text-h3 text-ink",children:r.title}),o.jsx("p",{className:"text-ink-soft",children:r.body})]},r.title)})})]})}function bh(){const{t:e}=F(),t=e.product,n=({title:r,items:l})=>o.jsxs("div",{className:"flex flex-col gap-4",children:[o.jsx("h3",{className:"text-h3 text-ink",children:r}),l.map(([a,i])=>o.jsxs("div",{className:"card flex flex-col gap-1 p-5",children:[o.jsx("p",{className:"font-semibold text-ink",children:a}),o.jsx("p",{className:"text-small text-ink-soft",children:i})]},a))]});return o.jsxs("div",{className:"container-mb flex flex-col gap-12",children:[o.jsxs("div",{className:"flex flex-col gap-4",children:[o.jsx("span",{className:"tag self-start",children:t.tag}),o.jsx(Xt,{label:t.label,title:t.title,body:t.body})]}),o.jsxs("div",{className:"grid items-start gap-12 lg:grid-cols-[auto_1fr]",children:[o.jsx(Rh,{}),o.jsxs("div",{className:"grid gap-8 md:grid-cols-2",children:[o.jsx(n,{title:t.appTitle,items:t.app}),o.jsx(n,{title:t.centreTitle,items:t.centre})]})]})]})}function $h(){const{t:e}=F(),t=e.gap,n=[[0],[1],[2],[0,1,2,3,4,5]];return o.jsxs("div",{className:"container-mb flex flex-col gap-8",children:[o.jsx(Xt,{label:t.label,title:t.title}),o.jsx("div",{className:"overflow-x-auto rounded-md border border-line",children:o.jsxs("table",{className:"w-full min-w-[640px] border-collapse text-left",children:[o.jsx("thead",{children:o.jsxs("tr",{className:"border-b border-line",children:[o.jsx("th",{scope:"col",className:"p-4",children:o.jsx("span",{className:"sr-only",children:"—"})}),t.cols.map((r,l)=>o.jsx("th",{scope:"col",className:`p-4 text-small font-semibold ${l===3?"bg-main text-bg-light":"text-ink"}`,children:r},r))]})}),o.jsx("tbody",{children:t.rows.map((r,l)=>o.jsxs("tr",{className:"border-b border-line last:border-0",children:[o.jsx("th",{scope:"row",className:"p-4 text-small font-semibold text-ink",children:r}),t.cols.map((a,i)=>{const s=n[i].includes(l);return o.jsx("td",{className:`p-4 ${i===3?"bg-main/10":""}`,children:s?o.jsx(Sr,{size:22,className:"text-main","aria-label":t.yes}):o.jsx(yh,{size:22,className:"text-line","aria-label":t.no})},a)})]},r))})]})}),o.jsx("p",{className:"hint",children:t.footnote})]})}function Wh(){const{t:e}=F(),t=e.model,n=[Nh,pd,oh];return o.jsxs("div",{className:"container-mb flex flex-col gap-12",children:[o.jsx(Xt,{label:t.label,title:t.title}),o.jsx("div",{className:"grid gap-6 md:grid-cols-3",children:t.cards.map((r,l)=>{const a=n[l];return o.jsxs("div",{className:"card flex flex-col gap-4",children:[o.jsx(a,{size:32,className:"text-main","aria-hidden":"true"}),o.jsx("h3",{className:"text-h3 text-ink",children:r.title}),o.jsx("p",{className:"text-ink-soft",children:r.body})]},r.title)})}),o.jsx("span",{className:"tag self-start",children:t.note})]})}function Vh(){const{t:e}=F(),t=e.roadmap;return o.jsxs("div",{className:"container-mb flex flex-col gap-12",children:[o.jsx(Xt,{label:t.label,title:t.title}),o.jsx("ol",{className:"grid gap-6 md:grid-cols-3",children:t.steps.map((n,r)=>o.jsxs("li",{className:"relative flex flex-col gap-4",children:[o.jsxs("div",{className:"flex items-center gap-4",children:[o.jsx("span",{className:`flex h-12 w-12 flex-none items-center justify-center rounded-full font-heading text-[20px] font-bold ${r===0?"bg-main text-bg-light":"border-2 border-main text-main"}`,children:r+1}),r<t.steps.length-1&&o.jsx("span",{className:"hidden h-[2px] flex-1 bg-line md:block","aria-hidden":"true"})]}),o.jsx("p",{className:"label text-main",children:n.when}),o.jsx("p",{className:"font-heading text-h3 text-ink",children:n.what})]},n.when))})]})}function Hh(){const{t:e}=F(),t=e.contact,[n,r]=y.useState({name:"",email:"",org:"",consent:!1}),[l,a]=y.useState(!1),[i,s]=y.useState(!1),u=c=>{c.preventDefault();const g=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(n.email);if(!n.name.trim()||!g||!n.consent){a(!0);return}a(!1),fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(n)}).then(R=>{R.ok?s(!0):a(!0)}).catch(()=>a(!0))};return o.jsxs("div",{className:"container-mb flex flex-col gap-8",children:[o.jsx(Xt,{label:t.label,title:t.title,body:t.body,onDark:!0}),o.jsx("div",{className:"rounded-lg bg-bg-light p-6 text-ink md:p-8",children:i?o.jsxs("p",{role:"status",className:"flex items-center gap-3 font-heading text-h3 text-ink",children:[o.jsx(Sr,{className:"text-main","aria-hidden":"true"})," ",t.success]}):o.jsxs("form",{onSubmit:u,noValidate:!0,className:"flex flex-col gap-6",children:[o.jsxs("div",{className:"grid gap-6 md:grid-cols-3",children:[o.jsx(ja,{id:"c-name",label:t.name,children:o.jsx("input",{id:"c-name",className:"input",autoComplete:"name",value:n.name,onChange:c=>r({...n,name:c.target.value})})}),o.jsx(ja,{id:"c-email",label:t.email,children:o.jsx("input",{id:"c-email",type:"email",className:"input",autoComplete:"email",value:n.email,onChange:c=>r({...n,email:c.target.value})})}),o.jsx(ja,{id:"c-org",label:t.org,children:o.jsx("input",{id:"c-org",className:"input",autoComplete:"organization",value:n.org,onChange:c=>r({...n,org:c.target.value})})})]}),o.jsxs("label",{className:"flex cursor-pointer items-start gap-3 text-small",children:[o.jsx("input",{type:"checkbox",className:"mt-0.5 h-5 w-5 accent-main",checked:n.consent,onChange:c=>r({...n,consent:c.target.checked})}),o.jsx("span",{children:t.consent})]}),l&&o.jsx("p",{role:"alert",className:"error",children:t.required}),o.jsx("div",{children:o.jsx("button",{type:"submit",className:"btn-main",children:t.submit})})]})})]})}function ja({id:e,label:t,children:n}){return o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsx("label",{htmlFor:e,className:"field-label",children:t}),n]})}const tl=[{id:"top",Component:Dh},{id:"problem",Component:Ah},{id:"solution",Component:Uh},{id:"product",Component:bh},{id:"why-us",Component:$h},{id:"model",Component:Wh},{id:"roadmap",Component:Vh},{id:"contact",tone:"main",Component:Hh}];function Qh({index:e,setIndex:t,onExit:n}){const{t:r}=F(),l=y.useRef(null),a=tl.length,i=y.useCallback(()=>t(Math.max(0,e-1)),[e,t]),s=y.useCallback(()=>t(Math.min(a-1,e+1)),[e,a,t]),u=y.useCallback(()=>{try{document.fullscreenElement&&document.exitFullscreen().catch(()=>{})}catch{}n()},[n]);y.useEffect(()=>{var h,v;try{const x=(v=(h=l.current)==null?void 0:h.requestFullscreen)==null?void 0:v.call(h);x&&x.catch(()=>{})}catch{}const m=()=>{};return document.addEventListener("fullscreenchange",m),()=>document.removeEventListener("fullscreenchange",m)},[]),y.useEffect(()=>{const m=h=>{var x;const v=(x=h.target)==null?void 0:x.tagName;v==="INPUT"||v==="TEXTAREA"||v==="SELECT"||((h.key==="ArrowRight"||h.key==="PageDown"||h.key===" ")&&(h.preventDefault(),s()),(h.key==="ArrowLeft"||h.key==="PageUp")&&(h.preventDefault(),i()),h.key==="Escape"&&u())};return window.addEventListener("keydown",m),()=>window.removeEventListener("keydown",m)},[s,i,u]);const c=tl[e],g=c.tone==="main"?"bg-main text-bg-light":"bg-bg-light text-ink";return o.jsxs("div",{ref:l,role:"dialog","aria-modal":"true","aria-label":r.nav.present,className:`fixed inset-0 z-50 flex flex-col ${g}`,children:[o.jsxs("div",{className:"flex items-center justify-between px-6 py-4",children:[o.jsx(Ql,{size:28,onDark:c.tone==="main"}),o.jsxs("button",{type:"button",onClick:u,className:`btn min-h-[44px] px-4 text-small ${c.tone==="main"?"bg-bg-light text-main":"btn-second"}`,children:[o.jsx(md,{size:18,"aria-hidden":"true"})," ",r.present.exit]})]}),o.jsx("div",{className:"flex flex-1 items-center overflow-y-auto py-8",children:o.jsx("div",{className:"w-full",children:o.jsx(c.Component,{})})},c.id),o.jsxs("div",{className:"flex items-center justify-between gap-4 px-6 py-4",children:[o.jsx("span",{className:"hidden text-small md:inline",children:r.present.hint}),o.jsx("div",{className:"flex items-center gap-1","aria-hidden":"true",children:tl.map((m,h)=>o.jsx("span",{className:`h-2 rounded-full transition-all ${h===e?"w-6 bg-accent":`w-2 ${c.tone==="main"?"bg-bg-light/50":"bg-line"}`}`},m.id))}),o.jsxs("div",{className:"flex items-center gap-2",children:[o.jsxs("span",{className:"text-small font-semibold","aria-live":"polite",children:[e+1," / ",a]}),o.jsx("button",{type:"button",onClick:i,disabled:e===0,"aria-label":r.present.prev,className:`flex h-11 w-11 items-center justify-center rounded-sm disabled:opacity-40 ${c.tone==="main"?"bg-bg-light text-main":"border border-line text-main"}`,children:o.jsx(uh,{"aria-hidden":"true"})}),o.jsx("button",{type:"button",onClick:s,disabled:e===a-1,"aria-label":r.present.next,className:`flex h-11 w-11 items-center justify-center rounded-sm disabled:opacity-40 ${c.tone==="main"?"bg-bg-light text-main":"bg-main text-bg-light"}`,children:o.jsx(ch,{"aria-hidden":"true"})})]})]})]})}function qh(){const[e,t]=y.useState(!1),[n,r]=y.useState(0),l=lt(),a=Gt();return y.useEffect(()=>{var s;const i=(s=l.state)==null?void 0:s.scrollTo;i&&(requestAnimationFrame(()=>{var u;return(u=document.getElementById(i))==null?void 0:u.scrollIntoView({behavior:"smooth"})}),a(".",{replace:!0,state:null}))},[l.state,a]),o.jsxs(o.Fragment,{children:[o.jsx(ko,{onPresent:()=>{r(0),t(!0)}}),o.jsx("main",{children:tl.map(({id:i,tone:s,Component:u},c)=>o.jsx("section",{id:i,className:`section ${s==="main"?"bg-main text-bg-light":c>0?"border-t border-line":""}`,children:o.jsx(u,{})},i))}),o.jsx(So,{}),e&&o.jsx(Qh,{index:n,setIndex:r,onExit:()=>t(!1)})]})}function _l({children:e,wide:t=!1}){const{t:n}=F(),{isDemo:r}=Yt();return o.jsxs("div",{className:"flex min-h-screen flex-col",children:[o.jsx("header",{className:"border-b border-line",children:o.jsxs("div",{className:"container-mb flex items-center justify-between py-3",children:[o.jsx(Fe,{to:"/","aria-label":"MindBloom home",children:o.jsx(Ql,{size:32})}),o.jsx(Pl,{})]})}),o.jsx("main",{className:"flex flex-1 items-start justify-center px-6 py-12 md:py-16",children:o.jsxs("div",{className:`w-full ${t?"max-w-[720px]":"max-w-[460px]"} flex flex-col gap-6`,children:[e,r&&o.jsx("p",{className:"hint text-center",children:n.auth.demo})]})})]})}function No({id:e,value:t,onChange:n,autoComplete:r}){const{t:l}=F(),[a,i]=y.useState(!1);return o.jsxs("div",{className:"relative",children:[o.jsx("input",{id:e,type:a?"text":"password",className:"input pr-14",value:t,autoComplete:r,onChange:s=>n(s.target.value),"aria-describedby":`${e}-hint`}),o.jsx("button",{type:"button",onClick:()=>i(s=>!s),"aria-label":a?l.auth.hide:l.auth.show,"aria-pressed":a,className:"absolute right-1 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-sm text-ink-soft hover:text-main",children:a?o.jsx(fh,{size:20,"aria-hidden":"true"}):o.jsx(ph,{size:20,"aria-hidden":"true"})})]})}function kd(){return o.jsxs("svg",{width:"20",height:"20",viewBox:"0 0 48 48","aria-hidden":"true",children:[o.jsx("path",{fill:"#EA4335",d:"M24 9.5c3.5 0 6.6 1.2 9 3.6l6.7-6.7C35.6 2.4 30.2 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.8 6C12.4 13.4 17.7 9.5 24 9.5z"}),o.jsx("path",{fill:"#4285F4",d:"M46.1 24.6c0-1.6-.1-3.1-.4-4.6H24v9h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.4 5.7c4.3-4 6.9-9.9 6.9-17z"}),o.jsx("path",{fill:"#FBBC05",d:"M10.5 28.7c-.5-1.4-.8-3-.8-4.7s.3-3.2.8-4.7l-7.8-6C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.8-6z"}),o.jsx("path",{fill:"#34A853",d:"M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.4-5.7c-2.1 1.4-4.8 2.2-8.5 2.2-6.3 0-11.6-3.9-13.5-9.8l-7.8 6C6.6 42.6 14.6 48 24 48z"})]})}function Kh(){var j;const{t:e}=F(),t=e.auth,{user:n,profile:r,signUp:l,signInWithGoogle:a,isDemo:i}=Yt(),s=Gt(),u=(j=lt().state)==null?void 0:j.deleted,[c,g]=y.useState(""),[m,h]=y.useState(""),[v,x]=y.useState(null),[k,C]=y.useState(!1),[f,d]=y.useState(!1);y.useEffect(()=>{n&&r&&s(r.completed?"/account":"/welcome",{replace:!0})},[n,r,s]);const p=async N=>{if(N.preventDefault(),!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c)){x("email");return}C(!0),x(null);const _=await l(c,m);if(C(!1),_.error){x(_.error);return}i||d(!0)},w=async()=>{C(!0);const N=await a();C(!1),N.error&&x(N.error)};return o.jsxs(_l,{children:[u&&o.jsxs("p",{role:"status",className:"card flex items-center gap-2 text-small font-semibold",children:[o.jsx(Sr,{size:18,className:"text-main","aria-hidden":"true"})," ",e.account.deleted]}),o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsx("h1",{className:"text-h2 text-ink",children:t.joinTitle}),o.jsx("p",{className:"text-ink-soft",children:t.joinBody})]}),f?o.jsx("p",{role:"status",className:"card font-semibold",children:t.checkEmail}):o.jsxs(o.Fragment,{children:[o.jsxs("button",{type:"button",onClick:w,disabled:k,className:"btn w-full border border-line bg-white text-ink hover:border-main",children:[o.jsx(kd,{})," ",t.google]}),o.jsxs("div",{className:"flex items-center gap-4 text-small text-ink-soft","aria-hidden":"true",children:[o.jsx("span",{className:"h-px flex-1 bg-line"})," ",t.or," ",o.jsx("span",{className:"h-px flex-1 bg-line"})]}),o.jsxs("form",{onSubmit:p,noValidate:!0,className:"flex flex-col gap-4",children:[o.jsx("p",{className:"label text-ink-soft",children:t.emailSignup}),o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsx("label",{htmlFor:"j-email",className:"field-label",children:t.email}),o.jsx("input",{id:"j-email",type:"email",className:"input",autoComplete:"email",value:c,onChange:N=>g(N.target.value)})]}),o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsx("label",{htmlFor:"j-pass",className:"field-label",children:t.password}),o.jsx(No,{id:"j-pass",value:m,onChange:h,autoComplete:"new-password"}),o.jsx("span",{id:"j-pass-hint",className:"hint",children:t.passwordHint})]}),v&&o.jsxs("p",{role:"alert",className:"error",children:[t.errors[v]," ",v==="exists"&&o.jsx(Fe,{to:"/signin",className:"underline",children:t.signInLink})]}),o.jsx("button",{type:"submit",disabled:k,className:"btn-main w-full",children:t.create})]})]}),o.jsxs("p",{className:"text-center text-small text-ink-soft",children:[t.haveAccount," ",o.jsx(Fe,{to:"/signin",className:"font-semibold text-main underline",children:t.signInLink})]})]})}function Gh(){const{t:e}=F(),t=e.auth,{user:n,profile:r,signIn:l,signInWithGoogle:a,resetPassword:i}=Yt(),s=Gt(),[u,c]=y.useState(""),[g,m]=y.useState(""),[h,v]=y.useState(null),[x,k]=y.useState(null),[C,f]=y.useState(!1);y.useEffect(()=>{n&&r&&s(r.completed?"/account":"/welcome",{replace:!0})},[n,r,s]);const d=async w=>{w.preventDefault(),f(!0),v(null),k(null);const j=await l(u,g);f(!1),j.error&&v(j.error)},p=async()=>{if(v(null),!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(u)){k(t.resetNeedEmail);return}const R=await i(u);if(R.error){v(R.error);return}k(t.resetSent)};return o.jsxs(_l,{children:[o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsx("h1",{className:"text-h2 text-ink",children:t.signInTitle}),o.jsx("p",{className:"text-ink-soft",children:t.signInBody})]}),o.jsxs("button",{type:"button",onClick:async()=>{const w=await a();w.error&&v(w.error)},className:"btn w-full border border-line bg-white text-ink hover:border-main",children:[o.jsx(kd,{})," ",t.google]}),o.jsxs("div",{className:"flex items-center gap-4 text-small text-ink-soft","aria-hidden":"true",children:[o.jsx("span",{className:"h-px flex-1 bg-line"})," ",t.or," ",o.jsx("span",{className:"h-px flex-1 bg-line"})]}),o.jsxs("form",{onSubmit:d,noValidate:!0,className:"flex flex-col gap-4",children:[o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsx("label",{htmlFor:"s-email",className:"field-label",children:t.email}),o.jsx("input",{id:"s-email",type:"email",className:"input",autoComplete:"email",value:u,onChange:w=>c(w.target.value)})]}),o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsxs("div",{className:"flex items-center justify-between",children:[o.jsx("label",{htmlFor:"s-pass",className:"field-label",children:t.password}),o.jsx("button",{type:"button",onClick:p,className:"min-h-[44px] text-small font-semibold text-main underline",children:t.forgot})]}),o.jsx(No,{id:"s-pass",value:g,onChange:m,autoComplete:"current-password"})]}),h&&o.jsx("p",{role:"alert",className:"error",children:t.errors[h]}),x&&o.jsx("p",{role:"status",className:"hint font-semibold",children:x}),o.jsx("button",{type:"submit",disabled:C,className:"btn-main w-full",children:t.signInBtn})]}),o.jsxs("p",{className:"text-center text-small text-ink-soft",children:[t.noAccount," ",o.jsx(Fe,{to:"/join",className:"font-semibold text-main underline",children:t.joinLink})]})]})}function Sd({value:e,set:t,idPrefix:n}){const r=F().t.welcome;return o.jsxs("div",{className:"flex flex-col gap-6",children:[o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsx("label",{htmlFor:`${n}-name`,className:"field-label",children:r.firstName}),o.jsx("input",{id:`${n}-name`,className:"input",autoComplete:"given-name",value:e.parent_name,onChange:l=>t({parent_name:l.target.value})})]}),o.jsxs("fieldset",{className:"flex flex-col gap-2",children:[o.jsx("legend",{className:"field-label mb-2",children:r.language}),o.jsx("div",{className:"flex flex-wrap gap-3",children:vd.map(l=>o.jsxs("label",{className:`flex min-h-[48px] cursor-pointer items-center gap-2 rounded-sm border px-4 ${e.language===l.code?"border-2 border-main":"border-line"}`,children:[o.jsx("input",{type:"radio",name:`${n}-lang`,className:"h-5 w-5 accent-main",checked:e.language===l.code,onChange:()=>t({language:l.code})}),l.name]},l.code))})]})]})}function jd({value:e,set:t,idPrefix:n,ageError:r}){const l=F().t.welcome,a=["app","centre","both"];return o.jsxs("div",{className:"flex flex-col gap-6",children:[o.jsxs("div",{className:"grid gap-6 sm:grid-cols-[1fr_160px]",children:[o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsx("label",{htmlFor:`${n}-child`,className:"field-label",children:l.childName}),o.jsx("input",{id:`${n}-child`,className:"input",autoComplete:"off",value:e.child_name,onChange:i=>t({child_name:i.target.value})})]}),o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsx("label",{htmlFor:`${n}-age`,className:"field-label",children:l.childAge}),o.jsx("input",{id:`${n}-age`,type:"number",inputMode:"numeric",min:6,max:18,className:"input","aria-invalid":r||void 0,"aria-describedby":`${n}-age-hint`,value:e.child_age??"",onChange:i=>t({child_age:i.target.value===""?null:Number(i.target.value)})})]})]}),o.jsx("p",{id:`${n}-age-hint`,className:r?"error -mt-4":"hint -mt-4",children:r?l.ageError:l.ageHint}),o.jsxs("fieldset",{className:"flex flex-col gap-3",children:[o.jsx("legend",{className:"field-label mb-1",children:l.interest}),o.jsx("div",{className:"grid gap-3 sm:grid-cols-3",children:a.map(i=>{const[s,u]=l.interests[i],c=e.interest===i;return o.jsxs("label",{className:`flex cursor-pointer flex-col gap-1 rounded-md p-4 ${c?"border-[3px] border-main":"border border-line"}`,children:[o.jsxs("span",{className:"flex items-center gap-2 font-semibold text-ink",children:[o.jsx("input",{type:"radio",name:`${n}-interest`,className:"h-5 w-5 accent-main",checked:c,onChange:()=>t({interest:i})}),s]}),o.jsx("span",{className:"text-small text-ink-soft",children:u})]},i)})})]})]})}const Nd=e=>e!==null&&Number.isInteger(e)&&e>=6&&e<=18;function Yh(){const{t:e,lang:t,setLang:n}=F(),r=e.welcome,{profile:l,saveProfile:a}=Yt(),[i,s]=y.useState({...yn,language:t,...l??{}}),[u,c]=y.useState(l!=null&&l.completed?3:1),[g,m]=y.useState(!1),[h,v]=y.useState(!1),[x,k]=y.useState(!1);y.useEffect(()=>{l!=null&&l.completed&&c(3)},[l==null?void 0:l.completed]);const C=p=>{s(w=>({...w,...p})),p.language&&n(p.language)},f=p=>{p.preventDefault(),c(2)},d=async p=>{p.preventDefault();const w=Nd(i.child_age);if(m(!w),v(!i.consent),!w||!i.consent)return;k(!0);const j=await a({...i,completed:!0});k(!1),j.error||c(3)};return u===3?o.jsxs(_l,{wide:!0,children:[o.jsxs("div",{className:"flex flex-col items-start gap-4",children:[o.jsx(dh,{size:48,className:"text-main","aria-hidden":"true"}),o.jsx("h1",{className:"text-h2 text-ink",children:r.doneTitle}),o.jsx("p",{className:"text-ink-soft",children:r.doneBody})]}),o.jsxs("div",{className:"card flex flex-col gap-4",children:[o.jsx("h2",{className:"text-h3 text-ink",children:r.nextTitle}),o.jsx("ol",{className:"flex flex-col gap-3",children:r.nextSteps.map((p,w)=>o.jsxs("li",{className:"flex items-center gap-3",children:[o.jsx("span",{className:"flex h-8 w-8 flex-none items-center justify-center rounded-full bg-main text-small font-semibold text-bg-light",children:w+1}),p]},p))})]}),o.jsxs("div",{className:"flex flex-wrap gap-4",children:[o.jsx(Fe,{to:"/account",className:"btn-main",children:r.toAccount}),o.jsx(Fe,{to:"/",className:"btn-second",children:r.toHome})]})]}):o.jsxs(_l,{wide:!0,children:[o.jsxs("div",{className:"flex flex-col gap-3",children:[o.jsxs("p",{className:"label text-main",children:[r.step," ",u," ",r.of," 2"]}),o.jsx("div",{className:"h-2 w-full rounded-full bg-line",role:"progressbar","aria-valuemin":1,"aria-valuemax":2,"aria-valuenow":u,"aria-label":`${r.step} ${u} ${r.of} 2`,children:o.jsx("div",{className:"h-2 rounded-full bg-main transition-all",style:{width:u===1?"50%":"100%"}})}),o.jsx("h1",{className:"text-h2 text-ink",children:u===1?r.s1Title:r.s2Title})]}),u===1?o.jsxs("form",{onSubmit:f,className:"flex flex-col gap-8",children:[o.jsx(Sd,{value:i,set:C,idPrefix:"w"}),o.jsx("div",{children:o.jsx("button",{type:"submit",className:"btn-main",children:r.next})})]}):o.jsxs("form",{onSubmit:d,noValidate:!0,className:"flex flex-col gap-8",children:[o.jsx(jd,{value:i,set:C,idPrefix:"w",ageError:g}),o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsxs("label",{className:"flex cursor-pointer items-start gap-3 text-small",children:[o.jsx("input",{type:"checkbox",className:"mt-0.5 h-5 w-5 accent-main",checked:i.consent,onChange:p=>C({consent:p.target.checked}),"aria-invalid":h||void 0}),o.jsx("span",{children:r.consent})]}),h&&o.jsx("p",{role:"alert",className:"error",children:r.consentError}),o.jsx("p",{className:"hint",children:r.privacyNote})]}),o.jsxs("div",{className:"flex flex-wrap gap-4",children:[o.jsx("button",{type:"button",className:"btn-second",onClick:()=>c(1),children:r.back}),o.jsx("button",{type:"submit",disabled:x,className:"btn-main",children:r.finish})]})]})]})}function Xh(){const{t:e,setLang:t}=F(),n=e.account,{user:r,profile:l,saveProfile:a,updatePassword:i,deleteAccount:s,signOut:u}=Yt(),c=Gt(),[g,m]=y.useState({...yn,...l??{}});y.useEffect(()=>{l&&m({...yn,...l})},[l]);const[h,v]=y.useState(!1),[x,k]=y.useState(!1),[C,f]=y.useState(""),[d,p]=y.useState(null),[w,j]=y.useState(null),[N,_]=y.useState(!1),[T,U]=y.useState(""),[z,me]=y.useState(!1),at=we=>{m(qe=>({...qe,...we})),v(!1)},Lt=async we=>{if(we.preventDefault(),!Nd(g.child_age)){k(!0);return}k(!1),(await a(g)).error||(v(!0),t(g.language))},jr=async we=>{we.preventDefault(),p(null),j(null);const qe=await i(C);qe.error?j(qe.error):(f(""),p(n.passwordChanged))},ql=async()=>{me(!0);const we=await s();me(!1),we.error||c("/join",{replace:!0,state:{deleted:!0}})};return o.jsxs(o.Fragment,{children:[o.jsx(ko,{}),o.jsxs("main",{className:"container-mb flex max-w-[800px] flex-col gap-10 py-12 md:py-16",children:[o.jsxs("div",{className:"flex flex-wrap items-end justify-between gap-4",children:[o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsx("h1",{className:"text-h2 text-ink",children:n.title}),o.jsxs("p",{className:"text-ink-soft",children:[n.signedInAs," ",o.jsx("span",{className:"font-semibold text-ink",children:r==null?void 0:r.email})]})]}),o.jsxs("button",{type:"button",className:"btn-second",onClick:async()=>{await u(),c("/")},children:[o.jsx(hh,{size:18,"aria-hidden":"true"})," ",n.signOut]})]}),o.jsxs("form",{onSubmit:Lt,noValidate:!0,className:"flex flex-col gap-8",children:[o.jsxs("section",{className:"card flex flex-col gap-6 p-6 md:p-8","aria-labelledby":"acc-parent",children:[o.jsx("h2",{id:"acc-parent",className:"text-h3 text-ink",children:n.parent}),o.jsx(Sd,{value:g,set:at,idPrefix:"a"})]}),o.jsxs("section",{className:"card flex flex-col gap-6 p-6 md:p-8","aria-labelledby":"acc-child",children:[o.jsx("h2",{id:"acc-child",className:"text-h3 text-ink",children:n.child}),o.jsx(jd,{value:g,set:at,idPrefix:"a",ageError:x})]}),o.jsxs("div",{className:"flex items-center gap-4",children:[o.jsx("button",{type:"submit",className:"btn-main",children:n.save}),h&&o.jsxs("span",{role:"status",className:"flex items-center gap-2 font-semibold text-main",children:[o.jsx(Sr,{size:18,"aria-hidden":"true"})," ",n.saved]})]})]}),o.jsxs("form",{onSubmit:jr,className:"card flex flex-col gap-4 p-6 md:p-8","aria-labelledby":"acc-pw",children:[o.jsx("h2",{id:"acc-pw",className:"text-h3 text-ink",children:n.passwordTitle}),o.jsxs("div",{className:"flex flex-col gap-2",children:[o.jsx("label",{htmlFor:"a-pw",className:"field-label",children:n.newPassword}),o.jsx(No,{id:"a-pw",value:C,onChange:f,autoComplete:"new-password"}),o.jsx("span",{id:"a-pw-hint",className:"hint",children:e.auth.passwordHint})]}),w&&o.jsx("p",{role:"alert",className:"error",children:e.auth.errors[w]}),d&&o.jsx("p",{role:"status",className:"font-semibold text-main",children:d}),o.jsx("div",{children:o.jsx("button",{type:"submit",className:"btn-second",children:n.changePassword})})]}),o.jsxs("section",{className:"flex flex-col gap-4 rounded-md border-2 border-ink p-6 md:p-8","aria-labelledby":"acc-del",children:[o.jsx("h2",{id:"acc-del",className:"text-h3 text-ink",children:n.dangerTitle}),o.jsx("p",{className:"text-ink-soft",children:n.dangerBody}),N?o.jsxs("div",{className:"flex flex-col gap-4",children:[o.jsx("label",{htmlFor:"a-del",className:"field-label",children:n.confirm}),o.jsx("input",{id:"a-del",className:"input max-w-[280px]",value:T,onChange:we=>U(we.target.value),autoComplete:"off"}),o.jsxs("div",{className:"flex flex-wrap gap-4",children:[o.jsx("button",{type:"button",className:"btn bg-ink text-bg-light",disabled:T.trim().toUpperCase()!==n.confirmWord||z,onClick:ql,children:n.confirmBtn}),o.jsx("button",{type:"button",className:"btn-second",onClick:()=>{_(!1),U("")},children:n.cancel})]})]}):o.jsx("div",{children:o.jsxs("button",{type:"button",className:"btn border-2 border-ink text-ink hover:bg-ink hover:text-bg-light",onClick:()=>_(!0),children:[o.jsx(jh,{size:18,"aria-hidden":"true"})," ",n.deleteBtn]})})]})]}),o.jsx(So,{})]})}function Jh(){const{t:e}=F();return o.jsxs(o.Fragment,{children:[o.jsx(ko,{}),o.jsxs("main",{className:"container-mb flex min-h-[60vh] flex-col items-start justify-center gap-6 py-24",children:[o.jsx(hd,{size:64}),o.jsx("p",{className:"label text-main",children:"404"}),o.jsx("h1",{className:"text-h2 text-ink",children:e.notFound.title}),o.jsx("p",{className:"text-ink-soft",children:e.notFound.body}),o.jsx(Fe,{to:"/",className:"btn-main",children:e.notFound.home})]}),o.jsx(So,{})]})}function Zh(){const{pathname:e}=lt();return y.useEffect(()=>{window.scrollTo(0,0)},[e]),null}function $s({children:e}){const{user:t,loading:n}=Yt();return n?o.jsx("div",{className:"container-mb py-24 text-ink-soft",children:"…"}):t?e:o.jsx(Hm,{to:"/signin",replace:!0})}function eg(){return o.jsxs(o.Fragment,{children:[o.jsx(Zh,{}),o.jsxs(qm,{children:[o.jsx(Ot,{path:"/",element:o.jsx(qh,{})}),o.jsx(Ot,{path:"/join",element:o.jsx(Kh,{})}),o.jsx(Ot,{path:"/signin",element:o.jsx(Gh,{})}),o.jsx(Ot,{path:"/welcome",element:o.jsx($s,{children:o.jsx(Yh,{})})}),o.jsx(Ot,{path:"/account",element:o.jsx($s,{children:o.jsx(Xh,{})})}),o.jsx(Ot,{path:"*",element:o.jsx(Jh,{})})]})]})}const tg=Vm;Na.createRoot(document.getElementById("root")).render(o.jsx(Zs.StrictMode,{children:o.jsx(tg,{initialEntries:[window.location.pathname],children:o.jsx(Lh,{children:o.jsx(zh,{children:o.jsx(eg,{})})})})}));
+ */
+const md = $("X", [
+  ["path", { d: "M18 6 6 18", key: "1bl5f8" }],
+  ["path", { d: "m6 6 12 12", key: "d8bk6v" }],
+]);
+function hd({ size: e = 32, onDark: t = !1 }) {
+  const n = t ? "#F7F7FB" : "#3F3D99",
+    r = t ? "#18183A" : "#F7F7FB";
+  return o.jsxs("svg", {
+    width: e,
+    height: e,
+    viewBox: "0 0 64 64",
+    "aria-hidden": "true",
+    children: [
+      o.jsx("g", {
+        fill: n,
+        children: [0, 60, 120, 180, 240, 300].map((l) =>
+          o.jsx(
+            "ellipse",
+            {
+              cx: "32",
+              cy: "16",
+              rx: "8",
+              ry: "13",
+              transform: `rotate(${l} 32 32)`,
+            },
+            l,
+          ),
+        ),
+      }),
+      o.jsx("circle", {
+        cx: "32",
+        cy: "32",
+        r: "10",
+        fill: "#F5C443",
+        stroke: r,
+        strokeWidth: "3",
+      }),
+    ],
+  });
+}
+function Ql({
+  size: e = 32,
+  onDark: t = !1,
+  withWordmark: n = !0,
+  className: r = "",
+}) {
+  return o.jsxs("span", {
+    className: `inline-flex items-center gap-2 ${r}`,
+    children: [
+      o.jsx(hd, { size: e, onDark: t }),
+      n &&
+        o.jsx("span", {
+          className: `mb-wordmark font-heading text-[28px] font-bold leading-9 tracking-tight ${t ? "text-bg-light" : "text-ink"}`,
+          children: "mindbloom",
+        }),
+    ],
+  });
+}
+const Q = {
+    get(e, t) {
+      try {
+        const n = window.localStorage.getItem(e);
+        return n ? JSON.parse(n) : t;
+      } catch {
+        return t;
+      }
+    },
+    set(e, t) {
+      try {
+        window.localStorage.setItem(e, JSON.stringify(t));
+      } catch {}
+    },
+    remove(e) {
+      try {
+        window.localStorage.removeItem(e);
+      } catch {}
+    },
+  },
+  Ch = {
+    langName: "English",
+    meta: {
+      title: "MindBloom — Study, focus and friends, in one place",
+      description:
+        "MindBloom helps children aged 6 to 18 in Barcelona who learn differently, with study, focus and friends in one app and one learning centre.",
+    },
+    nav: {
+      problem: "Problem",
+      solution: "Solution",
+      product: "Product",
+      whyUs: "Why us",
+      contact: "Contact",
+      join: "Join",
+      signIn: "Sign in",
+      account: "My account",
+      present: "Present",
+      menu: "Menu",
+      language: "Language",
+    },
+    hero: {
+      tags: ["Ages 6 to 18", "ADHD, dyslexia, autism and more", "Barcelona"],
+      title: "Study, focus and friends, in one place.",
+      subtitle:
+        "MindBloom brings study help, focus and time with other kids together, in one app and one learning centre in Barcelona.",
+      ctaProduct: "See the product",
+      ctaWaitlist: "Join the waitlist",
+      ctaContact: "Get in touch",
+      quoteTranslation: "Homework afternoons never end.",
+      quoteSource:
+        "Mother of an 8-year-old, quoted by a school counsellor · Infosal, 2016",
+    },
+    problem: {
+      label: "The problem",
+      title: "Help comes in pieces. Parents hold them together.",
+      body: "Families pay for a psychologist, a tutor, maybe an app, and homework still takes all afternoon. Each kind of help covers one piece, and parents are the ones holding it all together.",
+      stats: [
+        {
+          value: "1.26M",
+          label: "students in Spain needed extra support at school in 2024-25",
+        },
+        {
+          value: "€700",
+          label:
+            "One Barcelona family spends this much each month on private help.",
+        },
+        {
+          value: "6 months",
+          label:
+            "Waiting time a Barcelona early-care centre quotes to families.",
+        },
+      ],
+      quoteTranslation:
+        "My daughter needs a speech therapist, an occupational therapist and a psychologist, and nobody helps me!",
+      quoteSource: "Inma Caballero, mother of Vega, Barcelona · betevé, 2021",
+      sources:
+        "Sources: Spanish Ministry of Education, ACNEAE 2024-25 · betevé, 10 Jun 2021",
+    },
+    solution: {
+      label: "The solution",
+      title: "One place for study, focus and friends",
+      body: "MindBloom is for children aged 6 to 18 who think and learn differently. One app between visits, and one learning centre in Barcelona.",
+      cards: [
+        {
+          title: "Study",
+          body: "Help with real schoolwork: keeping it together and remembering what they learn.",
+        },
+        {
+          title: "Focus",
+          body: "Focus sessions with planned breaks, so homework time is calmer and shorter.",
+        },
+        {
+          title: "Friends",
+          body: "Time with other kids who learn like they do, at the Barcelona centre.",
+        },
+      ],
+    },
+    product: {
+      label: "Product",
+      title: "What we are building",
+      tag: "Prototype",
+      body: "Progress at home and at the centre is linked, so each child's plan follows them everywhere.",
+      mockLabel: "Example screens — concept",
+      tabs: ["Focus Mode", "My path", "Parent view"],
+      focus: {
+        timer: "25:00",
+        paused: "Distracting apps paused",
+        start: "Start focus",
+        next: "Next break in 25 min",
+      },
+      path: {
+        today: "Today's goals",
+        goals: [
+          "Read chapter 3 (15 min)",
+          "Maths: 10 fractions",
+          "Pack bag for tomorrow",
+        ],
+        progress: "This week",
+        home: "Home",
+        centre: "Centre",
+      },
+      parent: {
+        week: "Lucas's week",
+        sessions: "4 of 5 focus sessions done",
+        next: "Next centre session",
+        nextWhen: "Thursday, 17:00 · Small group",
+        message: "Message from Laura (educator)",
+        messageText:
+          "Great work on fractions today. We'll practise again on Thursday.",
+      },
+      appTitle: "The app",
+      app: [
+        [
+          "Focus Mode",
+          "Pauses distracting apps during focus sessions, with planned breaks.",
+        ],
+        [
+          "A personal path",
+          "Goals and a progression that link learning at home with the centre.",
+        ],
+        [
+          "Parent and educator view",
+          "Follow progress and coordinate the learning plan in one place.",
+        ],
+      ],
+      centreTitle: "The Barcelona centre",
+      centre: [
+        [
+          "Sessions and small groups",
+          "Practical exercises with qualified education professionals.",
+        ],
+        ["Quiet learning spaces", "A calm, flexible place to study."],
+        [
+          "One shared learning plan",
+          "Educators update each child's plan after every visit.",
+        ],
+      ],
+      pause: "Pause slideshow",
+      play: "Play slideshow",
+    },
+    gap: {
+      label: "Why us",
+      title: "Others solve one piece",
+      rows: [
+        "Attention training",
+        "Reading & writing",
+        "Diagnosis & therapy",
+        "Schoolwork help",
+        "Friends & social",
+        "App + physical centre",
+      ],
+      cols: ["Sincrolab", "Dytective", "Private clinics", "MindBloom"],
+      yes: "Yes",
+      no: "No",
+      planned: "Planned",
+      footnote:
+        "Ticks are what each organisation offers today, from their public websites in November 2026. MindBloom is not open yet: “Planned” is what we intend to offer, not a service you can use now. Diagnosis and therapy are not part of MindBloom.",
+    },
+    model: {
+      label: "Business model",
+      title: "How MindBloom will earn",
+      cards: [
+        {
+          title: "Families",
+          body: "App subscription and learning-centre membership.",
+        },
+        {
+          title: "Schools and institutions",
+          body: "Licences for schools and education organisations.",
+        },
+        {
+          title: "One-to-one sessions",
+          body: "Individual sessions at the Barcelona centre.",
+        },
+      ],
+      note: "Prices to be set with the first families.",
+    },
+    roadmap: {
+      label: "Roadmap",
+      title: "Where we are",
+      steps: [
+        { when: "Now", what: "Research and parent interviews" },
+        { when: "Next", what: "Waitlist and first Barcelona families" },
+        { when: "Then", what: "App pilot and learning-centre opening" },
+      ],
+    },
+    contact: {
+      label: "Waitlist",
+      title: "Join the waitlist",
+      body: "Leave your name and email and we will write when the app and the Barcelona centre open. Partners and educators can add a note in the message.",
+      name: "Name",
+      email: "Email",
+      message: "Message (optional)",
+      consentBefore: "I agree to the",
+      consentLink: "privacy policy",
+      consentAfter: "and to MindBloom storing my data.",
+      submit: "Join the waitlist",
+      success: "Thank you. You are on the waitlist and we will be in touch.",
+      required: "Please fill in your name, a valid email and tick the box.",
+    },
+    footer: {
+      tagline: "Study, focus and friends, in one place.",
+      rights: "© 2026 MindBloom · Barcelona",
+      privacy: "Privacy policy",
+    },
+    auth: {
+      joinTitle: "Join MindBloom",
+      joinBody: "Create a parent account. It takes less than a minute.",
+      google: "Continue with Google",
+      or: "or",
+      emailSignup: "Sign up with email",
+      email: "Email",
+      password: "Password",
+      passwordHint: "At least 8 characters.",
+      show: "Show password",
+      hide: "Hide password",
+      create: "Create account",
+      haveAccount: "Already have an account?",
+      signInLink: "Sign in",
+      signInTitle: "Welcome back",
+      signInBody: "Sign in to your parent account.",
+      signInBtn: "Sign in",
+      forgot: "Forgot password?",
+      noAccount: "New to MindBloom?",
+      joinLink: "Create an account",
+      resetSent:
+        "If that email has an account, we've sent a link to reset the password.",
+      resetNeedEmail:
+        "Type your email above first, then click “Forgot password?” again.",
+      checkEmail:
+        "Check your inbox: we've sent you a link to confirm your email.",
+      errors: {
+        google:
+          "Google sign-in isn't available yet. Please use your email and a password.",
+        resetOff:
+          "Password reset by email isn't switched on yet. Please write to us with the contact form on the home page.",
+        exists: "This email already has an account. Sign in instead?",
+        invalid:
+          "That email and password don't match. Try again, or reset your password.",
+        weak: "Please use a password with at least 8 characters.",
+        email: "Please enter a valid email address.",
+        generic: "Something went wrong. Please try again.",
+      },
+      demo: "Demo mode: accounts are saved only in this browser.",
+    },
+    welcome: {
+      step: "Step",
+      of: "of",
+      s1Title: "About you",
+      firstName: "Your first name",
+      language: "Preferred language",
+      s2Title: "About your child",
+      childName: "Child's first name or nickname",
+      childAge: "Child's age",
+      ageHint: "MindBloom is for ages 6 to 18.",
+      ageError: "Please enter an age between 6 and 18.",
+      interest: "What interests you most?",
+      interests: {
+        app: ["The app", "Help with schoolwork and focus between visits."],
+        centre: [
+          "The Barcelona centre",
+          "Sessions, small groups and quiet spaces to learn.",
+        ],
+        both: ["Both", "The app at home and the centre in Barcelona."],
+      },
+      consentBefore: "I agree to the",
+      consentLink: "privacy policy",
+      consentAfter: "and to MindBloom storing my data.",
+      consentError: "Please tick the box to continue.",
+      next: "Next",
+      back: "Back",
+      finish: "Finish",
+      privacyNote:
+        "We only ask for what we need. No diagnoses, health details, school or surnames.",
+      doneTitle: "You're on the list.",
+      doneBody: "We'll be in touch to talk.",
+      nextTitle: "What happens next",
+      nextSteps: [
+        "We read your answers.",
+        "We email you to arrange a short chat.",
+        "You hear first when the app and centre open.",
+      ],
+      toAccount: "Go to my account",
+      toHome: "Back to the website",
+    },
+    account: {
+      title: "My account",
+      signedInAs: "Signed in as",
+      parent: "You",
+      child: "Your child",
+      save: "Save changes",
+      saved: "Saved.",
+      passwordTitle: "Change password",
+      newPassword: "New password",
+      changePassword: "Change password",
+      passwordChanged: "Password changed.",
+      dangerTitle: "Delete account",
+      dangerBody:
+        "This deletes your account and all the data you gave us. It can't be undone.",
+      deleteBtn: "Delete my account and data",
+      confirm: "Are you sure? Type DELETE to confirm.",
+      confirmWord: "DELETE",
+      confirmBtn: "Yes, delete everything",
+      cancel: "Cancel",
+      deleted: "Your account and data have been deleted.",
+      signOut: "Sign out",
+    },
+    notFound: {
+      title: "Page not found",
+      body: "This page doesn't exist or has moved.",
+      home: "Back to the home page",
+    },
+    present: {
+      exit: "Exit",
+      prev: "Previous",
+      next: "Next",
+      hint: "Use ← → arrow keys · Esc to exit",
+    },
+    privacy: {
+      label: "Privacy",
+      title: "Privacy policy",
+      updated: "Last updated: November 2026",
+      intro:
+        "This page explains what the MindBloom website collects when you join the waitlist or write to us, and why. MindBloom is a research project for an app and a Barcelona learning centre for children aged 6 to 18 who learn differently. It is not open yet.",
+      sections: [
+        {
+          h: "Who is responsible",
+          paragraphs: [
+            "MindBloom, a project based in Barcelona, decides how the personal data from this website is used.",
+          ],
+        },
+        {
+          h: "What the form collects",
+          paragraphs: [
+            "The waitlist and contact form collects:",
+          ],
+          items: [
+            "your name",
+            "your email address",
+            "the message you choose to write, if you write one",
+          ],
+          after: [
+            "We also store the time you sent the form and that you ticked the consent box. We do not ask for a diagnosis, health details, a school name or a surname.",
+          ],
+        },
+        {
+          h: "Why we collect it",
+          paragraphs: [
+            "We use your name and email to keep you on the waitlist and to write when the app or the Barcelona centre opens. If you include a message, we use it to reply.",
+            "The legal basis is your consent, which you give by ticking the box on the form. You can withdraw that consent at any time by emailing us. Withdrawing consent does not affect anything we did before you withdrew it.",
+          ],
+        },
+        {
+          h: "How long we keep it",
+          paragraphs: [
+            "We keep the form data until you ask us to delete it, or until we no longer need it for the waitlist. We then delete it.",
+          ],
+        },
+        {
+          h: "Who else sees it",
+          paragraphs: [
+            "The site is hosted on Railway and the form data is stored in a database there so we can read it. We do not sell personal data and we do not use it for advertising.",
+          ],
+        },
+        {
+          h: "Your rights",
+          paragraphs: [
+            "If you are in Spain or elsewhere in the European Economic Area, you can ask us for access to your data, to correct it, to delete it, to limit how we use it, or for a portable copy. You can also object to how we use it.",
+            "You can complain to the Agencia Española de Protección de Datos (aepd.es).",
+          ],
+        },
+        {
+          h: "Children",
+          paragraphs: [
+            "The form is for parents and guardians. Please do not ask a child to fill it in.",
+          ],
+        },
+      ],
+      contactTitle: "Contact",
+      contactBody:
+        "To use any of the rights above, or to ask a question about this policy, email:",
+      contactEmail: "TODO@mindbloom.example",
+      contactTodo:
+        "TODO: replace TODO@mindbloom.example with the real MindBloom contact email. The owner must review this policy text before treating it as final.",
+    },
+  },
+  Ph = {
+    langName: "Español",
+    meta: {
+      title: "MindBloom — Estudio, concentración y amigos, en un solo lugar",
+      description:
+        "MindBloom ayuda a niños y jóvenes de 6 a 18 años en Barcelona que aprenden de otra manera: estudio, concentración y amigos, en una app y un centro.",
+    },
+    nav: {
+      problem: "Problema",
+      solution: "Solución",
+      product: "Producto",
+      whyUs: "Por qué nosotros",
+      contact: "Contacto",
+      join: "Únete",
+      signIn: "Iniciar sesión",
+      account: "Mi cuenta",
+      present: "Presentar",
+      menu: "Menú",
+      language: "Idioma",
+    },
+    hero: {
+      tags: ["De 6 a 18 años", "TDAH, dislexia, autismo y más", "Barcelona"],
+      title: "Estudio, concentración y amigos, en un solo lugar.",
+      subtitle:
+        "MindBloom une la ayuda con los estudios, la concentración y el tiempo con otros niños, en una app y un centro de aprendizaje en Barcelona.",
+      ctaProduct: "Ver el producto",
+      ctaWaitlist: "Apúntate a la lista de espera",
+      ctaContact: "Contacta con nosotros",
+      quoteTranslation: "Las tardes de deberes no tienen fin.",
+      quoteSource:
+        "Madre de un niño de 8 años, citada por una orientadora escolar · Infosal, 2016",
+    },
+    problem: {
+      label: "El problema",
+      title: "La ayuda llega a trozos. Los padres la sostienen.",
+      body: "Las familias pagan un psicólogo, un profesor particular, quizá una app, y los deberes siguen ocupando toda la tarde. Cada ayuda cubre una parte, y son los padres quienes lo sostienen todo.",
+      stats: [
+        {
+          value: "1,26 M",
+          label: "alumnos en España necesitaron apoyo educativo en 2024-25",
+        },
+        {
+          value: "700 €",
+          label:
+            "Es lo que gasta al mes una familia de Barcelona en ayuda privada.",
+        },
+        {
+          value: "6 meses",
+          label:
+            "Es la lista de espera que un centro de atención temprana de Barcelona indica a las familias.",
+        },
+      ],
+      quoteTranslation:
+        "¡Mi hija necesita un logopeda, un terapeuta ocupacional y un psicólogo, y nadie me ayuda!",
+      quoteSource: "Inma Caballero, madre de Vega, Barcelona · betevé, 2021",
+      sources:
+        "Fuentes: Ministerio de Educación, ACNEAE 2024-25 · betevé, 10 jun 2021",
+    },
+    solution: {
+      label: "La solución",
+      title: "Un solo lugar para estudiar, concentrarse y hacer amigos",
+      body: "MindBloom es para niños y jóvenes de 6 a 18 años que piensan y aprenden de forma diferente. Una app entre visitas y un centro de aprendizaje en Barcelona.",
+      cards: [
+        {
+          title: "Estudio",
+          body: "Ayuda con los deberes reales: organizarlos y recordar lo aprendido.",
+        },
+        {
+          title: "Concentración",
+          body: "Sesiones de concentración con descansos planificados, para tardes más tranquilas y cortas.",
+        },
+        {
+          title: "Amigos",
+          body: "Tiempo con otros niños que aprenden como ellos, en el centro de Barcelona.",
+        },
+      ],
+    },
+    product: {
+      label: "Producto",
+      title: "Lo que estamos construyendo",
+      tag: "Prototipo",
+      body: "El progreso en casa y en el centro está conectado, así que el plan de cada niño le acompaña siempre.",
+      mockLabel: "Pantallas de ejemplo — concepto",
+      tabs: ["Modo concentración", "Mi camino", "Vista familia"],
+      focus: {
+        timer: "25:00",
+        paused: "Apps que distraen en pausa",
+        start: "Empezar",
+        next: "Próximo descanso en 25 min",
+      },
+      path: {
+        today: "Objetivos de hoy",
+        goals: [
+          "Leer el capítulo 3 (15 min)",
+          "Mates: 10 fracciones",
+          "Preparar la mochila",
+        ],
+        progress: "Esta semana",
+        home: "Casa",
+        centre: "Centro",
+      },
+      parent: {
+        week: "La semana de Lucas",
+        sessions: "4 de 5 sesiones de concentración hechas",
+        next: "Próxima sesión en el centro",
+        nextWhen: "Jueves, 17:00 · Grupo pequeño",
+        message: "Mensaje de Laura (educadora)",
+        messageText:
+          "Muy buen trabajo hoy con las fracciones. Volveremos a practicar el jueves.",
+      },
+      appTitle: "La app",
+      app: [
+        [
+          "Modo concentración",
+          "Pausa las apps que distraen durante las sesiones, con descansos planificados.",
+        ],
+        [
+          "Un camino personal",
+          "Objetivos y una progresión que unen lo que aprende en casa y en el centro.",
+        ],
+        [
+          "Vista para familias y educadores",
+          "Sigue el progreso y coordina el plan de aprendizaje en un solo lugar.",
+        ],
+      ],
+      centreTitle: "El centro de Barcelona",
+      centre: [
+        [
+          "Sesiones y grupos pequeños",
+          "Ejercicios prácticos con profesionales de la educación cualificados.",
+        ],
+        ["Espacios tranquilos", "Un lugar calmado y flexible para estudiar."],
+        [
+          "Un plan compartido",
+          "Los educadores actualizan el plan de cada niño después de cada visita.",
+        ],
+      ],
+      pause: "Pausar la presentación",
+      play: "Reproducir la presentación",
+    },
+    gap: {
+      label: "Por qué nosotros",
+      title: "Los demás resuelven una parte",
+      rows: [
+        "Entrenamiento de la atención",
+        "Lectura y escritura",
+        "Diagnóstico y terapia",
+        "Ayuda con los deberes",
+        "Amigos y socialización",
+        "App + centro físico",
+      ],
+      cols: ["Sincrolab", "Dytective", "Clínicas privadas", "MindBloom"],
+      yes: "Sí",
+      no: "No",
+      planned: "Previsto",
+      footnote:
+        "Las marcas de verificación son lo que cada organización ofrece hoy, según sus webs públicas en noviembre de 2026. MindBloom aún no está abierto: «Previsto» es lo que pensamos ofrecer, no un servicio que se pueda usar ahora. El diagnóstico y la terapia no forman parte de MindBloom.",
+    },
+    model: {
+      label: "Modelo de negocio",
+      title: "Cómo generará ingresos MindBloom",
+      cards: [
+        {
+          title: "Familias",
+          body: "Suscripción a la app y cuota del centro de aprendizaje.",
+        },
+        {
+          title: "Escuelas e instituciones",
+          body: "Licencias para escuelas y organizaciones educativas.",
+        },
+        {
+          title: "Sesiones individuales",
+          body: "Sesiones uno a uno en el centro de Barcelona.",
+        },
+      ],
+      note: "Los precios se fijarán con las primeras familias.",
+    },
+    roadmap: {
+      label: "Hoja de ruta",
+      title: "Dónde estamos",
+      steps: [
+        { when: "Ahora", what: "Investigación y entrevistas con familias" },
+        {
+          when: "Después",
+          what: "Lista de espera y primeras familias de Barcelona",
+        },
+        {
+          when: "Más adelante",
+          what: "Piloto de la app y apertura del centro",
+        },
+      ],
+    },
+    contact: {
+      label: "Lista de espera",
+      title: "Apúntate a la lista de espera",
+      body: "Deja tu nombre y tu correo y te escribiremos cuando abran la app y el centro de Barcelona. Si eres un socio o un educador, añade una nota en el mensaje.",
+      name: "Nombre",
+      email: "Correo electrónico",
+      message: "Mensaje (opcional)",
+      consentBefore: "Acepto la",
+      consentLink: "política de privacidad",
+      consentAfter: "y que MindBloom guarde mis datos.",
+      submit: "Apúntate a la lista de espera",
+      success: "Gracias. Ya estás en la lista de espera y te escribiremos.",
+      required: "Escribe tu nombre, un correo válido y marca la casilla.",
+    },
+    footer: {
+      tagline: "Estudio, concentración y amigos, en un solo lugar.",
+      rights: "© 2026 MindBloom · Barcelona",
+      privacy: "Política de privacidad",
+    },
+    auth: {
+      joinTitle: "Únete a MindBloom",
+      joinBody: "Crea una cuenta de familia. Tardarás menos de un minuto.",
+      google: "Continuar con Google",
+      or: "o",
+      emailSignup: "Registrarse con correo",
+      email: "Correo electrónico",
+      password: "Contraseña",
+      passwordHint: "Mínimo 8 caracteres.",
+      show: "Mostrar contraseña",
+      hide: "Ocultar contraseña",
+      create: "Crear cuenta",
+      haveAccount: "¿Ya tienes cuenta?",
+      signInLink: "Inicia sesión",
+      signInTitle: "Hola de nuevo",
+      signInBody: "Inicia sesión en tu cuenta de familia.",
+      signInBtn: "Iniciar sesión",
+      forgot: "¿Has olvidado la contraseña?",
+      noAccount: "¿Eres nuevo en MindBloom?",
+      joinLink: "Crea una cuenta",
+      resetSent:
+        "Si ese correo tiene cuenta, te hemos enviado un enlace para cambiar la contraseña.",
+      resetNeedEmail:
+        "Escribe primero tu correo arriba y vuelve a pulsar «¿Has olvidado la contraseña?».",
+      checkEmail:
+        "Revisa tu correo: te hemos enviado un enlace para confirmarlo.",
+      errors: {
+        google:
+          "El acceso con Google aún no está disponible. Usa tu correo y una contraseña.",
+        resetOff:
+          "El cambio de contraseña por correo aún no está activado. Escríbenos con el formulario de contacto de la página principal.",
+        exists: "Este correo ya tiene una cuenta. ¿Quieres iniciar sesión?",
+        invalid:
+          "El correo y la contraseña no coinciden. Inténtalo de nuevo o cambia la contraseña.",
+        weak: "Usa una contraseña de al menos 8 caracteres.",
+        email: "Escribe un correo electrónico válido.",
+        generic: "Algo ha fallado. Inténtalo de nuevo.",
+      },
+      demo: "Modo demo: las cuentas solo se guardan en este navegador.",
+    },
+    welcome: {
+      step: "Paso",
+      of: "de",
+      s1Title: "Sobre ti",
+      firstName: "Tu nombre",
+      language: "Idioma preferido",
+      s2Title: "Sobre tu hijo o hija",
+      childName: "Nombre o apodo",
+      childAge: "Edad",
+      ageHint: "MindBloom es para edades de 6 a 18 años.",
+      ageError: "Escribe una edad entre 6 y 18 años.",
+      interest: "¿Qué te interesa más?",
+      interests: {
+        app: [
+          "La app",
+          "Ayuda con los deberes y la concentración entre visitas.",
+        ],
+        centre: [
+          "El centro de Barcelona",
+          "Sesiones, grupos pequeños y espacios tranquilos.",
+        ],
+        both: ["Las dos cosas", "La app en casa y el centro en Barcelona."],
+      },
+      consentBefore: "Acepto la",
+      consentLink: "política de privacidad",
+      consentAfter: "y que MindBloom guarde mis datos.",
+      consentError: "Marca la casilla para continuar.",
+      next: "Siguiente",
+      back: "Atrás",
+      finish: "Terminar",
+      privacyNote:
+        "Solo pedimos lo necesario. Nada de diagnósticos, datos de salud, escuela ni apellidos.",
+      doneTitle: "Ya estás en la lista.",
+      doneBody: "Te escribiremos para hablar.",
+      nextTitle: "Qué pasa ahora",
+      nextSteps: [
+        "Leemos tus respuestas.",
+        "Te escribimos para una breve llamada.",
+        "Te avisamos primero cuando abran la app y el centro.",
+      ],
+      toAccount: "Ir a mi cuenta",
+      toHome: "Volver a la web",
+    },
+    account: {
+      title: "Mi cuenta",
+      signedInAs: "Sesión iniciada como",
+      parent: "Tú",
+      child: "Tu hijo o hija",
+      save: "Guardar cambios",
+      saved: "Guardado.",
+      passwordTitle: "Cambiar contraseña",
+      newPassword: "Nueva contraseña",
+      changePassword: "Cambiar contraseña",
+      passwordChanged: "Contraseña cambiada.",
+      dangerTitle: "Eliminar cuenta",
+      dangerBody:
+        "Esto elimina tu cuenta y todos los datos que nos diste. No se puede deshacer.",
+      deleteBtn: "Eliminar mi cuenta y mis datos",
+      confirm: "¿Seguro? Escribe ELIMINAR para confirmar.",
+      confirmWord: "ELIMINAR",
+      confirmBtn: "Sí, eliminarlo todo",
+      cancel: "Cancelar",
+      deleted: "Tu cuenta y tus datos se han eliminado.",
+      signOut: "Cerrar sesión",
+    },
+    notFound: {
+      title: "Página no encontrada",
+      body: "Esta página no existe o se ha movido.",
+      home: "Volver al inicio",
+    },
+    present: {
+      exit: "Salir",
+      prev: "Anterior",
+      next: "Siguiente",
+      hint: "Usa las flechas ← → · Esc para salir",
+    },
+    privacy: {
+      label: "Privacidad",
+      title: "Política de privacidad",
+      updated: "Última actualización: noviembre de 2026",
+      intro:
+        "Esta página explica qué recoge la web de MindBloom cuando te apuntas a la lista de espera o nos escribes, y por qué. MindBloom es un proyecto de investigación: una app y un centro de aprendizaje en Barcelona para niños y jóvenes de 6 a 18 años que aprenden de otra manera. Aún no está abierto.",
+      sections: [
+        {
+          h: "Quién es el responsable",
+          paragraphs: [
+            "MindBloom, un proyecto con sede en Barcelona, decide cómo se usan los datos personales de esta web.",
+          ],
+        },
+        {
+          h: "Qué recoge el formulario",
+          paragraphs: ["El formulario de la lista de espera y de contacto recoge:"],
+          items: [
+            "tu nombre",
+            "tu correo electrónico",
+            "el mensaje que decidas escribir, si escribes uno",
+          ],
+          after: [
+            "También guardamos la hora de envío y que marcaste la casilla de consentimiento. No pedimos un diagnóstico, datos de salud, el nombre de un colegio ni apellidos.",
+          ],
+        },
+        {
+          h: "Por qué lo recogemos",
+          paragraphs: [
+            "Usamos tu nombre y tu correo para mantenerte en la lista de espera y escribirte cuando abran la app o el centro de Barcelona. Si dejas un mensaje, lo usamos para responderte.",
+            "La base legal es tu consentimiento, que das al marcar la casilla del formulario. Puedes retirarlo en cualquier momento escribiéndonos. Retirarlo no afecta a lo que hayamos hecho antes.",
+          ],
+        },
+        {
+          h: "Cuánto tiempo lo guardamos",
+          paragraphs: [
+            "Guardamos los datos del formulario hasta que nos pidas borrarlos, o hasta que ya no hagan falta para la lista de espera. Entonces los borramos.",
+          ],
+        },
+        {
+          h: "Quién más los ve",
+          paragraphs: [
+            "La web está alojada en Railway y los datos del formulario se guardan en una base de datos allí para que podamos leerlos. No vendemos datos personales ni los usamos para publicidad.",
+          ],
+        },
+        {
+          h: "Tus derechos",
+          paragraphs: [
+            "Si estás en España o en otro país del Espacio Económico Europeo, puedes pedirnos acceso a tus datos, que los corrijamos, que los borremos, que limitemos su uso o una copia portable. También puedes oponerte a cómo los usamos.",
+            "Puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).",
+          ],
+        },
+        {
+          h: "Menores",
+          paragraphs: [
+            "El formulario es para padres, madres y tutores. No pidas a un niño o niña que lo rellene.",
+          ],
+        },
+      ],
+      contactTitle: "Contacto",
+      contactBody:
+        "Para usar cualquiera de estos derechos, o para preguntar por esta política, escribe a:",
+      contactEmail: "TODO@mindbloom.example",
+      contactTodo:
+        "TODO: sustituir TODO@mindbloom.example por el correo real de MindBloom. Quien publica el sitio debe revisar este texto antes de darlo por definitivo.",
+    },
+  },
+  _h = {
+    langName: "Català",
+    meta: {
+      title: "MindBloom — Estudi, concentració i amics, en un sol lloc",
+      description:
+        "MindBloom ajuda infants i joves de 6 a 18 anys a Barcelona que aprenen diferent: estudi, concentració i amics, en una app i un centre.",
+    },
+    nav: {
+      problem: "Problema",
+      solution: "Solució",
+      product: "Producte",
+      whyUs: "Per què nosaltres",
+      contact: "Contacte",
+      join: "Uneix-te",
+      signIn: "Inicia sessió",
+      account: "El meu compte",
+      present: "Presentar",
+      menu: "Menú",
+      language: "Idioma",
+    },
+    hero: {
+      tags: ["De 6 a 18 anys", "TDAH, dislèxia, autisme i més", "Barcelona"],
+      title: "Estudi, concentració i amics, en un sol lloc.",
+      subtitle:
+        "MindBloom uneix l'ajuda amb els estudis, la concentració i el temps amb altres infants, en una app i un centre d'aprenentatge a Barcelona.",
+      ctaProduct: "Veure el producte",
+      ctaWaitlist: "Apunta't a la llista d'espera",
+      ctaContact: "Contacta amb nosaltres",
+      quoteTranslation: "Les tardes de deures no s'acaben mai.",
+      quoteSource:
+        "Mare d'un infant de 8 anys, citada per una orientadora escolar · Infosal, 2016",
+    },
+    problem: {
+      label: "El problema",
+      title: "L'ajuda arriba a trossos. Les famílies la sostenen.",
+      body: "Les famílies paguen un psicòleg, un professor particular, potser una app, i els deures encara ocupen tota la tarda. Cada ajuda cobreix una part, i són els pares els qui ho sostenen tot.",
+      stats: [
+        {
+          value: "1,26 M",
+          label: "alumnes a Espanya van necessitar suport educatiu el 2024-25",
+        },
+        {
+          value: "700 €",
+          label:
+            "És el que gasta al mes una família de Barcelona en ajuda privada.",
+        },
+        {
+          value: "6 mesos",
+          label:
+            "És la llista d'espera que un CDIAP de Barcelona indica a les famílies.",
+        },
+      ],
+      quoteTranslation:
+        "La meva filla necessita un logopeda, un terapeuta ocupacional i un psicòleg i ningú no m'ajuda!",
+      quoteSource: "Inma Caballero, mare de la Vega, Barcelona · betevé, 2021",
+      sources:
+        "Fonts: Ministeri d'Educació, ACNEAE 2024-25 · betevé, 10 juny 2021",
+    },
+    solution: {
+      label: "La solució",
+      title: "Un sol lloc per estudiar, concentrar-se i fer amics",
+      body: "MindBloom és per a infants i joves de 6 a 18 anys que pensen i aprenen de manera diferent. Una app entre visites i un centre d'aprenentatge a Barcelona.",
+      cards: [
+        {
+          title: "Estudi",
+          body: "Ajuda amb els deures reals: organitzar-los i recordar el que aprenen.",
+        },
+        {
+          title: "Concentració",
+          body: "Sessions de concentració amb descansos planificats, per a tardes més tranquil·les i curtes.",
+        },
+        {
+          title: "Amics",
+          body: "Temps amb altres infants que aprenen com ells, al centre de Barcelona.",
+        },
+      ],
+    },
+    product: {
+      label: "Producte",
+      title: "El que estem construint",
+      tag: "Prototip",
+      body: "El progrés a casa i al centre està connectat, així el pla de cada infant l'acompanya arreu.",
+      mockLabel: "Pantalles d'exemple — concepte",
+      tabs: ["Mode concentració", "El meu camí", "Vista família"],
+      focus: {
+        timer: "25:00",
+        paused: "Apps que distreuen en pausa",
+        start: "Començar",
+        next: "Proper descans en 25 min",
+      },
+      path: {
+        today: "Objectius d'avui",
+        goals: [
+          "Llegir el capítol 3 (15 min)",
+          "Mates: 10 fraccions",
+          "Preparar la motxilla",
+        ],
+        progress: "Aquesta setmana",
+        home: "Casa",
+        centre: "Centre",
+      },
+      parent: {
+        week: "La setmana d'en Lucas",
+        sessions: "4 de 5 sessions de concentració fetes",
+        next: "Propera sessió al centre",
+        nextWhen: "Dijous, 17:00 · Grup petit",
+        message: "Missatge de la Laura (educadora)",
+        messageText:
+          "Molt bona feina avui amb les fraccions. Hi tornarem dijous.",
+      },
+      appTitle: "L'app",
+      app: [
+        [
+          "Mode concentració",
+          "Posa en pausa les apps que distreuen durant les sessions, amb descansos planificats.",
+        ],
+        [
+          "Un camí personal",
+          "Objectius i una progressió que uneixen el que aprèn a casa i al centre.",
+        ],
+        [
+          "Vista per a famílies i educadors",
+          "Segueix el progrés i coordina el pla d'aprenentatge en un sol lloc.",
+        ],
+      ],
+      centreTitle: "El centre de Barcelona",
+      centre: [
+        [
+          "Sessions i grups petits",
+          "Exercicis pràctics amb professionals de l'educació qualificats.",
+        ],
+        ["Espais tranquils", "Un lloc calmat i flexible per estudiar."],
+        [
+          "Un pla compartit",
+          "Els educadors actualitzen el pla de cada infant després de cada visita.",
+        ],
+      ],
+      pause: "Atura la presentació",
+      play: "Reprodueix la presentació",
+    },
+    gap: {
+      label: "Per què nosaltres",
+      title: "Els altres resolen una part",
+      rows: [
+        "Entrenament de l'atenció",
+        "Lectura i escriptura",
+        "Diagnòstic i teràpia",
+        "Ajuda amb els deures",
+        "Amics i socialització",
+        "App + centre físic",
+      ],
+      cols: ["Sincrolab", "Dytective", "Clíniques privades", "MindBloom"],
+      yes: "Sí",
+      no: "No",
+      planned: "Previst",
+      footnote:
+        "Les marques de verificació són el que cada organització ofereix avui, segons els seus webs públics el novembre de 2026. MindBloom encara no està obert: «Previst» és el que pensem oferir, no un servei que es pugui fer servir ara. El diagnòstic i la teràpia no formen part de MindBloom.",
+    },
+    model: {
+      label: "Model de negoci",
+      title: "Com generarà ingressos MindBloom",
+      cards: [
+        {
+          title: "Famílies",
+          body: "Subscripció a l'app i quota del centre d'aprenentatge.",
+        },
+        {
+          title: "Escoles i institucions",
+          body: "Llicències per a escoles i organitzacions educatives.",
+        },
+        {
+          title: "Sessions individuals",
+          body: "Sessions individuals al centre de Barcelona.",
+        },
+      ],
+      note: "Els preus es fixaran amb les primeres famílies.",
+    },
+    roadmap: {
+      label: "Full de ruta",
+      title: "On som",
+      steps: [
+        { when: "Ara", what: "Recerca i entrevistes amb famílies" },
+        {
+          when: "Després",
+          what: "Llista d'espera i primeres famílies de Barcelona",
+        },
+        { when: "Més endavant", what: "Pilot de l'app i obertura del centre" },
+      ],
+    },
+    contact: {
+      label: "Llista d'espera",
+      title: "Apunta't a la llista d'espera",
+      body: "Deixa el teu nom i el teu correu i t'escriurem quan obrin l'app i el centre de Barcelona. Si ets un soci o un educador, afegeix una nota al missatge.",
+      name: "Nom",
+      email: "Correu electrònic",
+      message: "Missatge (opcional)",
+      consentBefore: "Accepto la",
+      consentLink: "política de privacitat",
+      consentAfter: "i que MindBloom desi les meves dades.",
+      submit: "Apunta't a la llista d'espera",
+      success: "Gràcies. Ja ets a la llista d'espera i t'escriurem.",
+      required: "Escriu el teu nom, un correu vàlid i marca la casella.",
+    },
+    footer: {
+      tagline: "Estudi, concentració i amics, en un sol lloc.",
+      rights: "© 2026 MindBloom · Barcelona",
+      privacy: "Política de privacitat",
+    },
+    auth: {
+      joinTitle: "Uneix-te a MindBloom",
+      joinBody: "Crea un compte de família. Trigaràs menys d'un minut.",
+      google: "Continua amb Google",
+      or: "o",
+      emailSignup: "Registra't amb correu",
+      email: "Correu electrònic",
+      password: "Contrasenya",
+      passwordHint: "Mínim 8 caràcters.",
+      show: "Mostra la contrasenya",
+      hide: "Amaga la contrasenya",
+      create: "Crea el compte",
+      haveAccount: "Ja tens compte?",
+      signInLink: "Inicia sessió",
+      signInTitle: "Hola de nou",
+      signInBody: "Inicia sessió al teu compte de família.",
+      signInBtn: "Inicia sessió",
+      forgot: "Has oblidat la contrasenya?",
+      noAccount: "Ets nou a MindBloom?",
+      joinLink: "Crea un compte",
+      resetSent:
+        "Si aquest correu té compte, t'hem enviat un enllaç per canviar la contrasenya.",
+      resetNeedEmail:
+        "Escriu primer el teu correu a dalt i torna a clicar «Has oblidat la contrasenya?».",
+      checkEmail: "Revisa el correu: t'hem enviat un enllaç per confirmar-lo.",
+      errors: {
+        google:
+          "L'accés amb Google encara no està disponible. Fes servir el teu correu i una contrasenya.",
+        resetOff:
+          "El canvi de contrasenya per correu encara no està activat. Escriu-nos amb el formulari de contacte de la pàgina principal.",
+        exists: "Aquest correu ja té un compte. Vols iniciar sessió?",
+        invalid:
+          "El correu i la contrasenya no coincideixen. Torna-ho a provar o canvia la contrasenya.",
+        weak: "Fes servir una contrasenya d'almenys 8 caràcters.",
+        email: "Escriu un correu electrònic vàlid.",
+        generic: "Alguna cosa ha fallat. Torna-ho a provar.",
+      },
+      demo: "Mode demo: els comptes només es desen en aquest navegador.",
+    },
+    welcome: {
+      step: "Pas",
+      of: "de",
+      s1Title: "Sobre tu",
+      firstName: "El teu nom",
+      language: "Idioma preferit",
+      s2Title: "Sobre el teu fill o filla",
+      childName: "Nom o sobrenom",
+      childAge: "Edat",
+      ageHint: "MindBloom és per a edats de 6 a 18 anys.",
+      ageError: "Escriu una edat entre 6 i 18 anys.",
+      interest: "Què t'interessa més?",
+      interests: {
+        app: ["L'app", "Ajuda amb els deures i la concentració entre visites."],
+        centre: [
+          "El centre de Barcelona",
+          "Sessions, grups petits i espais tranquils.",
+        ],
+        both: ["Totes dues coses", "L'app a casa i el centre a Barcelona."],
+      },
+      consentBefore: "Accepto la",
+      consentLink: "política de privacitat",
+      consentAfter: "i que MindBloom desi les meves dades.",
+      consentError: "Marca la casella per continuar.",
+      next: "Següent",
+      back: "Enrere",
+      finish: "Acaba",
+      privacyNote:
+        "Només demanem el necessari. Res de diagnòstics, dades de salut, escola ni cognoms.",
+      doneTitle: "Ja ets a la llista.",
+      doneBody: "T'escriurem per parlar.",
+      nextTitle: "Què passa ara",
+      nextSteps: [
+        "Llegim les teves respostes.",
+        "T'escrivim per fer una breu trucada.",
+        "T'avisem els primers quan obrin l'app i el centre.",
+      ],
+      toAccount: "Ves al meu compte",
+      toHome: "Torna al web",
+    },
+    account: {
+      title: "El meu compte",
+      signedInAs: "Sessió iniciada com a",
+      parent: "Tu",
+      child: "El teu fill o filla",
+      save: "Desa els canvis",
+      saved: "Desat.",
+      passwordTitle: "Canvia la contrasenya",
+      newPassword: "Nova contrasenya",
+      changePassword: "Canvia la contrasenya",
+      passwordChanged: "Contrasenya canviada.",
+      dangerTitle: "Elimina el compte",
+      dangerBody:
+        "Això elimina el teu compte i totes les dades que ens vas donar. No es pot desfer.",
+      deleteBtn: "Elimina el meu compte i les meves dades",
+      confirm: "N'estàs segur? Escriu ELIMINAR per confirmar.",
+      confirmWord: "ELIMINAR",
+      confirmBtn: "Sí, elimina-ho tot",
+      cancel: "Cancel·la",
+      deleted: "El teu compte i les teves dades s'han eliminat.",
+      signOut: "Tanca la sessió",
+    },
+    notFound: {
+      title: "Pàgina no trobada",
+      body: "Aquesta pàgina no existeix o s'ha mogut.",
+      home: "Torna a l'inici",
+    },
+    present: {
+      exit: "Surt",
+      prev: "Anterior",
+      next: "Següent",
+      hint: "Fes servir les fletxes ← → · Esc per sortir",
+    },
+    privacy: {
+      label: "Privacitat",
+      title: "Política de privacitat",
+      updated: "Darrera actualització: novembre de 2026",
+      intro:
+        "Aquesta pàgina explica què recull el web de MindBloom quan t'apuntes a la llista d'espera o ens escrius, i per què. MindBloom és un projecte de recerca: una app i un centre d'aprenentatge a Barcelona per a infants i joves de 6 a 18 anys que aprenen diferent. Encara no està obert.",
+      sections: [
+        {
+          h: "Qui n'és el responsable",
+          paragraphs: [
+            "MindBloom, un projecte amb seu a Barcelona, decideix com es fan servir les dades personals d'aquest web.",
+          ],
+        },
+        {
+          h: "Què recull el formulari",
+          paragraphs: ["El formulari de la llista d'espera i de contacte recull:"],
+          items: [
+            "el teu nom",
+            "el teu correu electrònic",
+            "el missatge que decideixis escriure, si n'escrius un",
+          ],
+          after: [
+            "També desem l'hora d'enviament i que has marcat la casella de consentiment. No demanem un diagnòstic, dades de salut, el nom d'una escola ni cognoms.",
+          ],
+        },
+        {
+          h: "Per què ho recollim",
+          paragraphs: [
+            "Fem servir el teu nom i el teu correu per mantenir-te a la llista d'espera i escriure't quan obrin l'app o el centre de Barcelona. Si deixes un missatge, el fem servir per respondre't.",
+            "La base legal és el teu consentiment, que dones en marcar la casella del formulari. El pots retirar en qualsevol moment escrivint-nos. Retirar-lo no afecta el que hàgim fet abans.",
+          ],
+        },
+        {
+          h: "Quant de temps ho desem",
+          paragraphs: [
+            "Desem les dades del formulari fins que ens demanis d'esborrar-les, o fins que ja no facin falta per a la llista d'espera. Llavors les esborrem.",
+          ],
+        },
+        {
+          h: "Qui més les veu",
+          paragraphs: [
+            "El web està allotjat a Railway i les dades del formulari es desen en una base de dades allà perquè les puguem llegir. No venem dades personals ni les fem servir per a publicitat.",
+          ],
+        },
+        {
+          h: "Els teus drets",
+          paragraphs: [
+            "Si ets a Espanya o en un altre país de l'Espai Econòmic Europeu, ens pots demanar accés a les teves dades, que les corregim, que les esborrem, que en limitem l'ús o una còpia portable. També t'hi pots oposar.",
+            "Pots reclamar a l'Agencia Española de Protección de Datos (aepd.es).",
+          ],
+        },
+        {
+          h: "Menors",
+          paragraphs: [
+            "El formulari és per a pares, mares i tutors. No demanis a un infant que l'ompli.",
+          ],
+        },
+      ],
+      contactTitle: "Contacte",
+      contactBody:
+        "Per fer servir qualsevol d'aquests drets, o per preguntar per aquesta política, escriu a:",
+      contactEmail: "TODO@mindbloom.example",
+      contactTodo:
+        "TODO: substituir TODO@mindbloom.example pel correu real de MindBloom. Qui publica el web ha de revisar aquest text abans de donar-lo per definitiu.",
+    },
+  },
+  gd = { en: Ch, es: Ph, ca: _h },
+  vd = [
+    { code: "es", short: "ES", name: "Español" },
+    { code: "ca", short: "CA", name: "Català" },
+    { code: "en", short: "EN", name: "English" },
+  ],
+  yd = y.createContext(null);
+function Th() {
+  try {
+    const n = new URLSearchParams(window.location.search).get("lang");
+    if (n && n in gd) return n;
+  } catch {}
+  const e = Q.get("mb_lang", null);
+  if (e && e in gd) return e;
+  return "es";
+}
+function privacyHref(e) {
+  return e && e !== "es" ? `/privacy?lang=${e}` : "/privacy";
+}
+function Lh({ children: e }) {
+  const [t, n] = y.useState(Th),
+    { pathname: l } = lt(),
+    r = (a) => {
+      (n(a), Q.set("mb_lang", a));
+    };
+  return (
+    y.useEffect(() => {
+      document.documentElement.lang = t;
+      Q.set("mb_lang", t);
+      const a = gd[t].meta,
+        i = (s, u, c) => {
+          const g = document.querySelector(s);
+          g && g.setAttribute(u, c);
+        };
+      document.title = a.title;
+      i('meta[name="description"]', "content", a.description);
+      i('meta[property="og:title"]', "content", a.title);
+      i('meta[property="og:description"]', "content", a.description);
+      i(
+        'meta[property="og:locale"]',
+        "content",
+        t === "ca" ? "ca_ES" : t === "en" ? "en_GB" : "es_ES",
+      );
+      i('meta[name="twitter:title"]', "content", a.title);
+      i('meta[name="twitter:description"]', "content", a.description);
+      const s = window.location.origin,
+        u = new URL(window.location.href);
+      t === "es" ? u.searchParams.delete("lang") : u.searchParams.set("lang", t);
+      const c = u.pathname + u.search + u.hash;
+      c !==
+        window.location.pathname +
+          window.location.search +
+          window.location.hash && history.replaceState(history.state, "", c);
+      const g =
+        t === "es"
+          ? s + (l === "/" ? "/" : l)
+          : s + (l === "/" ? "/" : l) + "?lang=" + t;
+      const m = document.querySelector('link[rel="canonical"]');
+      m && m.setAttribute("href", g);
+      i('meta[property="og:url"]', "content", g);
+    }, [t, l]),
+    o.jsx(yd.Provider, {
+      value: { lang: t, setLang: r, t: gd[t] },
+      children: e,
+    })
+  );
+}
+function F() {
+  const e = y.useContext(yd);
+  if (!e) throw new Error("useLang must be used inside LanguageProvider");
+  return e;
+}
+function Pl({ onDark: e = !1 }) {
+  const { lang: t, setLang: n, t: r } = F();
+  return o.jsx("div", {
+    role: "group",
+    "aria-label": r.nav.language,
+    className: "mb-lang flex items-center gap-1",
+    children: vd.map((l, a) =>
+      o.jsxs(
+        "span",
+        {
+          className: "flex items-center",
+          children: [
+            a > 0 &&
+              o.jsx("span", {
+                "aria-hidden": "true",
+                className: e ? "px-1 text-bg-light" : "px-1 text-ink-soft",
+                children: "·",
+              }),
+            o.jsx("button", {
+              type: "button",
+              onClick: () => n(l.code),
+              "aria-pressed": t === l.code,
+              "aria-label": l.name,
+              className: `min-h-[44px] min-w-[44px] rounded-sm px-2 text-label ${t === l.code ? (e ? "text-bg-light underline underline-offset-4" : "text-main underline underline-offset-4") : e ? "text-bg-light" : "text-ink-soft hover:text-ink"}`,
+              children: l.short,
+            }),
+          ],
+        },
+        l.code,
+      ),
+    ),
+  });
+}
+const Mh = !1,
+  yn = {
+    parent_name: "",
+    language: "es",
+    child_name: "",
+    child_age: null,
+    interest: null,
+    consent: !1,
+    completed: !1,
+  },
+  xd = y.createContext(null),
+  $e = "mb_demo_users",
+  Dn = "mb_demo_session",
+  An = "mb_demo_profiles";
+async function Sa(e) {
+  try {
+    const t = await crypto.subtle.digest(
+      "SHA-256",
+      new TextEncoder().encode(e),
+    );
+    return Array.from(new Uint8Array(t))
+      .map((n) => n.toString(16).padStart(2, "0"))
+      .join("");
+  } catch {
+    return btoa(unescape(encodeURIComponent(e)));
+  }
+}
+const bs = () =>
+  crypto.randomUUID
+    ? crypto.randomUUID()
+    : String(Date.now()) + Math.random().toString(16).slice(2);
+function zh({ children: e }) {
+  const [t, n] = y.useState(null),
+    [r, l] = y.useState(null),
+    [a, i] = y.useState(!0),
+    A = async (P, M = "GET", B) => {
+      try {
+        const R = await fetch("/api" + P, {
+            method: M,
+            credentials: "same-origin",
+            headers: B ? { "Content-Type": "application/json" } : {},
+            body: B ? JSON.stringify(B) : void 0,
+          }),
+          J = await R.json().catch(() => ({}));
+        return R.ok ? J : { error: J.error || "generic" };
+      } catch {
+        return { error: "generic" };
+      }
+    },
+    S = (J) => {
+      J && J.user
+        ? (n(J.user),
+          l({
+            ...yn,
+            ...Object.fromEntries(
+              Object.entries(J.profile || {}).filter(([, V]) => V !== null),
+            ),
+          }))
+        : (n(null), l(null));
+    };
+  y.useEffect(() => {
+    A("/me")
+      .then((J) => {
+        J.error || S(J);
+      })
+      .finally(() => i(!1));
+  }, []);
+  const u = y.useCallback(async (f, d) => {
+      if (((f = f.trim().toLowerCase()), d.length < 8))
+        return { error: "weak" };
+      const J = await A("/signup", "POST", { email: f, password: d });
+      return J.error ? J : (S(J), {});
+    }, []),
+    c = y.useCallback(async (f, d) => {
+      const J = await A("/signin", "POST", {
+        email: f.trim().toLowerCase(),
+        password: d,
+      });
+      return J.error ? J : (S(J), {});
+    }, []),
+    g = y.useCallback(async () => {
+      const J = await A("/auth/google/enabled");
+      return J.enabled
+        ? ((window.location.href = "/api/auth/google"),
+          await new Promise(() => {}))
+        : { error: "google" };
+    }, []),
+    m = y.useCallback(async (f) => {
+      const J = await A("/reset", "POST", { email: f.trim().toLowerCase() });
+      return J.error ? J : {};
+    }, []),
+    h = y.useCallback(async (f) => {
+      if (f.length < 8) return { error: "weak" };
+      const J = await A("/password", "POST", { password: f });
+      return J.error ? J : {};
+    }, []),
+    v = y.useCallback(
+      async (f) => {
+        if (!t) return { error: "generic" };
+        const d = { ...(r ?? yn), ...f },
+          J = await A("/profile", "PUT", { profile: d });
+        return J.error ? J : (l(d), {});
+      },
+      [t, r],
+    ),
+    x = y.useCallback(async () => {
+      (await A("/signout", "POST"), n(null), l(null));
+    }, []),
+    k = y.useCallback(async () => {
+      if (!t) return { error: "generic" };
+      const J = await A("/account", "DELETE");
+      return J.error ? J : (n(null), l(null), {});
+    }, [t]),
+    C = y.useMemo(
+      () => ({
+        user: t,
+        profile: r,
+        loading: a,
+        isDemo: Mh,
+        signUp: u,
+        signIn: c,
+        signInWithGoogle: g,
+        resetPassword: m,
+        updatePassword: h,
+        saveProfile: v,
+        deleteAccount: k,
+        signOut: x,
+      }),
+      [t, r, a, u, c, g, m, h, v, k, x],
+    );
+  return o.jsx(xd.Provider, { value: C, children: e });
+}
+function Yt() {
+  const e = y.useContext(xd);
+  if (!e) throw new Error("useAuth must be used inside AuthProvider");
+  return e;
+}
+const wd = [
+  { id: "problem", key: "problem" },
+  { id: "solution", key: "solution" },
+  { id: "product", key: "product" },
+  { id: "why-us", key: "whyUs" },
+  { id: "contact", key: "contact" },
+];
+function wo() {
+  const e = Gt(),
+    { pathname: t } = lt();
+  return (n) => {
+    var r;
+    if (t !== "/") {
+      e("/", { state: { scrollTo: n } });
+      return;
+    }
+    (r = document.getElementById(n)) == null ||
+      r.scrollIntoView({ behavior: "smooth" });
+  };
+}
+function ko() {
+  const { t } = F(),
+    { user: n } = Yt(),
+    r = wo(),
+    [l, a] = y.useState(!1),
+    i = wd.map((u) =>
+      o.jsx(
+        "a",
+        {
+          href: `#${u.id}`,
+          onClick: (c) => {
+            (c.preventDefault(), a(!1), r(u.id));
+          },
+          className:
+            "mb-nowrap flex min-h-[44px] items-center text-small font-semibold text-ink hover:text-main",
+          children: t.nav[u.key],
+        },
+        u.id,
+      ),
+    ),
+    s =
+      n &&
+      o.jsx(Fe, {
+        to: "/account",
+        onClick: () => a(!1),
+        className: "btn-main mb-nowrap min-h-[44px] px-4 text-small",
+        children: t.nav.account,
+      });
+  return o.jsxs("header", {
+    className:
+      "sticky top-0 z-30 border-b border-line bg-bg-light/95 backdrop-blur",
+    children: [
+      o.jsxs("nav", {
+        className: "container-mb flex items-center justify-between gap-3 py-3",
+        "aria-label": "Main",
+        children: [
+          o.jsx(Fe, {
+            to: "/",
+            "aria-label": "MindBloom home",
+            onClick: () => a(!1),
+            className: "min-w-0",
+            children: o.jsx(Ql, { size: 32 }),
+          }),
+          o.jsx("div", {
+            className: "mb-nav hidden items-center gap-5 lg:flex",
+            children: i,
+          }),
+          o.jsxs("div", {
+            className: "flex flex-none items-center gap-2",
+            children: [
+              o.jsx(Pl, {}),
+              s &&
+                o.jsx("div", { className: "mb-desktop-only", children: s }),
+              o.jsx("button", {
+                type: "button",
+                className:
+                  "flex h-11 w-11 flex-none items-center justify-center rounded-sm text-ink lg:hidden",
+                "aria-label": t.nav.menu,
+                "aria-expanded": l,
+                onClick: () => a((u) => !u),
+                children: l
+                  ? o.jsx(md, { "aria-hidden": "true" })
+                  : o.jsx(gh, { "aria-hidden": "true" }),
+              }),
+            ],
+          }),
+        ],
+      }),
+      l &&
+        o.jsx("div", {
+          className: "border-t border-line bg-bg-light lg:hidden",
+          children: o.jsxs("div", {
+            className: "container-mb flex flex-col gap-2 py-4",
+            children: [i, s && o.jsx("div", { className: "pt-2", children: s })],
+          }),
+        }),
+    ],
+  });
+}
+function So() {
+  const { t: e } = F(),
+    t = wo();
+  return o.jsxs("footer", {
+    className: "bg-bg-dark text-bg-light",
+    children: [
+      o.jsxs("div", {
+        className:
+          "container-mb flex flex-col gap-8 py-12 md:flex-row md:items-start md:justify-between",
+        children: [
+          o.jsxs("div", {
+            className: "flex flex-col gap-2",
+            children: [
+              o.jsx(Ql, { onDark: !0, size: 32 }),
+              o.jsx("p", {
+                className: "text-small",
+                children: e.footer.tagline,
+              }),
+            ],
+          }),
+          o.jsx("ul", {
+            className: "flex flex-wrap gap-x-6 gap-y-2",
+            children: wd.map((n) =>
+              o.jsx(
+                "li",
+                {
+                  children: o.jsx("a", {
+                    href: `#${n.id}`,
+                    onClick: (r) => {
+                      (r.preventDefault(), t(n.id));
+                    },
+                    className: "text-small text-bg-light hover:underline",
+                    children: e.nav[n.key],
+                  }),
+                },
+                n.id,
+              ),
+            ),
+          }),
+          o.jsx(Pl, { onDark: !0 }),
+        ],
+      }),
+      o.jsxs("div", {
+        className:
+          "container-mb flex flex-wrap items-center gap-x-6 gap-y-2 pb-8 text-small",
+        children: [
+          o.jsx("span", { children: e.footer.rights }),
+          o.jsx("a", {
+            href: privacyHref(F().lang),
+            className: "text-bg-light underline",
+            children: e.footer.privacy,
+          }),
+          o.jsx("a", {
+            href: "/signin",
+            className: "text-bg-light underline",
+            children: e.nav.signIn,
+          }),
+        ],
+      }),
+    ],
+  });
+}
+const Ih = 5e3;
+function MbPause() {
+  return o.jsxs("svg", {
+    width: "18",
+    height: "18",
+    viewBox: "0 0 18 18",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    children: [
+      o.jsx("rect", { x: "3", y: "2", width: "4.5", height: "14", rx: "1" }),
+      o.jsx("rect", { x: "10.5", y: "2", width: "4.5", height: "14", rx: "1" }),
+    ],
+  });
+}
+function MbPlay() {
+  return o.jsx("svg", {
+    width: "18",
+    height: "18",
+    viewBox: "0 0 18 18",
+    fill: "currentColor",
+    "aria-hidden": "true",
+    children: o.jsx("path", { d: "M5 2.5v13l10-6.5z" }),
+  });
+}
+function Rh() {
+  const { t: e } = F(),
+    t = e.product,
+    [n, r] = y.useState(0),
+    [l, a] = y.useState(!1),
+    [i, s] = y.useState(!1),
+    [u, c] = y.useState(!1);
+  y.useEffect(() => {
+    var h;
+    const m =
+      (h = window.matchMedia) == null
+        ? void 0
+        : h.call(window, "(prefers-reduced-motion: reduce)");
+    c(!!(m != null && m.matches));
+  }, []);
+  const g = l || i || u;
+  return (
+    y.useEffect(() => {
+      if (g) return;
+      const m = window.setInterval(() => r((h) => (h + 1) % 3), Ih);
+      return () => window.clearInterval(m);
+    }, [g]),
+    o.jsxs("div", {
+      className: "flex flex-col items-center gap-4",
+      onMouseEnter: () => a(!0),
+      onMouseLeave: () => a(!1),
+      onFocus: () => a(!0),
+      onBlur: () => a(!1),
+      children: [
+        o.jsx("div", {
+          role: "tablist",
+          "aria-label": t.mockLabel,
+          className: "flex flex-wrap justify-center gap-2",
+          children: t.tabs.map((m, h) =>
+            o.jsx(
+              "button",
+              {
+                type: "button",
+                role: "tab",
+                id: `mock-tab-${h}`,
+                "aria-selected": n === h,
+                "aria-controls": "mock-panel",
+                onClick: () => r(h),
+                className: `min-h-[44px] rounded-sm px-4 text-small font-semibold transition-colors ${n === h ? "bg-main text-bg-light" : "border border-line text-ink hover:border-main"}`,
+                children: m,
+              },
+              m,
+            ),
+          ),
+        }),
+        o.jsx("div", {
+          className:
+            "w-[300px] rounded-[44px] bg-bg-dark p-3 shadow-[0_24px_48px_-24px_rgba(24,24,58,0.45)]",
+          children: o.jsxs("div", {
+            id: "mock-panel",
+            role: "tabpanel",
+            "aria-labelledby": `mock-tab-${n}`,
+            className:
+              "relative h-[560px] overflow-hidden rounded-[34px] bg-bg-light",
+            children: [
+              o.jsx("div", {
+                className: "mx-auto mt-2 h-6 w-28 rounded-full bg-bg-dark",
+                "aria-hidden": "true",
+              }),
+              o.jsxs("div", {
+                className: "px-5 pt-4",
+                children: [
+                  n === 0 && o.jsx(Oh, {}),
+                  n === 1 && o.jsx(Bh, {}),
+                  n === 2 && o.jsx(Fh, {}),
+                ],
+              }),
+            ],
+          }),
+        }),
+        o.jsxs("div", {
+          className: "flex items-center gap-3",
+          children: [
+            o.jsx("span", { className: "tag", children: t.mockLabel }),
+            o.jsx("button", {
+              type: "button",
+              onClick: () => s((m) => !m),
+              "aria-label": i ? t.play : t.pause,
+              className:
+                "flex h-11 w-11 items-center justify-center rounded-sm border border-line text-main hover:border-main",
+              children: i ? o.jsx(MbPlay, {}) : o.jsx(MbPause, {}),
+            }),
+          ],
+        }),
+      ],
+    })
+  );
+}
+function jo({ children: e }) {
+  return o.jsx("p", {
+    className: "font-heading text-[22px] font-semibold leading-7 text-ink",
+    children: e,
+  });
+}
+function Oh() {
+  const e = F().t.product.focus,
+    t = 84,
+    n = 2 * Math.PI * t;
+  return o.jsxs("div", {
+    className: "flex flex-col items-center gap-5 pt-4",
+    children: [
+      o.jsx(jo, { children: F().t.product.tabs[0] }),
+      o.jsxs("div", {
+        className: "relative h-[200px] w-[200px]",
+        children: [
+          o.jsxs("svg", {
+            viewBox: "0 0 200 200",
+            className: "h-full w-full -rotate-90",
+            "aria-hidden": "true",
+            children: [
+              o.jsx("circle", {
+                cx: "100",
+                cy: "100",
+                r: t,
+                fill: "none",
+                stroke: "#D9D9E6",
+                strokeWidth: "14",
+              }),
+              o.jsx("circle", {
+                cx: "100",
+                cy: "100",
+                r: t,
+                fill: "none",
+                stroke: "#3F3D99",
+                strokeWidth: "14",
+                strokeLinecap: "round",
+                strokeDasharray: n,
+                strokeDashoffset: n * 0.25,
+              }),
+            ],
+          }),
+          o.jsx("span", {
+            className:
+              "absolute inset-0 flex items-center justify-center font-heading text-[44px] font-bold text-ink",
+            children: e.timer,
+          }),
+        ],
+      }),
+      o.jsxs("p", {
+        className: "flex items-center gap-2 text-small font-semibold text-ink",
+        children: [
+          o.jsx(ah, {
+            size: 16,
+            "aria-hidden": "true",
+            className: "text-main",
+          }),
+          " ",
+          e.paused,
+        ],
+      }),
+      o.jsx("span", { className: "btn-main w-full", children: e.start }),
+      o.jsx("span", { className: "tag", children: e.next }),
+    ],
+  });
+}
+function Bh() {
+  const { t: e } = F(),
+    t = e.product.path;
+  return o.jsxs("div", {
+    className: "flex flex-col gap-4 pt-2",
+    children: [
+      o.jsx(jo, { children: e.product.tabs[1] }),
+      o.jsx("p", { className: "label text-ink-soft", children: t.today }),
+      o.jsx("ul", {
+        className: "flex flex-col gap-2",
+        children: t.goals.map((n, r) =>
+          o.jsxs(
+            "li",
+            {
+              className:
+                "flex items-center gap-3 rounded-md border border-line bg-white p-3 text-small text-ink",
+              children: [
+                o.jsx("span", {
+                  className: `flex h-6 w-6 flex-none items-center justify-center rounded-full ${r === 0 ? "bg-main text-bg-light" : "border-2 border-line"}`,
+                  children:
+                    r === 0 && o.jsx(Sr, { size: 14, "aria-hidden": "true" }),
+                }),
+                n,
+              ],
+            },
+            n,
+          ),
+        ),
+      }),
+      o.jsx("p", {
+        className: "label pt-2 text-ink-soft",
+        children: t.progress,
+      }),
+      [
+        [t.home, 70, mh],
+        [t.centre, 45, pd],
+      ].map(([n, r, l]) => {
+        const a = l;
+        return o.jsxs(
+          "div",
+          {
+            className: "flex flex-col gap-1",
+            children: [
+              o.jsxs("div", {
+                className:
+                  "flex items-center justify-between text-small text-ink",
+                children: [
+                  o.jsxs("span", {
+                    className: "flex items-center gap-2",
+                    children: [
+                      o.jsx(a, {
+                        size: 16,
+                        "aria-hidden": "true",
+                        className: "text-main",
+                      }),
+                      n,
+                    ],
+                  }),
+                  o.jsxs("span", {
+                    className: "font-semibold",
+                    children: [r, "%"],
+                  }),
+                ],
+              }),
+              o.jsx("div", {
+                className: "h-2 rounded-full bg-line",
+                children: o.jsx("div", {
+                  className: "h-2 rounded-full bg-main",
+                  style: { width: `${r}%` },
+                }),
+              }),
+            ],
+          },
+          n,
+        );
+      }),
+    ],
+  });
+}
+function Fh() {
+  const { t: e, lang: t } = F(),
+    n = e.product.parent,
+    r = [1, 1, 0, 1, 1],
+    l = new Intl.DateTimeFormat(t, { weekday: "narrow" }),
+    a = r.map((i, s) => l.format(new Date(2026, 0, 5 + s)));
+  return o.jsxs("div", {
+    className: "flex flex-col gap-4 pt-2",
+    children: [
+      o.jsx(jo, { children: n.week }),
+      o.jsxs("div", {
+        className: "rounded-md border border-line bg-white p-4",
+        children: [
+          o.jsx("div", {
+            className: "flex items-end justify-between gap-2",
+            "aria-hidden": "true",
+            children: r.map((i, s) =>
+              o.jsxs(
+                "div",
+                {
+                  className: "flex flex-1 flex-col items-center gap-1",
+                  children: [
+                    o.jsx("div", {
+                      className: `w-full rounded-sm ${i ? "bg-main" : "bg-line"}`,
+                      style: { height: i ? 56 : 20 },
+                    }),
+                    o.jsx("span", {
+                      className: "text-[12px] text-ink-soft",
+                      children: a[s],
+                    }),
+                  ],
+                },
+                s,
+              ),
+            ),
+          }),
+          o.jsx("p", {
+            className: "mt-3 text-small font-semibold text-ink",
+            children: n.sessions,
+          }),
+        ],
+      }),
+      o.jsxs("div", {
+        className: "flex gap-3 rounded-md border border-line bg-white p-4",
+        children: [
+          o.jsx(sh, {
+            size: 20,
+            "aria-hidden": "true",
+            className: "flex-none text-main",
+          }),
+          o.jsxs("div", {
+            children: [
+              o.jsx("p", {
+                className: "text-small font-semibold text-ink",
+                children: n.next,
+              }),
+              o.jsx("p", {
+                className: "text-small text-ink-soft",
+                children: n.nextWhen,
+              }),
+            ],
+          }),
+        ],
+      }),
+      o.jsxs("div", {
+        className: "flex gap-3 rounded-md bg-main p-4 text-bg-light",
+        children: [
+          o.jsx(vh, {
+            size: 20,
+            "aria-hidden": "true",
+            className: "flex-none",
+          }),
+          o.jsxs("div", {
+            children: [
+              o.jsx("p", {
+                className: "text-small font-semibold",
+                children: n.message,
+              }),
+              o.jsx("p", { className: "text-small", children: n.messageText }),
+            ],
+          }),
+        ],
+      }),
+    ],
+  });
+}
+function Xt({ label: e, title: t, body: n, onDark: r = !1 }) {
+  return o.jsxs("div", {
+    className: "flex max-w-[760px] flex-col gap-4",
+    children: [
+      o.jsx("p", {
+        className: `label ${r ? "text-bg-light" : "text-main"}`,
+        children: e,
+      }),
+      o.jsx("h2", {
+        className: `text-[32px] font-semibold leading-10 md:text-h2 ${r ? "text-bg-light" : "text-ink"}`,
+        children: t,
+      }),
+      n &&
+        o.jsx("p", {
+          className: r ? "text-bg-light" : "text-ink-soft",
+          children: n,
+        }),
+    ],
+  });
+}
+function Dh() {
+  const { t: e } = F(),
+    t = wo(),
+    n = e.hero;
+  return o.jsxs("div", {
+    className:
+      "container-mb grid items-center gap-12 lg:grid-cols-[1.15fr_1fr] lg:gap-16",
+    children: [
+      o.jsxs("div", {
+        className: "flex flex-col gap-6",
+        children: [
+          o.jsx("div", {
+            className: "flex flex-wrap gap-2",
+            children: n.tags.map((r) =>
+              o.jsx("span", { className: "tag", children: r }, r),
+            ),
+          }),
+          o.jsx("h1", {
+            className:
+              "text-[40px] font-bold leading-[48px] text-ink md:text-h1",
+            children: n.title,
+          }),
+          o.jsx("p", { className: "text-ink-soft", children: n.subtitle }),
+          o.jsxs("div", {
+            className: "flex flex-wrap gap-4",
+            children: [
+              o.jsx("button", {
+                type: "button",
+                className: "btn-main",
+                onClick: () => t("contact"),
+                children: n.ctaWaitlist,
+              }),
+              o.jsx("button", {
+                type: "button",
+                className: "btn-second",
+                onClick: () => t("product"),
+                children: n.ctaProduct,
+              }),
+            ],
+          }),
+        ],
+      }),
+      o.jsxs("figure", {
+        className:
+          "flex flex-col gap-6 rounded-lg bg-bg-dark p-8 text-bg-light md:p-12",
+        children: [
+          o.jsx("blockquote", {
+            lang: "es",
+            className:
+              "font-heading text-[32px] font-semibold leading-10 md:text-h2",
+            children: "“Las tardes de deberes no tienen fin.”",
+          }),
+          n.quoteTranslation !== "Las tardes de deberes no tienen fin." &&
+            o.jsx("p", { children: n.quoteTranslation }),
+          o.jsx("figcaption", {
+            className: "text-small",
+            children: n.quoteSource,
+          }),
+        ],
+      }),
+    ],
+  });
+}
+function Ah() {
+  const { t: e } = F(),
+    t = e.problem;
+  return o.jsxs("div", {
+    className: "container-mb flex flex-col gap-12",
+    children: [
+      o.jsxs("div", {
+        className: "grid items-center gap-12 lg:grid-cols-2",
+        children: [
+          o.jsx(Xt, { label: t.label, title: t.title, body: t.body }),
+          o.jsxs("figure", {
+            className: "card flex flex-col gap-4 p-8",
+            children: [
+              o.jsx("blockquote", {
+                lang: "ca",
+                className: "font-heading text-h3 text-ink",
+                children: "“…i ningú no m’ajuda!”",
+              }),
+              o.jsxs("p", {
+                className: "text-ink-soft",
+                children: ["“", t.quoteTranslation, "”"],
+              }),
+              o.jsx("figcaption", {
+                className: "hint",
+                children: t.quoteSource,
+              }),
+            ],
+          }),
+        ],
+      }),
+      o.jsx("div", {
+        className: "grid gap-8 md:grid-cols-3",
+        children: t.stats.map((n) =>
+          o.jsxs(
+            "div",
+            {
+              className: "flex flex-col gap-2",
+              children: [
+                o.jsx("span", {
+                  className:
+                    "font-heading text-[48px] font-bold leading-[56px] text-main md:text-h1",
+                  children: n.value,
+                }),
+                o.jsx("span", {
+                  className: "text-ink-soft",
+                  children: n.label,
+                }),
+              ],
+            },
+            n.value,
+          ),
+        ),
+      }),
+      o.jsx("p", { className: "hint", children: t.sources }),
+    ],
+  });
+}
+function Uh() {
+  const { t: e } = F(),
+    t = e.solution,
+    n = [ih, Sh, Eh];
+  return o.jsxs("div", {
+    className: "container-mb flex flex-col gap-12",
+    children: [
+      o.jsx(Xt, { label: t.label, title: t.title, body: t.body }),
+      o.jsx("div", {
+        className: "grid gap-6 md:grid-cols-3",
+        children: t.cards.map((r, l) => {
+          const a = n[l];
+          return o.jsxs(
+            "div",
+            {
+              className: "card flex flex-col gap-4",
+              children: [
+                o.jsx(a, {
+                  size: 32,
+                  className: "text-main",
+                  "aria-hidden": "true",
+                }),
+                o.jsx("h3", {
+                  className: "text-h3 text-ink",
+                  children: r.title,
+                }),
+                o.jsx("p", { className: "text-ink-soft", children: r.body }),
+              ],
+            },
+            r.title,
+          );
+        }),
+      }),
+    ],
+  });
+}
+function bh() {
+  const { t: e } = F(),
+    t = e.product,
+    n = ({ title: r, items: l }) =>
+      o.jsxs("div", {
+        className: "flex flex-col gap-4",
+        children: [
+          o.jsx("h3", { className: "text-h3 text-ink", children: r }),
+          l.map(([a, i]) =>
+            o.jsxs(
+              "div",
+              {
+                className: "card flex flex-col gap-1 p-5",
+                children: [
+                  o.jsx("p", {
+                    className: "font-semibold text-ink",
+                    children: a,
+                  }),
+                  o.jsx("p", {
+                    className: "text-small text-ink-soft",
+                    children: i,
+                  }),
+                ],
+              },
+              a,
+            ),
+          ),
+        ],
+      });
+  return o.jsxs("div", {
+    className: "container-mb flex flex-col gap-12",
+    children: [
+      o.jsxs("div", {
+        className: "flex flex-col gap-4",
+        children: [
+          o.jsx("span", { className: "tag self-start", children: t.tag }),
+          o.jsx(Xt, { label: t.label, title: t.title, body: t.body }),
+        ],
+      }),
+      o.jsxs("div", {
+        className: "grid items-start gap-12 lg:grid-cols-[auto_1fr]",
+        children: [
+          o.jsx(Rh, {}),
+          o.jsxs("div", {
+            className: "grid gap-8 md:grid-cols-2",
+            children: [
+              o.jsx(n, { title: t.appTitle, items: t.app }),
+              o.jsx(n, { title: t.centreTitle, items: t.centre }),
+            ],
+          }),
+        ],
+      }),
+    ],
+  });
+}
+function $h() {
+  const { t: e } = F(),
+    t = e.gap,
+    n = [[0], [1], [2], []],
+    r = [[], [], [], [0, 1, 3, 4, 5]],
+    l = (a, i) =>
+      r[i].includes(a)
+        ? o.jsx("span", {
+            className: "mb-nowrap text-small font-semibold text-main",
+            children: t.planned,
+          })
+        : n[i].includes(a)
+          ? o.jsx(Sr, {
+              size: 22,
+              className: "text-main",
+              "aria-label": t.yes,
+            })
+          : o.jsx(yh, {
+              size: 22,
+              className: "text-ink-soft",
+              "aria-label": t.no,
+            });
+  return o.jsxs("div", {
+    className: "container-mb flex flex-col gap-8",
+    children: [
+      o.jsx(Xt, { label: t.label, title: t.title }),
+      o.jsx("p", { className: "text-ink-soft", children: t.footnote }),
+      o.jsx("div", {
+        className: "compare-cards",
+        children: t.rows.map((a, i) =>
+          o.jsxs(
+            "article",
+            {
+              className: "card flex flex-col gap-3 p-5",
+              children: [
+                o.jsx("h3", {
+                  className: "text-small font-semibold text-ink",
+                  children: a,
+                }),
+                o.jsx("ul", {
+                  className: "flex flex-col",
+                  children: t.cols.map((s, u) =>
+                    o.jsxs(
+                      "li",
+                      {
+                        className:
+                          "flex items-center justify-between gap-3 border-t border-line py-3",
+                        children: [
+                          o.jsx("span", {
+                            className: "text-small text-ink",
+                            children: s,
+                          }),
+                          l(i, u),
+                        ],
+                      },
+                      s,
+                    ),
+                  ),
+                }),
+              ],
+            },
+            a,
+          ),
+        ),
+      }),
+      o.jsx("div", {
+        className: "compare-table overflow-x-auto rounded-md border border-line",
+        children: o.jsxs("table", {
+          className: "w-full border-collapse text-left",
+          children: [
+            o.jsx("thead", {
+              children: o.jsxs("tr", {
+                className: "border-b border-line",
+                children: [
+                  o.jsx("th", {
+                    scope: "col",
+                    className: "p-4",
+                    children: o.jsx("span", {
+                      className: "sr-only",
+                      children: "—",
+                    }),
+                  }),
+                  t.cols.map((a, i) =>
+                    o.jsx(
+                      "th",
+                      {
+                        scope: "col",
+                        className: `p-4 text-small font-semibold ${i === 3 ? "bg-main text-bg-light" : "text-ink"}`,
+                        children:
+                          i === 3
+                            ? o.jsxs("span", {
+                                className: "flex flex-col gap-1",
+                                children: [
+                                  a,
+                                  o.jsx("span", {
+                                    className: "text-[12px] font-semibold",
+                                    style: { color: "#F5C443" },
+                                    children: t.planned,
+                                  }),
+                                ],
+                              })
+                            : a,
+                      },
+                      a,
+                    ),
+                  ),
+                ],
+              }),
+            }),
+            o.jsx("tbody", {
+              children: t.rows.map((a, i) =>
+                o.jsxs(
+                  "tr",
+                  {
+                    className: "border-b border-line last:border-0",
+                    children: [
+                      o.jsx("th", {
+                        scope: "row",
+                        className: "p-4 text-small font-semibold text-ink",
+                        children: a,
+                      }),
+                      t.cols.map((s, u) =>
+                        o.jsx(
+                          "td",
+                          {
+                            className: `p-4 ${u === 3 ? "bg-main/10" : ""}`,
+                            children: l(i, u),
+                          },
+                          s,
+                        ),
+                      ),
+                    ],
+                  },
+                  a,
+                ),
+              ),
+            }),
+          ],
+        }),
+      }),
+    ],
+  });
+}
+function Wh() {
+  const { t: e } = F(),
+    t = e.model,
+    n = [Nh, pd, oh];
+  return o.jsxs("div", {
+    className: "container-mb flex flex-col gap-12",
+    children: [
+      o.jsx(Xt, { label: t.label, title: t.title }),
+      o.jsx("div", {
+        className: "grid gap-6 md:grid-cols-3",
+        children: t.cards.map((r, l) => {
+          const a = n[l];
+          return o.jsxs(
+            "div",
+            {
+              className: "card flex flex-col gap-4",
+              children: [
+                o.jsx(a, {
+                  size: 32,
+                  className: "text-main",
+                  "aria-hidden": "true",
+                }),
+                o.jsx("h3", {
+                  className: "text-h3 text-ink",
+                  children: r.title,
+                }),
+                o.jsx("p", { className: "text-ink-soft", children: r.body }),
+              ],
+            },
+            r.title,
+          );
+        }),
+      }),
+      o.jsx("span", { className: "tag self-start", children: t.note }),
+    ],
+  });
+}
+function Vh() {
+  const { t: e } = F(),
+    t = e.roadmap;
+  return o.jsxs("div", {
+    className: "container-mb flex flex-col gap-12",
+    children: [
+      o.jsx(Xt, { label: t.label, title: t.title }),
+      o.jsx("ol", {
+        className: "grid gap-6 md:grid-cols-3",
+        children: t.steps.map((n, r) =>
+          o.jsxs(
+            "li",
+            {
+              className: "relative flex flex-col gap-4",
+              children: [
+                o.jsxs("div", {
+                  className: "flex items-center gap-4",
+                  children: [
+                    o.jsx("span", {
+                      className: `flex h-12 w-12 flex-none items-center justify-center rounded-full font-heading text-[20px] font-bold ${r === 0 ? "bg-main text-bg-light" : "border-2 border-main text-main"}`,
+                      children: r + 1,
+                    }),
+                    r < t.steps.length - 1 &&
+                      o.jsx("span", {
+                        className: "hidden h-[2px] flex-1 bg-line md:block",
+                        "aria-hidden": "true",
+                      }),
+                  ],
+                }),
+                o.jsx("p", { className: "label text-main", children: n.when }),
+                o.jsx("p", {
+                  className: "font-heading text-h3 text-ink",
+                  children: n.what,
+                }),
+              ],
+            },
+            n.when,
+          ),
+        ),
+      }),
+    ],
+  });
+}
+function Hh() {
+  const { t: e, lang: p } = F(),
+    t = e.contact,
+    [n, r] = y.useState({ name: "", email: "", message: "", consent: !1 }),
+    [l, a] = y.useState(!1),
+    [i, s] = y.useState(!1),
+    u = (c) => {
+      c.preventDefault();
+      const g = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(n.email);
+      if (!n.name.trim() || !g || !n.consent) {
+        a(!0);
+        return;
+      }
+      (a(!1),
+        fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...n, kind: "waitlist" }),
+        })
+          .then((R) => {
+            R.ok ? s(!0) : a(!0);
+          })
+          .catch(() => a(!0)));
+    };
+  return o.jsxs("div", {
+    className: "container-mb flex flex-col gap-8",
+    children: [
+      o.jsx(Xt, { label: t.label, title: t.title, body: t.body, onDark: !0 }),
+      o.jsx("div", {
+        className: "rounded-lg bg-bg-light p-6 text-ink md:p-8",
+        children: i
+          ? o.jsxs("p", {
+              role: "status",
+              className:
+                "flex items-center gap-3 font-heading text-h3 text-ink",
+              children: [
+                o.jsx(Sr, { className: "text-main", "aria-hidden": "true" }),
+                " ",
+                t.success,
+              ],
+            })
+          : o.jsxs("form", {
+              onSubmit: u,
+              noValidate: !0,
+              className: "flex flex-col gap-6",
+              children: [
+                o.jsxs("div", {
+                  className: "grid gap-6 md:grid-cols-2",
+                  children: [
+                    o.jsx(ja, {
+                      id: "c-name",
+                      label: t.name,
+                      children: o.jsx("input", {
+                        id: "c-name",
+                        className: "input",
+                        autoComplete: "name",
+                        value: n.name,
+                        onChange: (c) => r({ ...n, name: c.target.value }),
+                      }),
+                    }),
+                    o.jsx(ja, {
+                      id: "c-email",
+                      label: t.email,
+                      children: o.jsx("input", {
+                        id: "c-email",
+                        type: "email",
+                        className: "input",
+                        autoComplete: "email",
+                        value: n.email,
+                        onChange: (c) => r({ ...n, email: c.target.value }),
+                      }),
+                    }),
+                  ],
+                }),
+                o.jsx(ja, {
+                  id: "c-message",
+                  label: t.message,
+                  children: o.jsx("textarea", {
+                    id: "c-message",
+                    className: "input input-area",
+                    rows: 4,
+                    value: n.message,
+                    onChange: (c) => r({ ...n, message: c.target.value }),
+                  }),
+                }),
+                o.jsxs("div", {
+                  className: "flex items-start gap-3 text-small",
+                  children: [
+                    o.jsx("input", {
+                      id: "c-consent",
+                      type: "checkbox",
+                      className: "mt-0.5 h-5 w-5 flex-none accent-main",
+                      checked: n.consent,
+                      onChange: (c) => r({ ...n, consent: c.target.checked }),
+                    }),
+                    o.jsxs("span", {
+                      children: [
+                        o.jsx("label", {
+                          htmlFor: "c-consent",
+                          children: t.consentBefore + " ",
+                        }),
+                        o.jsx("a", {
+                          href: privacyHref(p),
+                          className: "font-semibold text-main underline",
+                          children: t.consentLink,
+                        }),
+                        o.jsx("label", {
+                          htmlFor: "c-consent",
+                          children: " " + t.consentAfter,
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+                l &&
+                  o.jsx("p", {
+                    role: "alert",
+                    className: "error",
+                    children: t.required,
+                  }),
+                o.jsx("div", {
+                  children: o.jsx("button", {
+                    type: "submit",
+                    className: "btn-main",
+                    children: t.submit,
+                  }),
+                }),
+              ],
+            }),
+      }),
+    ],
+  });
+}
+function ja({ id: e, label: t, children: n }) {
+  return o.jsxs("div", {
+    className: "flex flex-col gap-2",
+    children: [
+      o.jsx("label", { htmlFor: e, className: "field-label", children: t }),
+      n,
+    ],
+  });
+}
+const tl = [
+  { id: "top", Component: Dh },
+  { id: "problem", Component: Ah },
+  { id: "solution", Component: Uh },
+  { id: "product", Component: bh },
+  { id: "why-us", Component: $h },
+  { id: "model", Component: Wh },
+  { id: "roadmap", Component: Vh },
+  { id: "contact", tone: "main", Component: Hh },
+];
+function Qh({ index: e, setIndex: t, onExit: n }) {
+  const { t: r } = F(),
+    l = y.useRef(null),
+    a = tl.length,
+    i = y.useCallback(() => t(Math.max(0, e - 1)), [e, t]),
+    s = y.useCallback(() => t(Math.min(a - 1, e + 1)), [e, a, t]),
+    u = y.useCallback(() => {
+      try {
+        document.fullscreenElement && document.exitFullscreen().catch(() => {});
+      } catch {}
+      n();
+    }, [n]);
+  (y.useEffect(() => {
+    var h, v;
+    try {
+      const x =
+        (v = (h = l.current) == null ? void 0 : h.requestFullscreen) == null
+          ? void 0
+          : v.call(h);
+      x && x.catch(() => {});
+    } catch {}
+    const m = () => {};
+    return (
+      document.addEventListener("fullscreenchange", m),
+      () => document.removeEventListener("fullscreenchange", m)
+    );
+  }, []),
+    y.useEffect(() => {
+      const m = (h) => {
+        var x;
+        const v = (x = h.target) == null ? void 0 : x.tagName;
+        v === "INPUT" ||
+          v === "TEXTAREA" ||
+          v === "SELECT" ||
+          ((h.key === "ArrowRight" || h.key === "PageDown" || h.key === " ") &&
+            (h.preventDefault(), s()),
+          (h.key === "ArrowLeft" || h.key === "PageUp") &&
+            (h.preventDefault(), i()),
+          h.key === "Escape" && u());
+      };
+      return (
+        window.addEventListener("keydown", m),
+        () => window.removeEventListener("keydown", m)
+      );
+    }, [s, i, u]));
+  const c = tl[e],
+    g = c.tone === "main" ? "bg-main text-bg-light" : "bg-bg-light text-ink";
+  return o.jsxs("div", {
+    ref: l,
+    role: "dialog",
+    "aria-modal": "true",
+    "aria-label": r.nav.present,
+    className: `fixed inset-0 z-50 flex flex-col ${g}`,
+    children: [
+      o.jsxs("div", {
+        className: "flex items-center justify-between px-6 py-4",
+        children: [
+          o.jsx(Ql, { size: 28, onDark: c.tone === "main" }),
+          o.jsxs("button", {
+            type: "button",
+            onClick: u,
+            className: `btn min-h-[44px] px-4 text-small ${c.tone === "main" ? "bg-bg-light text-main" : "btn-second"}`,
+            children: [
+              o.jsx(md, { size: 18, "aria-hidden": "true" }),
+              " ",
+              r.present.exit,
+            ],
+          }),
+        ],
+      }),
+      o.jsx(
+        "div",
+        {
+          className: "flex flex-1 items-center overflow-y-auto py-8",
+          children: o.jsx("div", {
+            className: "w-full",
+            children: o.jsx(c.Component, {}),
+          }),
+        },
+        c.id,
+      ),
+      o.jsxs("div", {
+        className: "flex items-center justify-between gap-4 px-6 py-4",
+        children: [
+          o.jsx("span", {
+            className: "hidden text-small md:inline",
+            children: r.present.hint,
+          }),
+          o.jsx("div", {
+            className: "flex items-center gap-1",
+            "aria-hidden": "true",
+            children: tl.map((m, h) =>
+              o.jsx(
+                "span",
+                {
+                  className: `h-2 rounded-full transition-all ${h === e ? "w-6 bg-accent" : `w-2 ${c.tone === "main" ? "bg-bg-light/50" : "bg-line"}`}`,
+                },
+                m.id,
+              ),
+            ),
+          }),
+          o.jsxs("div", {
+            className: "flex items-center gap-2",
+            children: [
+              o.jsxs("span", {
+                className: "text-small font-semibold",
+                "aria-live": "polite",
+                children: [e + 1, " / ", a],
+              }),
+              o.jsx("button", {
+                type: "button",
+                onClick: i,
+                disabled: e === 0,
+                "aria-label": r.present.prev,
+                className: `flex h-11 w-11 items-center justify-center rounded-sm disabled:opacity-40 ${c.tone === "main" ? "bg-bg-light text-main" : "border border-line text-main"}`,
+                children: o.jsx(uh, { "aria-hidden": "true" }),
+              }),
+              o.jsx("button", {
+                type: "button",
+                onClick: s,
+                disabled: e === a - 1,
+                "aria-label": r.present.next,
+                className: `flex h-11 w-11 items-center justify-center rounded-sm disabled:opacity-40 ${c.tone === "main" ? "bg-bg-light text-main" : "bg-main text-bg-light"}`,
+                children: o.jsx(ch, { "aria-hidden": "true" }),
+              }),
+            ],
+          }),
+        ],
+      }),
+    ],
+  });
+}
+function qh() {
+  const [e, t] = y.useState(!1),
+    [n, r] = y.useState(0),
+    l = lt(),
+    a = Gt(),
+    i = tl.filter((s) => s.id !== "model");
+  return (
+    y.useEffect(() => {
+      var u;
+      const s = (u = l.state) == null ? void 0 : u.scrollTo;
+      s &&
+        (requestAnimationFrame(() => {
+          var c;
+          return (c = document.getElementById(s)) == null
+            ? void 0
+            : c.scrollIntoView({ behavior: "smooth" });
+        }),
+        a(".", { replace: !0, state: null }));
+    }, [l.state, a]),
+    y.useEffect(() => {
+      if (new URLSearchParams(window.location.search).get("present") === "1") {
+        (r(0), t(!0));
+      }
+    }, []),
+    o.jsxs(o.Fragment, {
+      children: [
+        o.jsx(ko, {}),
+        o.jsx("main", {
+          children: i.map(({ id: s, tone: u, Component: c }, g) =>
+            o.jsx(
+              "section",
+              {
+                id: s,
+                className: `section ${u === "main" ? "bg-main text-bg-light" : g > 0 ? "border-t border-line" : ""}`,
+                children: o.jsx(c, {}),
+              },
+              s,
+            ),
+          ),
+        }),
+        o.jsx(So, {}),
+        e &&
+          o.jsx(Qh, {
+            index: n,
+            setIndex: r,
+            onExit: () => {
+              t(!1);
+              const s = new URL(window.location.href);
+              s.searchParams.delete("present");
+              history.replaceState(
+                history.state,
+                "",
+                s.pathname + s.search + s.hash,
+              );
+            },
+          }),
+      ],
+    })
+  );
+}
+function _l({ children: e, wide: t = !1 }) {
+  const { t: n } = F(),
+    { isDemo: r } = Yt();
+  return o.jsxs("div", {
+    className: "flex min-h-screen flex-col",
+    children: [
+      o.jsx("header", {
+        className: "border-b border-line",
+        children: o.jsxs("div", {
+          className: "container-mb flex items-center justify-between py-3",
+          children: [
+            o.jsx(Fe, {
+              to: "/",
+              "aria-label": "MindBloom home",
+              children: o.jsx(Ql, { size: 32 }),
+            }),
+            o.jsx(Pl, {}),
+          ],
+        }),
+      }),
+      o.jsx("main", {
+        className: "flex flex-1 items-start justify-center px-6 py-12 md:py-16",
+        children: o.jsxs("div", {
+          className: `w-full ${t ? "max-w-[720px]" : "max-w-[460px]"} flex flex-col gap-6`,
+          children: [
+            e,
+            r &&
+              o.jsx("p", {
+                className: "hint text-center",
+                children: n.auth.demo,
+              }),
+          ],
+        }),
+      }),
+    ],
+  });
+}
+function No({ id: e, value: t, onChange: n, autoComplete: r }) {
+  const { t: l } = F(),
+    [a, i] = y.useState(!1);
+  return o.jsxs("div", {
+    className: "relative",
+    children: [
+      o.jsx("input", {
+        id: e,
+        type: a ? "text" : "password",
+        className: "input pr-14",
+        value: t,
+        autoComplete: r,
+        onChange: (s) => n(s.target.value),
+        "aria-describedby": `${e}-hint`,
+      }),
+      o.jsx("button", {
+        type: "button",
+        onClick: () => i((s) => !s),
+        "aria-label": a ? l.auth.hide : l.auth.show,
+        "aria-pressed": a,
+        className:
+          "absolute right-1 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-sm text-ink-soft hover:text-main",
+        children: a
+          ? o.jsx(fh, { size: 20, "aria-hidden": "true" })
+          : o.jsx(ph, { size: 20, "aria-hidden": "true" }),
+      }),
+    ],
+  });
+}
+function kd() {
+  return o.jsxs("svg", {
+    width: "20",
+    height: "20",
+    viewBox: "0 0 48 48",
+    "aria-hidden": "true",
+    children: [
+      o.jsx("path", {
+        fill: "#EA4335",
+        d: "M24 9.5c3.5 0 6.6 1.2 9 3.6l6.7-6.7C35.6 2.4 30.2 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.8 6C12.4 13.4 17.7 9.5 24 9.5z",
+      }),
+      o.jsx("path", {
+        fill: "#4285F4",
+        d: "M46.1 24.6c0-1.6-.1-3.1-.4-4.6H24v9h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.4 5.7c4.3-4 6.9-9.9 6.9-17z",
+      }),
+      o.jsx("path", {
+        fill: "#FBBC05",
+        d: "M10.5 28.7c-.5-1.4-.8-3-.8-4.7s.3-3.2.8-4.7l-7.8-6C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.8-6z",
+      }),
+      o.jsx("path", {
+        fill: "#34A853",
+        d: "M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.4-5.7c-2.1 1.4-4.8 2.2-8.5 2.2-6.3 0-11.6-3.9-13.5-9.8l-7.8 6C6.6 42.6 14.6 48 24 48z",
+      }),
+    ],
+  });
+}
+function Kh() {
+  var j;
+  const { t: e } = F(),
+    t = e.auth,
+    { user: n, profile: r, signUp: l, signInWithGoogle: a, isDemo: i } = Yt(),
+    s = Gt(),
+    u = (j = lt().state) == null ? void 0 : j.deleted,
+    [c, g] = y.useState(""),
+    [m, h] = y.useState(""),
+    [v, x] = y.useState(null),
+    [k, C] = y.useState(!1),
+    [f, d] = y.useState(!1);
+  y.useEffect(() => {
+    n && r && s(r.completed ? "/account" : "/welcome", { replace: !0 });
+  }, [n, r, s]);
+  const p = async (N) => {
+      if ((N.preventDefault(), !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c))) {
+        x("email");
+        return;
+      }
+      (C(!0), x(null));
+      const _ = await l(c, m);
+      if ((C(!1), _.error)) {
+        x(_.error);
+        return;
+      }
+      i || d(!0);
+    },
+    w = async () => {
+      C(!0);
+      const N = await a();
+      (C(!1), N.error && x(N.error));
+    };
+  return o.jsxs(_l, {
+    children: [
+      u &&
+        o.jsxs("p", {
+          role: "status",
+          className: "card flex items-center gap-2 text-small font-semibold",
+          children: [
+            o.jsx(Sr, {
+              size: 18,
+              className: "text-main",
+              "aria-hidden": "true",
+            }),
+            " ",
+            e.account.deleted,
+          ],
+        }),
+      o.jsxs("div", {
+        className: "flex flex-col gap-2",
+        children: [
+          o.jsx("h1", { className: "text-h2 text-ink", children: t.joinTitle }),
+          o.jsx("p", { className: "text-ink-soft", children: t.joinBody }),
+        ],
+      }),
+      f
+        ? o.jsx("p", {
+            role: "status",
+            className: "card font-semibold",
+            children: t.checkEmail,
+          })
+        : o.jsxs(o.Fragment, {
+            children: [
+              o.jsxs("button", {
+                type: "button",
+                onClick: w,
+                disabled: k,
+                className:
+                  "btn w-full border border-line bg-white text-ink hover:border-main",
+                children: [o.jsx(kd, {}), " ", t.google],
+              }),
+              o.jsxs("div", {
+                className: "flex items-center gap-4 text-small text-ink-soft",
+                "aria-hidden": "true",
+                children: [
+                  o.jsx("span", { className: "h-px flex-1 bg-line" }),
+                  " ",
+                  t.or,
+                  " ",
+                  o.jsx("span", { className: "h-px flex-1 bg-line" }),
+                ],
+              }),
+              o.jsxs("form", {
+                onSubmit: p,
+                noValidate: !0,
+                className: "flex flex-col gap-4",
+                children: [
+                  o.jsx("p", {
+                    className: "label text-ink-soft",
+                    children: t.emailSignup,
+                  }),
+                  o.jsxs("div", {
+                    className: "flex flex-col gap-2",
+                    children: [
+                      o.jsx("label", {
+                        htmlFor: "j-email",
+                        className: "field-label",
+                        children: t.email,
+                      }),
+                      o.jsx("input", {
+                        id: "j-email",
+                        type: "email",
+                        className: "input",
+                        autoComplete: "email",
+                        value: c,
+                        onChange: (N) => g(N.target.value),
+                      }),
+                    ],
+                  }),
+                  o.jsxs("div", {
+                    className: "flex flex-col gap-2",
+                    children: [
+                      o.jsx("label", {
+                        htmlFor: "j-pass",
+                        className: "field-label",
+                        children: t.password,
+                      }),
+                      o.jsx(No, {
+                        id: "j-pass",
+                        value: m,
+                        onChange: h,
+                        autoComplete: "new-password",
+                      }),
+                      o.jsx("span", {
+                        id: "j-pass-hint",
+                        className: "hint",
+                        children: t.passwordHint,
+                      }),
+                    ],
+                  }),
+                  v &&
+                    o.jsxs("p", {
+                      role: "alert",
+                      className: "error",
+                      children: [
+                        t.errors[v],
+                        " ",
+                        v === "exists" &&
+                          o.jsx(Fe, {
+                            to: "/signin",
+                            className: "underline",
+                            children: t.signInLink,
+                          }),
+                      ],
+                    }),
+                  o.jsx("button", {
+                    type: "submit",
+                    disabled: k,
+                    className: "btn-main w-full",
+                    children: t.create,
+                  }),
+                ],
+              }),
+            ],
+          }),
+      o.jsxs("p", {
+        className: "text-center text-small text-ink-soft",
+        children: [
+          t.haveAccount,
+          " ",
+          o.jsx(Fe, {
+            to: "/signin",
+            className: "font-semibold text-main underline",
+            children: t.signInLink,
+          }),
+        ],
+      }),
+    ],
+  });
+}
+function Gh() {
+  const { t: e } = F(),
+    t = e.auth,
+    {
+      user: n,
+      profile: r,
+      signIn: l,
+      signInWithGoogle: a,
+      resetPassword: i,
+    } = Yt(),
+    s = Gt(),
+    [u, c] = y.useState(""),
+    [g, m] = y.useState(""),
+    [h, v] = y.useState(null),
+    [x, k] = y.useState(null),
+    [C, f] = y.useState(!1);
+  y.useEffect(() => {
+    n && r && s(r.completed ? "/account" : "/welcome", { replace: !0 });
+  }, [n, r, s]);
+  const d = async (w) => {
+      (w.preventDefault(), f(!0), v(null), k(null));
+      const j = await l(u, g);
+      (f(!1), j.error && v(j.error));
+    },
+    p = async () => {
+      if ((v(null), !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(u))) {
+        k(t.resetNeedEmail);
+        return;
+      }
+      const R = await i(u);
+      if (R.error) {
+        v(R.error);
+        return;
+      }
+      k(t.resetSent);
+    };
+  return o.jsxs(_l, {
+    children: [
+      o.jsxs("div", {
+        className: "flex flex-col gap-2",
+        children: [
+          o.jsx("h1", {
+            className: "text-h2 text-ink",
+            children: t.signInTitle,
+          }),
+          o.jsx("p", { className: "text-ink-soft", children: t.signInBody }),
+        ],
+      }),
+      o.jsxs("button", {
+        type: "button",
+        onClick: async () => {
+          const w = await a();
+          w.error && v(w.error);
+        },
+        className:
+          "btn w-full border border-line bg-white text-ink hover:border-main",
+        children: [o.jsx(kd, {}), " ", t.google],
+      }),
+      o.jsxs("div", {
+        className: "flex items-center gap-4 text-small text-ink-soft",
+        "aria-hidden": "true",
+        children: [
+          o.jsx("span", { className: "h-px flex-1 bg-line" }),
+          " ",
+          t.or,
+          " ",
+          o.jsx("span", { className: "h-px flex-1 bg-line" }),
+        ],
+      }),
+      o.jsxs("form", {
+        onSubmit: d,
+        noValidate: !0,
+        className: "flex flex-col gap-4",
+        children: [
+          o.jsxs("div", {
+            className: "flex flex-col gap-2",
+            children: [
+              o.jsx("label", {
+                htmlFor: "s-email",
+                className: "field-label",
+                children: t.email,
+              }),
+              o.jsx("input", {
+                id: "s-email",
+                type: "email",
+                className: "input",
+                autoComplete: "email",
+                value: u,
+                onChange: (w) => c(w.target.value),
+              }),
+            ],
+          }),
+          o.jsxs("div", {
+            className: "flex flex-col gap-2",
+            children: [
+              o.jsxs("div", {
+                className: "flex items-center justify-between",
+                children: [
+                  o.jsx("label", {
+                    htmlFor: "s-pass",
+                    className: "field-label",
+                    children: t.password,
+                  }),
+                  o.jsx("button", {
+                    type: "button",
+                    onClick: p,
+                    className:
+                      "min-h-[44px] text-small font-semibold text-main underline",
+                    children: t.forgot,
+                  }),
+                ],
+              }),
+              o.jsx(No, {
+                id: "s-pass",
+                value: g,
+                onChange: m,
+                autoComplete: "current-password",
+              }),
+            ],
+          }),
+          h &&
+            o.jsx("p", {
+              role: "alert",
+              className: "error",
+              children: t.errors[h],
+            }),
+          x &&
+            o.jsx("p", {
+              role: "status",
+              className: "hint font-semibold",
+              children: x,
+            }),
+          o.jsx("button", {
+            type: "submit",
+            disabled: C,
+            className: "btn-main w-full",
+            children: t.signInBtn,
+          }),
+        ],
+      }),
+      o.jsxs("p", {
+        className: "text-center text-small text-ink-soft",
+        children: [
+          t.noAccount,
+          " ",
+          o.jsx(Fe, {
+            to: "/join",
+            className: "font-semibold text-main underline",
+            children: t.joinLink,
+          }),
+        ],
+      }),
+    ],
+  });
+}
+function Sd({ value: e, set: t, idPrefix: n }) {
+  const r = F().t.welcome;
+  return o.jsxs("div", {
+    className: "flex flex-col gap-6",
+    children: [
+      o.jsxs("div", {
+        className: "flex flex-col gap-2",
+        children: [
+          o.jsx("label", {
+            htmlFor: `${n}-name`,
+            className: "field-label",
+            children: r.firstName,
+          }),
+          o.jsx("input", {
+            id: `${n}-name`,
+            className: "input",
+            autoComplete: "given-name",
+            value: e.parent_name,
+            onChange: (l) => t({ parent_name: l.target.value }),
+          }),
+        ],
+      }),
+      o.jsxs("fieldset", {
+        className: "flex flex-col gap-2",
+        children: [
+          o.jsx("legend", {
+            className: "field-label mb-2",
+            children: r.language,
+          }),
+          o.jsx("div", {
+            className: "flex flex-wrap gap-3",
+            children: vd.map((l) =>
+              o.jsxs(
+                "label",
+                {
+                  className: `flex min-h-[48px] cursor-pointer items-center gap-2 rounded-sm border px-4 ${e.language === l.code ? "border-2 border-main" : "border-line"}`,
+                  children: [
+                    o.jsx("input", {
+                      type: "radio",
+                      name: `${n}-lang`,
+                      className: "h-5 w-5 accent-main",
+                      checked: e.language === l.code,
+                      onChange: () => t({ language: l.code }),
+                    }),
+                    l.name,
+                  ],
+                },
+                l.code,
+              ),
+            ),
+          }),
+        ],
+      }),
+    ],
+  });
+}
+function jd({ value: e, set: t, idPrefix: n, ageError: r }) {
+  const l = F().t.welcome,
+    a = ["app", "centre", "both"];
+  return o.jsxs("div", {
+    className: "flex flex-col gap-6",
+    children: [
+      o.jsxs("div", {
+        className: "grid gap-6 sm:grid-cols-[1fr_160px]",
+        children: [
+          o.jsxs("div", {
+            className: "flex flex-col gap-2",
+            children: [
+              o.jsx("label", {
+                htmlFor: `${n}-child`,
+                className: "field-label",
+                children: l.childName,
+              }),
+              o.jsx("input", {
+                id: `${n}-child`,
+                className: "input",
+                autoComplete: "off",
+                value: e.child_name,
+                onChange: (i) => t({ child_name: i.target.value }),
+              }),
+            ],
+          }),
+          o.jsxs("div", {
+            className: "flex flex-col gap-2",
+            children: [
+              o.jsx("label", {
+                htmlFor: `${n}-age`,
+                className: "field-label",
+                children: l.childAge,
+              }),
+              o.jsx("input", {
+                id: `${n}-age`,
+                type: "number",
+                inputMode: "numeric",
+                min: 6,
+                max: 18,
+                className: "input",
+                "aria-invalid": r || void 0,
+                "aria-describedby": `${n}-age-hint`,
+                value: e.child_age ?? "",
+                onChange: (i) =>
+                  t({
+                    child_age:
+                      i.target.value === "" ? null : Number(i.target.value),
+                  }),
+              }),
+            ],
+          }),
+        ],
+      }),
+      o.jsx("p", {
+        id: `${n}-age-hint`,
+        className: r ? "error -mt-4" : "hint -mt-4",
+        children: r ? l.ageError : l.ageHint,
+      }),
+      o.jsxs("fieldset", {
+        className: "flex flex-col gap-3",
+        children: [
+          o.jsx("legend", {
+            className: "field-label mb-1",
+            children: l.interest,
+          }),
+          o.jsx("div", {
+            className: "grid gap-3 sm:grid-cols-3",
+            children: a.map((i) => {
+              const [s, u] = l.interests[i],
+                c = e.interest === i;
+              return o.jsxs(
+                "label",
+                {
+                  className: `flex cursor-pointer flex-col gap-1 rounded-md p-4 ${c ? "border-[3px] border-main" : "border border-line"}`,
+                  children: [
+                    o.jsxs("span", {
+                      className:
+                        "flex items-center gap-2 font-semibold text-ink",
+                      children: [
+                        o.jsx("input", {
+                          type: "radio",
+                          name: `${n}-interest`,
+                          className: "h-5 w-5 accent-main",
+                          checked: c,
+                          onChange: () => t({ interest: i }),
+                        }),
+                        s,
+                      ],
+                    }),
+                    o.jsx("span", {
+                      className: "text-small text-ink-soft",
+                      children: u,
+                    }),
+                  ],
+                },
+                i,
+              );
+            }),
+          }),
+        ],
+      }),
+    ],
+  });
+}
+const Nd = (e) => e !== null && Number.isInteger(e) && e >= 6 && e <= 18;
+function Yh() {
+  const { t: e, lang: t, setLang: n } = F(),
+    r = e.welcome,
+    { profile: l, saveProfile: a } = Yt(),
+    [i, s] = y.useState({ ...yn, language: t, ...(l ?? {}) }),
+    [u, c] = y.useState(l != null && l.completed ? 3 : 1),
+    [g, m] = y.useState(!1),
+    [h, v] = y.useState(!1),
+    [x, k] = y.useState(!1);
+  y.useEffect(() => {
+    l != null && l.completed && c(3);
+  }, [l == null ? void 0 : l.completed]);
+  const C = (p) => {
+      (s((w) => ({ ...w, ...p })), p.language && n(p.language));
+    },
+    f = (p) => {
+      (p.preventDefault(), c(2));
+    },
+    d = async (p) => {
+      p.preventDefault();
+      const w = Nd(i.child_age);
+      if ((m(!w), v(!i.consent), !w || !i.consent)) return;
+      k(!0);
+      const j = await a({ ...i, completed: !0 });
+      (k(!1), j.error || c(3));
+    };
+  return u === 3
+    ? o.jsxs(_l, {
+        wide: !0,
+        children: [
+          o.jsxs("div", {
+            className: "flex flex-col items-start gap-4",
+            children: [
+              o.jsx(dh, {
+                size: 48,
+                className: "text-main",
+                "aria-hidden": "true",
+              }),
+              o.jsx("h1", {
+                className: "text-h2 text-ink",
+                children: r.doneTitle,
+              }),
+              o.jsx("p", { className: "text-ink-soft", children: r.doneBody }),
+            ],
+          }),
+          o.jsxs("div", {
+            className: "card flex flex-col gap-4",
+            children: [
+              o.jsx("h2", {
+                className: "text-h3 text-ink",
+                children: r.nextTitle,
+              }),
+              o.jsx("ol", {
+                className: "flex flex-col gap-3",
+                children: r.nextSteps.map((p, w) =>
+                  o.jsxs(
+                    "li",
+                    {
+                      className: "flex items-center gap-3",
+                      children: [
+                        o.jsx("span", {
+                          className:
+                            "flex h-8 w-8 flex-none items-center justify-center rounded-full bg-main text-small font-semibold text-bg-light",
+                          children: w + 1,
+                        }),
+                        p,
+                      ],
+                    },
+                    p,
+                  ),
+                ),
+              }),
+            ],
+          }),
+          o.jsxs("div", {
+            className: "flex flex-wrap gap-4",
+            children: [
+              o.jsx(Fe, {
+                to: "/account",
+                className: "btn-main",
+                children: r.toAccount,
+              }),
+              o.jsx(Fe, {
+                to: "/",
+                className: "btn-second",
+                children: r.toHome,
+              }),
+            ],
+          }),
+        ],
+      })
+    : o.jsxs(_l, {
+        wide: !0,
+        children: [
+          o.jsxs("div", {
+            className: "flex flex-col gap-3",
+            children: [
+              o.jsxs("p", {
+                className: "label text-main",
+                children: [r.step, " ", u, " ", r.of, " 2"],
+              }),
+              o.jsx("div", {
+                className: "h-2 w-full rounded-full bg-line",
+                role: "progressbar",
+                "aria-valuemin": 1,
+                "aria-valuemax": 2,
+                "aria-valuenow": u,
+                "aria-label": `${r.step} ${u} ${r.of} 2`,
+                children: o.jsx("div", {
+                  className: "h-2 rounded-full bg-main transition-all",
+                  style: { width: u === 1 ? "50%" : "100%" },
+                }),
+              }),
+              o.jsx("h1", {
+                className: "text-h2 text-ink",
+                children: u === 1 ? r.s1Title : r.s2Title,
+              }),
+            ],
+          }),
+          u === 1
+            ? o.jsxs("form", {
+                onSubmit: f,
+                className: "flex flex-col gap-8",
+                children: [
+                  o.jsx(Sd, { value: i, set: C, idPrefix: "w" }),
+                  o.jsx("div", {
+                    children: o.jsx("button", {
+                      type: "submit",
+                      className: "btn-main",
+                      children: r.next,
+                    }),
+                  }),
+                ],
+              })
+            : o.jsxs("form", {
+                onSubmit: d,
+                noValidate: !0,
+                className: "flex flex-col gap-8",
+                children: [
+                  o.jsx(jd, { value: i, set: C, idPrefix: "w", ageError: g }),
+                  o.jsxs("div", {
+                    className: "flex flex-col gap-2",
+                    children: [
+                      o.jsxs("label", {
+                        className:
+                          "flex cursor-pointer items-start gap-3 text-small",
+                        children: [
+                          o.jsx("input", {
+                            type: "checkbox",
+                            className: "mt-0.5 h-5 w-5 accent-main",
+                            checked: i.consent,
+                            onChange: (p) => C({ consent: p.target.checked }),
+                            "aria-invalid": h || void 0,
+                          }),
+                          o.jsxs("span", {
+                            children: [
+                              o.jsx("span", { children: r.consentBefore + " " }),
+                              o.jsx("a", {
+                                href: privacyHref(t),
+                                className: "font-semibold text-main underline",
+                                children: r.consentLink,
+                              }),
+                              o.jsx("span", { children: " " + r.consentAfter }),
+                            ],
+                          }),
+                        ],
+                      }),
+                      h &&
+                        o.jsx("p", {
+                          role: "alert",
+                          className: "error",
+                          children: r.consentError,
+                        }),
+                      o.jsx("p", {
+                        className: "hint",
+                        children: r.privacyNote,
+                      }),
+                    ],
+                  }),
+                  o.jsxs("div", {
+                    className: "flex flex-wrap gap-4",
+                    children: [
+                      o.jsx("button", {
+                        type: "button",
+                        className: "btn-second",
+                        onClick: () => c(1),
+                        children: r.back,
+                      }),
+                      o.jsx("button", {
+                        type: "submit",
+                        disabled: x,
+                        className: "btn-main",
+                        children: r.finish,
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+        ],
+      });
+}
+function Xh() {
+  const { t: e, setLang: t } = F(),
+    n = e.account,
+    {
+      user: r,
+      profile: l,
+      saveProfile: a,
+      updatePassword: i,
+      deleteAccount: s,
+      signOut: u,
+    } = Yt(),
+    c = Gt(),
+    [g, m] = y.useState({ ...yn, ...(l ?? {}) });
+  y.useEffect(() => {
+    l && m({ ...yn, ...l });
+  }, [l]);
+  const [h, v] = y.useState(!1),
+    [x, k] = y.useState(!1),
+    [C, f] = y.useState(""),
+    [d, p] = y.useState(null),
+    [w, j] = y.useState(null),
+    [N, _] = y.useState(!1),
+    [T, U] = y.useState(""),
+    [z, me] = y.useState(!1),
+    at = (we) => {
+      (m((qe) => ({ ...qe, ...we })), v(!1));
+    },
+    Lt = async (we) => {
+      if ((we.preventDefault(), !Nd(g.child_age))) {
+        k(!0);
+        return;
+      }
+      (k(!1), (await a(g)).error || (v(!0), t(g.language)));
+    },
+    jr = async (we) => {
+      (we.preventDefault(), p(null), j(null));
+      const qe = await i(C);
+      qe.error ? j(qe.error) : (f(""), p(n.passwordChanged));
+    },
+    ql = async () => {
+      me(!0);
+      const we = await s();
+      (me(!1), we.error || c("/join", { replace: !0, state: { deleted: !0 } }));
+    };
+  return o.jsxs(o.Fragment, {
+    children: [
+      o.jsx(ko, {}),
+      o.jsxs("main", {
+        className:
+          "container-mb flex max-w-[800px] flex-col gap-10 py-12 md:py-16",
+        children: [
+          o.jsxs("div", {
+            className: "flex flex-wrap items-end justify-between gap-4",
+            children: [
+              o.jsxs("div", {
+                className: "flex flex-col gap-2",
+                children: [
+                  o.jsx("h1", {
+                    className: "text-h2 text-ink",
+                    children: n.title,
+                  }),
+                  o.jsxs("p", {
+                    className: "text-ink-soft",
+                    children: [
+                      n.signedInAs,
+                      " ",
+                      o.jsx("span", {
+                        className: "font-semibold text-ink",
+                        children: r == null ? void 0 : r.email,
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+              o.jsxs("button", {
+                type: "button",
+                className: "btn-second",
+                onClick: async () => {
+                  (await u(), c("/"));
+                },
+                children: [
+                  o.jsx(hh, { size: 18, "aria-hidden": "true" }),
+                  " ",
+                  n.signOut,
+                ],
+              }),
+            ],
+          }),
+          o.jsxs("form", {
+            onSubmit: Lt,
+            noValidate: !0,
+            className: "flex flex-col gap-8",
+            children: [
+              o.jsxs("section", {
+                className: "card flex flex-col gap-6 p-6 md:p-8",
+                "aria-labelledby": "acc-parent",
+                children: [
+                  o.jsx("h2", {
+                    id: "acc-parent",
+                    className: "text-h3 text-ink",
+                    children: n.parent,
+                  }),
+                  o.jsx(Sd, { value: g, set: at, idPrefix: "a" }),
+                ],
+              }),
+              o.jsxs("section", {
+                className: "card flex flex-col gap-6 p-6 md:p-8",
+                "aria-labelledby": "acc-child",
+                children: [
+                  o.jsx("h2", {
+                    id: "acc-child",
+                    className: "text-h3 text-ink",
+                    children: n.child,
+                  }),
+                  o.jsx(jd, { value: g, set: at, idPrefix: "a", ageError: x }),
+                ],
+              }),
+              o.jsxs("div", {
+                className: "flex items-center gap-4",
+                children: [
+                  o.jsx("button", {
+                    type: "submit",
+                    className: "btn-main",
+                    children: n.save,
+                  }),
+                  h &&
+                    o.jsxs("span", {
+                      role: "status",
+                      className:
+                        "flex items-center gap-2 font-semibold text-main",
+                      children: [
+                        o.jsx(Sr, { size: 18, "aria-hidden": "true" }),
+                        " ",
+                        n.saved,
+                      ],
+                    }),
+                ],
+              }),
+            ],
+          }),
+          o.jsxs("form", {
+            onSubmit: jr,
+            className: "card flex flex-col gap-4 p-6 md:p-8",
+            "aria-labelledby": "acc-pw",
+            children: [
+              o.jsx("h2", {
+                id: "acc-pw",
+                className: "text-h3 text-ink",
+                children: n.passwordTitle,
+              }),
+              o.jsxs("div", {
+                className: "flex flex-col gap-2",
+                children: [
+                  o.jsx("label", {
+                    htmlFor: "a-pw",
+                    className: "field-label",
+                    children: n.newPassword,
+                  }),
+                  o.jsx(No, {
+                    id: "a-pw",
+                    value: C,
+                    onChange: f,
+                    autoComplete: "new-password",
+                  }),
+                  o.jsx("span", {
+                    id: "a-pw-hint",
+                    className: "hint",
+                    children: e.auth.passwordHint,
+                  }),
+                ],
+              }),
+              w &&
+                o.jsx("p", {
+                  role: "alert",
+                  className: "error",
+                  children: e.auth.errors[w],
+                }),
+              d &&
+                o.jsx("p", {
+                  role: "status",
+                  className: "font-semibold text-main",
+                  children: d,
+                }),
+              o.jsx("div", {
+                children: o.jsx("button", {
+                  type: "submit",
+                  className: "btn-second",
+                  children: n.changePassword,
+                }),
+              }),
+            ],
+          }),
+          o.jsxs("section", {
+            className:
+              "flex flex-col gap-4 rounded-md border-2 border-ink p-6 md:p-8",
+            "aria-labelledby": "acc-del",
+            children: [
+              o.jsx("h2", {
+                id: "acc-del",
+                className: "text-h3 text-ink",
+                children: n.dangerTitle,
+              }),
+              o.jsx("p", {
+                className: "text-ink-soft",
+                children: n.dangerBody,
+              }),
+              N
+                ? o.jsxs("div", {
+                    className: "flex flex-col gap-4",
+                    children: [
+                      o.jsx("label", {
+                        htmlFor: "a-del",
+                        className: "field-label",
+                        children: n.confirm,
+                      }),
+                      o.jsx("input", {
+                        id: "a-del",
+                        className: "input max-w-[280px]",
+                        value: T,
+                        onChange: (we) => U(we.target.value),
+                        autoComplete: "off",
+                      }),
+                      o.jsxs("div", {
+                        className: "flex flex-wrap gap-4",
+                        children: [
+                          o.jsx("button", {
+                            type: "button",
+                            className: "btn bg-ink text-bg-light",
+                            disabled:
+                              T.trim().toUpperCase() !== n.confirmWord || z,
+                            onClick: ql,
+                            children: n.confirmBtn,
+                          }),
+                          o.jsx("button", {
+                            type: "button",
+                            className: "btn-second",
+                            onClick: () => {
+                              (_(!1), U(""));
+                            },
+                            children: n.cancel,
+                          }),
+                        ],
+                      }),
+                    ],
+                  })
+                : o.jsx("div", {
+                    children: o.jsxs("button", {
+                      type: "button",
+                      className:
+                        "btn border-2 border-ink text-ink hover:bg-ink hover:text-bg-light",
+                      onClick: () => _(!0),
+                      children: [
+                        o.jsx(jh, { size: 18, "aria-hidden": "true" }),
+                        " ",
+                        n.deleteBtn,
+                      ],
+                    }),
+                  }),
+            ],
+          }),
+        ],
+      }),
+      o.jsx(So, {}),
+    ],
+  });
+}
+function Jh() {
+  const { t: e } = F();
+  return o.jsxs(o.Fragment, {
+    children: [
+      o.jsx(ko, {}),
+      o.jsxs("main", {
+        className:
+          "container-mb flex min-h-[60vh] flex-col items-start justify-center gap-6 py-24",
+        children: [
+          o.jsx(hd, { size: 64 }),
+          o.jsx("p", { className: "label text-main", children: "404" }),
+          o.jsx("h1", {
+            className: "text-h2 text-ink",
+            children: e.notFound.title,
+          }),
+          o.jsx("p", { className: "text-ink-soft", children: e.notFound.body }),
+          o.jsx(Fe, {
+            to: "/",
+            className: "btn-main",
+            children: e.notFound.home,
+          }),
+        ],
+      }),
+      o.jsx(So, {}),
+    ],
+  });
+}
+function Zh() {
+  const { pathname: e } = lt();
+  return (
+    y.useEffect(() => {
+      window.scrollTo(0, 0);
+      if (window.location.pathname !== e) {
+        const t = new URL(window.location.href);
+        t.pathname = e;
+        history.pushState(history.state, "", t.pathname + t.search + t.hash);
+      }
+    }, [e]),
+    null
+  );
+}
+function MbPrivacy() {
+  const { t: e } = F(),
+    t = e.privacy;
+  return o.jsxs(o.Fragment, {
+    children: [
+      o.jsx(ko, {}),
+      o.jsxs("main", {
+        className:
+          "container-mb privacy-prose flex max-w-[760px] flex-col gap-4 py-12 md:py-16",
+        children: [
+          o.jsx("p", { className: "label text-main", children: t.label }),
+          o.jsx("h1", { className: "text-h2 text-ink", children: t.title }),
+          o.jsx("p", { className: "hint", children: t.updated }),
+          o.jsx("p", { children: t.intro }),
+          t.sections.map((n) =>
+            o.jsxs(
+              "section",
+              {
+                className: "flex flex-col gap-2",
+                children: [
+                  o.jsx("h2", { children: n.h }),
+                  (n.paragraphs || []).map((r) => o.jsx("p", { children: r }, r)),
+                  n.items &&
+                    o.jsx("ul", {
+                      children: n.items.map((r) =>
+                        o.jsx("li", { children: r }, r),
+                      ),
+                    }),
+                  (n.after || []).map((r) => o.jsx("p", { children: r }, r)),
+                ],
+              },
+              n.h,
+            ),
+          ),
+          o.jsxs("section", {
+            className: "flex flex-col gap-2",
+            children: [
+              o.jsx("h2", { children: t.contactTitle }),
+              o.jsx("p", { children: t.contactBody }),
+              o.jsx("p", {
+                children: o.jsx("span", {
+                  className: "todo-email",
+                  children: t.contactEmail,
+                }),
+              }),
+              o.jsx("p", {
+                className: "font-semibold text-ink",
+                children: t.contactTodo,
+              }),
+            ],
+          }),
+          o.jsx("a", {
+            href: "/",
+            className: "btn-main self-start",
+            children: e.notFound.home,
+          }),
+        ],
+      }),
+      o.jsx(So, {}),
+    ],
+  });
+}
+function $s({ children: e }) {
+  const { user: t, loading: n } = Yt();
+  return n
+    ? o.jsx("div", {
+        className: "container-mb py-24 text-ink-soft",
+        children: "…",
+      })
+    : t
+      ? e
+      : o.jsx(Hm, { to: "/signin", replace: !0 });
+}
+function eg() {
+  return o.jsxs(o.Fragment, {
+    children: [
+      o.jsx(Zh, {}),
+      o.jsxs(qm, {
+        children: [
+          o.jsx(Ot, { path: "/", element: o.jsx(qh, {}) }),
+          o.jsx(Ot, { path: "/privacy", element: o.jsx(MbPrivacy, {}) }),
+          o.jsx(Ot, { path: "/join", element: o.jsx(Kh, {}) }),
+          o.jsx(Ot, { path: "/signin", element: o.jsx(Gh, {}) }),
+          o.jsx(Ot, {
+            path: "/welcome",
+            element: o.jsx($s, { children: o.jsx(Yh, {}) }),
+          }),
+          o.jsx(Ot, {
+            path: "/account",
+            element: o.jsx($s, { children: o.jsx(Xh, {}) }),
+          }),
+          o.jsx(Ot, { path: "*", element: o.jsx(Jh, {}) }),
+        ],
+      }),
+    ],
+  });
+}
+const tg = Vm;
+Na.createRoot(document.getElementById("root")).render(
+  o.jsx(Zs.StrictMode, {
+    children: o.jsx(tg, {
+      initialEntries: [window.location.pathname],
+      children: o.jsx(Lh, { children: o.jsx(zh, { children: o.jsx(eg, {}) }) }),
+    }),
+  }),
+);
