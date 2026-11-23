@@ -1,4 +1,6 @@
-FROM caddy:2-alpine
-COPY Caddyfile /etc/caddy/Caddyfile
-COPY index.html favicon.svg /srv/
-COPY assets /srv/assets
+FROM oven/bun:1-alpine
+WORKDIR /app
+COPY server.ts ./
+COPY public ./public
+ENV NODE_ENV=production
+CMD ["bun", "run", "server.ts"]
