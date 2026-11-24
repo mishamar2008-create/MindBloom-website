@@ -315,6 +315,17 @@ const Q = {
       quoteSource:
         "Mother of an 8-year-old, quoted by a school counsellor · Infosal, 2016",
     },
+    photos: {
+      hero: "Two children doing homework together at a wooden table at home.",
+      study: "A teenager reads a textbook in a bright classroom.",
+      focus:
+        "A child concentrates on writing in a notebook, with a clock on the table.",
+      friends: "Three girls sit together reading one book.",
+      space:
+        "Illustrative photo of an empty study room with tables and daylight. This is not the MindBloom centre.",
+      spaceCaption:
+        "Illustrative image. The Barcelona centre is not open yet.",
+    },
     problem: {
       label: "The problem",
       title: "Help comes in pieces. Parents hold them together.",
@@ -700,6 +711,17 @@ const Q = {
       quoteTranslation: "Las tardes de deberes no tienen fin.",
       quoteSource:
         "Madre de un niño de 8 años, citada por una orientadora escolar · Infosal, 2016",
+    },
+    photos: {
+      hero: "Dos niños haciendo los deberes juntos en una mesa de madera, en casa.",
+      study: "Una adolescente lee un libro de texto en un aula luminosa.",
+      focus:
+        "Una niña concentrada escribe en un cuaderno, con un reloj sobre la mesa.",
+      friends: "Tres niñas leen juntas un libro, sentadas una al lado de la otra.",
+      space:
+        "Foto ilustrativa de una sala de estudio vacía, con mesas y luz natural. No es el centro de MindBloom.",
+      spaceCaption:
+        "Imagen ilustrativa. El centro de Barcelona aún no está abierto.",
     },
     problem: {
       label: "El problema",
@@ -1093,6 +1115,17 @@ const Q = {
       quoteTranslation: "Les tardes de deures no s'acaben mai.",
       quoteSource:
         "Mare d'un infant de 8 anys, citada per una orientadora escolar · Infosal, 2016",
+    },
+    photos: {
+      hero: "Dos infants fent els deures junts en una taula de fusta, a casa.",
+      study: "Una adolescent llegeix un llibre de text en una aula lluminosa.",
+      focus:
+        "Una nena concentrada escriu en una llibreta, amb un rellotge sobre la taula.",
+      friends: "Tres nenes llegeixen juntes un llibre, assegudes una al costat de l'altra.",
+      space:
+        "Foto il·lustrativa d'una sala d'estudi buida, amb taules i llum natural. No és el centre de MindBloom.",
+      spaceCaption:
+        "Imatge il·lustrativa. El centre de Barcelona encara no està obert.",
     },
     problem: {
       label: "El problema",
@@ -2220,6 +2253,33 @@ function Xt({ label: e, title: t, body: n, onDark: r = !1 }) {
     ],
   });
 }
+function MbPicture({
+  name: e,
+  alt: t,
+  eager: n = !1,
+  sizes: r,
+  widths: l,
+}) {
+  const a = (i, s) => `/images/${e}-${s}.${i}`,
+    u = (i) => l.map((s) => `${a(i, s)} ${s}w`).join(", ");
+  return o.jsxs("picture", {
+    children: [
+      o.jsx("source", { type: "image/avif", srcSet: u("avif"), sizes: r }),
+      o.jsx("source", { type: "image/webp", srcSet: u("webp"), sizes: r }),
+      o.jsx("img", {
+        className: "mb-photo",
+        src: a("webp", 768),
+        alt: t,
+        width: 1152,
+        height: 768,
+        sizes: r,
+        loading: n ? "eager" : "lazy",
+        decoding: "async",
+        ...(n ? { fetchPriority: "high" } : {}),
+      }),
+    ],
+  });
+}
 function Dh() {
   const { t: e } = F(),
     t = wo(),
@@ -2262,7 +2322,20 @@ function Dh() {
           }),
         ],
       }),
-      o.jsxs("figure", {
+      o.jsxs("div", {
+        className: "flex flex-col gap-6",
+        children: [
+          o.jsx("div", {
+            className: "mb-photo-frame",
+            children: o.jsx(MbPicture, {
+              name: "hero",
+              alt: e.photos.hero,
+              eager: !0,
+              sizes: "(min-width: 1024px) 520px, calc(100vw - 3rem)",
+              widths: [480, 768, 1152],
+            }),
+          }),
+          o.jsxs("figure", {
         className:
           "flex flex-col gap-6 rounded-lg bg-bg-dark p-8 text-bg-light md:p-12",
         children: [
@@ -2278,6 +2351,8 @@ function Dh() {
             className: "text-small",
             children: n.quoteSource,
           }),
+        ],
+      }),
         ],
       }),
     ],
@@ -2343,33 +2418,49 @@ function Ah() {
 function Uh() {
   const { t: e } = F(),
     t = e.solution,
-    n = [ih, Sh, Eh];
+    n = [ih, Sh, Eh],
+    r = ["study", "focus", "friends"];
   return o.jsxs("div", {
     className: "container-mb flex flex-col gap-12",
     children: [
       o.jsx(Xt, { label: t.label, title: t.title, body: t.body }),
       o.jsx("div", {
         className: "grid gap-6 md:grid-cols-3",
-        children: t.cards.map((r, l) => {
-          const a = n[l];
+        children: t.cards.map((l, a) => {
+          const i = n[a],
+            s = r[a];
           return o.jsxs(
             "div",
             {
-              className: "card flex flex-col gap-4",
+              className: "card card-photo flex flex-col",
               children: [
-                o.jsx(a, {
-                  size: 32,
-                  className: "text-main",
-                  "aria-hidden": "true",
+                o.jsx("div", {
+                  className: "card-media",
+                  children: o.jsx(MbPicture, {
+                    name: s,
+                    alt: e.photos[s],
+                    sizes: "(min-width: 768px) 30vw, calc(100vw - 3rem)",
+                    widths: [480, 768],
+                  }),
                 }),
-                o.jsx("h3", {
-                  className: "text-h3 text-ink",
-                  children: r.title,
+                o.jsxs("div", {
+                  className: "card-body",
+                  children: [
+                    o.jsx(i, {
+                      size: 32,
+                      className: "text-main",
+                      "aria-hidden": "true",
+                    }),
+                    o.jsx("h3", {
+                      className: "text-h3 text-ink",
+                      children: l.title,
+                    }),
+                    o.jsx("p", { className: "text-ink-soft", children: l.body }),
+                  ],
                 }),
-                o.jsx("p", { className: "text-ink-soft", children: r.body }),
               ],
             },
-            r.title,
+            l.title,
           );
         }),
       }),
@@ -2379,12 +2470,28 @@ function Uh() {
 function bh() {
   const { t: e } = F(),
     t = e.product,
-    n = ({ title: r, items: l }) =>
+    n = ({ title: r, items: l, photo: a, caption: i }) =>
       o.jsxs("div", {
         className: "flex flex-col gap-4",
         children: [
           o.jsx("h3", { className: "text-h3 text-ink", children: r }),
-          l.map(([a, i]) =>
+          a &&
+            o.jsxs("figure", {
+              className: "flex flex-col gap-2",
+              children: [
+                o.jsx("div", {
+                  className: "mb-photo-frame",
+                  children: o.jsx(MbPicture, {
+                    name: a,
+                    alt: e.photos.space,
+                    sizes: "(min-width: 1024px) 420px, calc(100vw - 3rem)",
+                    widths: [480, 768, 1152],
+                  }),
+                }),
+                o.jsx("figcaption", { className: "hint", children: i }),
+              ],
+            }),
+          l.map(([s, u]) =>
             o.jsxs(
               "div",
               {
@@ -2392,15 +2499,15 @@ function bh() {
                 children: [
                   o.jsx("p", {
                     className: "font-semibold text-ink",
-                    children: a,
+                    children: s,
                   }),
                   o.jsx("p", {
                     className: "text-small text-ink-soft",
-                    children: i,
+                    children: u,
                   }),
                 ],
               },
-              a,
+              s,
             ),
           ),
         ],
@@ -2423,7 +2530,12 @@ function bh() {
             className: "grid gap-8 md:grid-cols-2",
             children: [
               o.jsx(n, { title: t.appTitle, items: t.app }),
-              o.jsx(n, { title: t.centreTitle, items: t.centre }),
+              o.jsx(n, {
+                title: t.centreTitle,
+                items: t.centre,
+                photo: "space",
+                caption: e.photos.spaceCaption,
+              }),
             ],
           }),
         ],
