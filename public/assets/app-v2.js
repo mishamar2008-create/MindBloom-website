@@ -675,9 +675,8 @@ const Q = {
       contactTitle: "Contact",
       contactBody:
         "To use any of the rights above, or to ask a question about this policy, email:",
-      contactEmail: "TODO@mindbloom.example",
-      contactTodo:
-        "TODO: replace TODO@mindbloom.example with the real MindBloom contact email. The owner must review this policy text before treating it as final.",
+      contactEmail: "mishamar2008@gmail.com",
+      contactTodo: "This privacy policy is a draft.",
     },
   },
   Ph = {
@@ -1079,9 +1078,8 @@ const Q = {
       contactTitle: "Contacto",
       contactBody:
         "Para usar cualquiera de estos derechos, o para preguntar por esta política, escribe a:",
-      contactEmail: "TODO@mindbloom.example",
-      contactTodo:
-        "TODO: sustituir TODO@mindbloom.example por el correo real de MindBloom. Quien publica el sitio debe revisar este texto antes de darlo por definitivo.",
+      contactEmail: "mishamar2008@gmail.com",
+      contactTodo: "Esta política de privacidad es un borrador.",
     },
   },
   _h = {
@@ -1476,9 +1474,8 @@ const Q = {
       contactTitle: "Contacte",
       contactBody:
         "Per fer servir qualsevol d'aquests drets, o per preguntar per aquesta política, escriu a:",
-      contactEmail: "TODO@mindbloom.example",
-      contactTodo:
-        "TODO: substituir TODO@mindbloom.example pel correu real de MindBloom. Qui publica el web ha de revisar aquest text abans de donar-lo per definitiu.",
+      contactEmail: "mishamar2008@gmail.com",
+      contactTodo: "Aquesta política de privacitat és un esborrany.",
     },
   },
   gd = { en: Ch, es: Ph, ca: _h },
@@ -4238,8 +4235,9 @@ function MbPrivacy() {
               o.jsx("h2", { children: t.contactTitle }),
               o.jsx("p", { children: t.contactBody }),
               o.jsx("p", {
-                children: o.jsx("span", {
-                  className: "todo-email",
+                children: o.jsx("a", {
+                  href: `mailto:${t.contactEmail}`,
+                  className: "font-semibold text-main underline",
                   children: t.contactEmail,
                 }),
               }),
