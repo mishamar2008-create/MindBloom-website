@@ -35,8 +35,12 @@ await sql`CREATE TABLE IF NOT EXISTS reset_tokens (
 await sql`CREATE TABLE IF NOT EXISTS contact_messages (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL, email TEXT NOT NULL, organisation TEXT,
+  message TEXT,
+  kind TEXT,
   created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 )`;
+await sql`ALTER TABLE contact_messages ADD COLUMN IF NOT EXISTS message TEXT`;
+await sql`ALTER TABLE contact_messages ADD COLUMN IF NOT EXISTS kind TEXT`;
 
 // ---------- helpers ----------
 const json = (data: unknown, status = 200, headers: Record<string, string> = {}) =>
@@ -235,11 +239,13 @@ async function api(req: Request, url: URL, server: any): Promise<Response> {
 
   if (p === "/contact" && m === "POST") {
     if (limited(req, server)) return err("generic", 429);
-    const { name, email, org, consent } = await body(req);
+    const { name, email, org, message, consent, kind } = await body(req);
     const e = String(email || "").trim().toLowerCase();
     if (!String(name || "").trim() || !EMAIL_RE.test(e) || consent !== true) return err("required");
-    await sql`INSERT INTO contact_messages (name, email, organisation)
-              VALUES (${String(name).trim().slice(0, 200)}, ${e}, ${String(org || "").trim().slice(0, 200) || null})`;
+    const note = String(message || "").trim().slice(0, 2000) || null;
+    const purpose = kind === "waitlist" ? "waitlist" : "contact";
+    await sql`INSERT INTO contact_messages (name, email, organisation, message, kind)
+              VALUES (${String(name).trim().slice(0, 200)}, ${e}, ${String(org || "").trim().slice(0, 200) || null}, ${note}, ${purpose})`;
     return json({ ok: true });
   }
 
@@ -278,10 +284,54 @@ async function api(req: Request, url: URL, server: any): Promise<Response> {
 }
 
 // ---------- static site ----------
+const SITE = "https://website-production-7892f518.up.railway.app";
+const PAGE_META: Record<string, { title: string; description: string; locale: string }> = {
+  es: {
+    title: "MindBloom — Estudio, concentración y amigos, en un solo lugar",
+    description:
+      "MindBloom ayuda a niños y jóvenes de 6 a 18 años en Barcelona que aprenden de otra manera: estudio, concentración y amigos, en una app y un centro.",
+    locale: "es_ES",
+  },
+  ca: {
+    title: "MindBloom — Estudi, concentració i amics, en un sol lloc",
+    description:
+      "MindBloom ajuda infants i joves de 6 a 18 anys a Barcelona que aprenen diferent: estudi, concentració i amics, en una app i un centre.",
+    locale: "ca_ES",
+  },
+  en: {
+    title: "MindBloom — Study, focus and friends, in one place",
+    description:
+      "MindBloom helps children aged 6 to 18 in Barcelona who learn differently, with study, focus and friends in one app and one learning centre.",
+    locale: "en_GB",
+  },
+};
+let indexTemplate: string | null = null;
+function pageHtml(url: URL, html: string) {
+  const asked = url.searchParams.get("lang");
+  const lang = asked === "en" || asked === "ca" ? asked : "es";
+  const meta = PAGE_META[lang];
+  const origin = (PUBLIC_URL || SITE).replace(/\/$/, "");
+  const path = url.pathname === "/index.html" ? "/" : url.pathname;
+  const canonical =
+    lang === "es"
+      ? origin + (path === "/" ? "/" : path)
+      : origin + (path === "/" ? "/" : path) + "?lang=" + lang;
+  return html
+    .replace('<html lang="es">', `<html lang="${lang}">`)
+    .replace(/<title>[^<]*<\/title>/, `<title>${meta.title}</title>`)
+    .replace(/(name="description" content=")[^"]*/, `$1${meta.description}`)
+    .replace(/(property="og:title" content=")[^"]*/, `$1${meta.title}`)
+    .replace(/(property="og:description" content=")[^"]*/, `$1${meta.description}`)
+    .replace(/(property="og:locale" content=")[^"]*/, `$1${meta.locale}`)
+    .replace(/(property="og:url" content=")[^"]*/, `$1${canonical}`)
+    .replace(/(name="twitter:title" content=")[^"]*/, `$1${meta.title}`)
+    .replace(/(name="twitter:description" content=")[^"]*/, `$1${meta.description}`)
+    .replace(/(rel="canonical" href=")[^"]*/, `$1${canonical}`);
+}
 async function staticFile(url: URL): Promise<Response> {
   let path = decodeURIComponent(url.pathname);
   if (path.includes("..")) return new Response("Not found", { status: 404 });
-  if (path !== "/") {
+  if (path !== "/" && path !== "/index.html") {
     const f = Bun.file(PUBLIC_DIR + path.replace(/^\//, ""));
     if (await f.exists()) {
       const immutable = path.startsWith("/assets/");
@@ -290,8 +340,9 @@ async function staticFile(url: URL): Promise<Response> {
       });
     }
   }
-  // App routes (/join, /signin, /welcome, /account …) all load index.html.
-  return new Response(Bun.file(PUBLIC_DIR + "index.html"), {
+  // App routes (/join, /signin, /welcome, /account, /privacy …) all load index.html.
+  if (!indexTemplate) indexTemplate = await Bun.file(PUBLIC_DIR + "index.html").text();
+  return new Response(pageHtml(url, indexTemplate), {
     headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-cache" },
   });
 }
