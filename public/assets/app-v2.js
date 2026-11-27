@@ -2780,7 +2780,7 @@ function Hh() {
         fetch("/api/contact", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ ...n, kind: "waitlist" }),
+          body: JSON.stringify({ ...n, kind: "waitlist", language: p }),
         })
           .then((R) => {
             R.ok ? s(!0) : a(!0);

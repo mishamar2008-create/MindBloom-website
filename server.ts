@@ -1,5 +1,6 @@
 // MindBloom website server: serves the site and stores parent accounts in Postgres.
 import { sql } from "bun";
+import { notifyEnquiry, submittedLanguage } from "./telegram.ts";
 
 const PORT = Number(Bun.env.PORT || 8080);
 const PUBLIC_DIR = new URL("./public/", import.meta.url).pathname;
@@ -114,22 +115,6 @@ async function sendResetEmail(to: string, link: string) {
     }),
   });
   return r.ok;
-}
-// Skill 1: Telegram alert for each Contact / waitlist form. Off until both variables are set in Railway.
-async function telegramAlert(text: string) {
-  const botToken = Bun.env.TELEGRAM_BOT_TOKEN;
-  const chatId = Bun.env.TELEGRAM_CHAT_ID;
-  if (!botToken || !chatId) return;
-  try {
-    const r = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ chat_id: chatId, text, disable_web_page_preview: true }),
-    });
-    if (!r.ok) console.error("telegram alert failed", r.status, await r.text());
-  } catch (e) {
-    console.error("telegram alert error", e);
-  }
 }
 const googleEnabled = () => !!(Bun.env.GOOGLE_CLIENT_ID && Bun.env.GOOGLE_CLIENT_SECRET);
 
@@ -255,23 +240,31 @@ async function api(req: Request, url: URL, server: any): Promise<Response> {
 
   if (p === "/contact" && m === "POST") {
     if (limited(req, server)) return err("generic", 429);
-    const { name, email, org, message, consent, kind } = await body(req);
+    const payload = await body(req);
+    const { name, email, org, message, consent, kind } = payload;
     const e = String(email || "").trim().toLowerCase();
     if (!String(name || "").trim() || !EMAIL_RE.test(e) || consent !== true) return err("required");
     const note = String(message || "").trim().slice(0, 2000) || null;
     const purpose = kind === "waitlist" ? "waitlist" : "contact";
+    const savedName = String(name).trim().slice(0, 200);
+    const savedOrg = String(org || "").trim().slice(0, 200) || null;
     await sql`INSERT INTO contact_messages (name, email, organisation, message, kind)
-              VALUES (${String(name).trim().slice(0, 200)}, ${e}, ${String(org || "").trim().slice(0, 200) || null}, ${note}, ${purpose})`;
-    const orgName = String(org || "").trim().slice(0, 200);
-    telegramAlert(
-      [
-        purpose === "waitlist" ? "🌱 New waitlist sign-up on MindBloom" : "📩 New enquiry on MindBloom",
-        `Name: ${String(name).trim().slice(0, 200)}`,
-        `Email: ${e}`,
-        orgName ? `Organisation: ${orgName}` : "",
-        note ? `Message: ${note.slice(0, 1000)}` : "",
-      ].filter(Boolean).join("\n"),
-    ); // not awaited: the parent gets their "sent" reply straight away
+              VALUES (${savedName}, ${e}, ${savedOrg}, ${note}, ${purpose})`;
+    const extra: Record<string, unknown> = { ...payload, kind: purpose };
+    if (savedOrg) {
+      extra.organisation = savedOrg;
+      delete extra.org;
+      delete extra.organization;
+    }
+    // Not awaited. A missing bot or a Telegram error must not change this response.
+    void notifyEnquiry({
+      name: savedName,
+      email: e,
+      phone: payload.phone ?? payload.telephone ?? payload.tel,
+      message: note,
+      language: submittedLanguage(payload, req.headers.get("referer")),
+      extra,
+    });
     return json({ ok: true });
   }
 
