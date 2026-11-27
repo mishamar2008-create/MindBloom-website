@@ -115,6 +115,22 @@ async function sendResetEmail(to: string, link: string) {
   });
   return r.ok;
 }
+// Skill 1: Telegram alert for each Contact / waitlist form. Off until both variables are set in Railway.
+async function telegramAlert(text: string) {
+  const botToken = Bun.env.TELEGRAM_BOT_TOKEN;
+  const chatId = Bun.env.TELEGRAM_CHAT_ID;
+  if (!botToken || !chatId) return;
+  try {
+    const r = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ chat_id: chatId, text, disable_web_page_preview: true }),
+    });
+    if (!r.ok) console.error("telegram alert failed", r.status, await r.text());
+  } catch (e) {
+    console.error("telegram alert error", e);
+  }
+}
 const googleEnabled = () => !!(Bun.env.GOOGLE_CLIENT_ID && Bun.env.GOOGLE_CLIENT_SECRET);
 
 // ---------- API ----------
@@ -246,6 +262,16 @@ async function api(req: Request, url: URL, server: any): Promise<Response> {
     const purpose = kind === "waitlist" ? "waitlist" : "contact";
     await sql`INSERT INTO contact_messages (name, email, organisation, message, kind)
               VALUES (${String(name).trim().slice(0, 200)}, ${e}, ${String(org || "").trim().slice(0, 200) || null}, ${note}, ${purpose})`;
+    const orgName = String(org || "").trim().slice(0, 200);
+    telegramAlert(
+      [
+        purpose === "waitlist" ? "🌱 New waitlist sign-up on MindBloom" : "📩 New enquiry on MindBloom",
+        `Name: ${String(name).trim().slice(0, 200)}`,
+        `Email: ${e}`,
+        orgName ? `Organisation: ${orgName}` : "",
+        note ? `Message: ${note.slice(0, 1000)}` : "",
+      ].filter(Boolean).join("\n"),
+    ); // not awaited: the parent gets their "sent" reply straight away
     return json({ ok: true });
   }
 
